@@ -1,0 +1,415 @@
+# Project information
+site_name: Google Cloud Vertex AI Documentations
+site_url: https://github.com/zhixinlaigg/doc_rewrite_mvp.github.io
+site_description: >-
+  Google Cloud Vertex AI Documentations
+site_dir: site
+
+# Repository
+repo_name: doc_rewrite_new.github.io
+repo_url: https://github.com/zhixinlaigg/doc_rewrite_new.github.io
+
+# Copyright
+copyright: Copyright Google 2025
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-google-theme.js
+
+# Configuration
+theme:
+  name: material
+  font:
+    text: Google Sans
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  # custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: white
+      accent: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: white
+      accent: white
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      dedent_subsections: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - toc:
+      permalink: true
+
+# Plugins
+# plugins:
+#   - search
+#   - redirects:
+#       redirect_maps:
+#         'get-started/local-testing.md': 'get-started/testing.md'
+#         'get-started/tutorial.md': 'tutorials/index.md'
+#         'guides/responsible-agents.md': 'safety/index.md'
+
+# Navigation
+
+nav:
+  - Home: index.md
+  - Guides:
+    # - Discover:
+      # - Overview of Generative AI on Vertex AI: vertex-ai/generative-ai/docs.md
+      # - Generative AI beginner's guide: vertex-ai/generative-ai/docs/learn/overview.md
+      # - Glossary: vertex-ai/generative-ai/docs/glossary-genai.md
+    - Get started:
+      - Send a text prompt to the Gemini API without an account: vertex-ai/generative-ai/docs/start/quickstarts/try-gen-ai.md
+      - Generate an image and verify its watermark using Imagen: vertex-ai/generative-ai/docs/image/quickstart-image-generate-console.md
+      - Generate text using the Gemini API: vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal.md
+      - Send text prompts to Gemini using Vertex AI Studio: vertex-ai/generative-ai/docs/start/quickstarts/quickstart.md
+      - Deploy your Vertex AI Studio prompt as a web application: vertex-ai/generative-ai/docs/start/quickstarts/deploy-vais-prompt.md
+      - Overview: vertex-ai/generative-ai/docs/start/express-mode/overview.md
+      - Console tutorial: vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-studio-express-mode-quickstart.md
+      - API tutorial: vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-express-mode-api-quickstart.md
+    - Select models:
+      # - "Try it: Test model capabilities using Playspaces": vertex-ai/generative-ai/docs/model-garden/quickstart.md
+      # - Overview of Model Garden: vertex-ai/generative-ai/docs/model-garden/explore-models.md
+      # - Use models in Model Garden: vertex-ai/generative-ai/docs/model-garden/use-models.md
+      # - Supported models: vertex-ai/generative-ai/docs/model-garden/available-models.md
+      - Gemini:
+        # - Gemini 2.5 Flash: vertex-ai/generative-ai/docs/models/gemini/2-5-flash.md.md
+        # - Gemini 2.5 Pro: vertex-ai/generative-ai/docs/models/gemini/2-5-pro.md.md
+        # - Gemini 2.0 Flash: vertex-ai/generative-ai/docs/models/gemini/2-0-flash.md
+        # - Gemini 2.0 Flash-Lite: vertex-ai/generative-ai/docs/models/gemini/2-0-flash-lite.md
+        # - Vertex AI Model Optimizer: vertex-ai/generative-ai/docs/model-reference/vertex-ai-model-optimizer.md
+        - Migrate to Gemini 2: vertex-ai/generative-ai/docs/migrate-to-v2.md
+        # - SDKs: vertex-ai/generative-ai/docs/sdks/overview.md
+      # - Imagen:
+      #   - Imagen 3.0 Generate 002: vertex-ai/generative-ai/docs/models/imagen/3-0-generate-002.md
+      #   - Imagen 3.0 Generate 001: vertex-ai/generative-ai/docs/models/imagen/3-0-generate-001.md
+      #   - Imagen 3.0 Fast Generate 001: vertex-ai/generative-ai/docs/models/imagen/3-0-fast-generate-001.md
+      #   - Imagen 3.0 Capability 001: vertex-ai/generative-ai/docs/models/imagen/3-0-capability-001.md
+      #   - Imagen 4.0 Generate Preview 06-06: vertex-ai/generative-ai/docs/models/imagen/4-0-generate-preview-06-06.md
+      #   - Imagen 4.0 Fast Generate Preview 06-06: vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-preview-06-06.md
+      #   - Imagen 4.0 Ultra Generate Preview 06-06: vertex-ai/generative-ai/docs/models/imagen/4-0-ultra-generate-preview-06-06.md
+      #   - Migrate to Imagen 3: vertex-ai/generative-ai/docs/image/migrate-to-imagen-3.md
+    #   - Veo:
+    #     - Veo 2 Generate 001: vertex-ai/generative-ai/docs/models/veo/2-0-generate-001.md
+    #     - Veo 3 Generate 001 Preview: vertex-ai/generative-ai/docs/models/veo/3-0-generate-preview.md
+      - Model versions: vertex-ai/generative-ai/docs/learn/model-versions.md
+    #   - Model as a Service (MaaS) overview: vertex-ai/generative-ai/docs/partner-models/use-partner-models.md
+    #   - AI21 Labs:
+    #     - Jamba 1.5 Large: vertex-ai/generative-ai/docs/partner-models/ai21/jamba-1-5-large.md
+    #     - Jamba 1.5 Mini: vertex-ai/generative-ai/docs/partner-models/ai21/jamba-1-5-mini.md
+    #   - Claude:
+    #     - Request predictions: vertex-ai/generative-ai/docs/partner-models/claude/use-claude.md
+    #     - Batch predictions: vertex-ai/generative-ai/docs/partner-models/claude/batch.md
+    #     - Prompt caching: vertex-ai/generative-ai/docs/partner-models/claude/prompt-caching.md
+    #     - Count tokens: vertex-ai/generative-ai/docs/partner-models/claude/count-tokens.md
+    #     - Claude Opus 4: vertex-ai/generative-ai/docs/partner-models/claude/opus-4.md
+    #     - Claude Sonnet 4: vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4.md
+    #     - Claude 3.7 Sonnet: vertex-ai/generative-ai/docs/partner-models/claude/sonnet-3-7.md
+    #     - Claude 3.5 Sonnet v2: vertex-ai/generative-ai/docs/partner-models/claude/sonnet-3-5-v2.md
+    #     - Claude 3.5 Haiku: vertex-ai/generative-ai/docs/partner-models/claude/haiku-3-5.md
+    #     - Claude 3 Opus: vertex-ai/generative-ai/docs/partner-models/claude/opus-3.md
+    #     - Claude 3 Haiku: vertex-ai/generative-ai/docs/partner-models/claude/haiku-3.md
+    #     - Claude 3.5 Sonnet: vertex-ai/generative-ai/docs/partner-models/claude/sonnet-3-5.md
+    #   - Llama:
+    #     - Llama 4 Maverick: vertex-ai/generative-ai/docs/partner-models/llama/llama4-maverick.md
+    #     - Llama 4 Scout: vertex-ai/generative-ai/docs/partner-models/llama/llama4-scout.md
+    #     - Llama 3.3: vertex-ai/generative-ai/docs/partner-models/llama/llama3-3.md
+    #     - Llama 3.2: vertex-ai/generative-ai/docs/partner-models/llama/llama3-2.md
+    #     - Llama 3.1 405b: vertex-ai/generative-ai/docs/partner-models/llama/llama3-1-405.md
+    #     - Llama 3.1 70b: vertex-ai/generative-ai/docs/partner-models/llama/llama3-1-70.md
+    #     - Llama 3.1 8b: vertex-ai/generative-ai/docs/partner-models/llama/llama3-1-8.md
+    #   - Mistral AI:
+    #     - Mistral OCR (25.05): vertex-ai/generative-ai/docs/partner-models/mistral/mistral-ocr.md
+    #     - Mistral Small 3.1 (25.03): vertex-ai/generative-ai/docs/partner-models/mistral/mistral-small-3-1.md
+    #     - Mistral Large (24.11): vertex-ai/generative-ai/docs/partner-models/mistral/mistral-large.md
+    #     - Mistral Nemo: vertex-ai/generative-ai/docs/partner-models/mistral/mistral-nemo.md
+    #     - Codestral (25.01): vertex-ai/generative-ai/docs/partner-models/mistral/codestral-2501.md
+    #   - Model as a Service (MaaS) deprecations: vertex-ai/generative-ai/docs/deprecations/partner-models.md
+    #   - Google Gemma:
+    #     - Use Gemma: vertex-ai/generative-ai/docs/open-models/use-gemma.md
+    #     - "Tutorial: Deploy and inference Gemma (GPU)": vertex-ai/generative-ai/docs/model-garden/deploy-and-inference-tutorial.md
+    #     - "Tutorial: Deploy and inference Gemma (TPU)": vertex-ai/generative-ai/docs/model-garden/deploy-and-inference-tutorial-tpu.md
+    #   - Use Hugging Face Models: vertex-ai/generative-ai/docs/open-models/use-hugging-face-models.md
+    #   - Hex-LLM: vertex-ai/generative-ai/docs/open-models/use-hex-llm.md
+    #   - Comprehensive guide to vLLM for Text and Multimodal LLM Serving (GPU): vertex-ai/generative-ai/docs/open-models/vllm/use-vllm.md
+    #   - xDiT: vertex-ai/generative-ai/docs/open-models/xdit.md
+    #   - "Tutorial: Deploy Llamma 3 models with SpotVM and Reservations": vertex-ai/generative-ai/docs/open-models/spotvm-reservations/use-spotvm-reservations.md
+    - Build:
+    #   - Introduction to prompting: vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design.md
+    #   - Prompting strategies:
+    #     - Give clear and specific instructions: vertex-ai/generative-ai/docs/learn/prompts/clear-instructions.md
+    #     - Use system instructions: vertex-ai/generative-ai/docs/learn/prompts/system-instructions.md
+    #     - Include few-shot examples: vertex-ai/generative-ai/docs/learn/prompts/few-shot-examples.md
+    #     - Add contextual information: vertex-ai/generative-ai/docs/learn/prompts/contextual-information.md
+    #     - Structure prompts: vertex-ai/generative-ai/docs/learn/prompts/structure-prompts.md
+    #     - Instruct the model to explain its reasoning: vertex-ai/generative-ai/docs/learn/prompts/explain-reasoning.md
+    #     - Break down complex tasks: vertex-ai/generative-ai/docs/learn/prompts/break-down-prompts.md
+    #     - Experiment with parameter values: vertex-ai/generative-ai/docs/learn/prompts/adjust-parameter-values.md
+    #     - Prompt iteration strategies: vertex-ai/generative-ai/docs/learn/prompts/prompt-iteration.md
+    #   - Task-specific prompt guidance:
+    #     - Design multimodal prompts: vertex-ai/generative-ai/docs/multimodal/design-multimodal-prompts.md
+    #     - Design chat prompts: vertex-ai/generative-ai/docs/chat/chat-prompts.md
+    #     - Design medical text prompts: vertex-ai/generative-ai/docs/medlm/medlm-prompts.md
+    #   - Text and code generation:
+    #     - Text generation: vertex-ai/generative-ai/docs/multimodal/send-chat-prompts-gemini.md
+    #     - System instructions: vertex-ai/generative-ai/docs/learn/prompts/system-instruction-introduction.md
+    #     - Function calling: vertex-ai/generative-ai/docs/multimodal/function-calling.md
+    #     - Structured output: vertex-ai/generative-ai/docs/multimodal/control-generated-output.md
+    #     - Content generation parameters: vertex-ai/generative-ai/docs/multimodal/content-generation-parameters.md
+    #     - Code execution: vertex-ai/generative-ai/docs/multimodal/code-execution.md
+    #     - Thinking: vertex-ai/generative-ai/docs/thinking.md
+    #     - Live API: vertex-ai/generative-ai/docs/live-api.md
+    #     - Safety:
+    #       - Responsible AI: vertex-ai/generative-ai/docs/learn/responsible-ai.md
+    #       - System instructions for safety: vertex-ai/generative-ai/docs/multimodal/safety-system-instructions.md
+    #       - Configure content filters: vertex-ai/generative-ai/docs/multimodal/configure-safety-filters.md
+    #       - Gemini for safety filtering and content moderation: vertex-ai/generative-ai/docs/multimodal/gemini-for-filtering-and-moderation.md
+    #       - Abuse monitoring: vertex-ai/generative-ai/docs/learn/abuse-monitoring.md
+    #       - Process blocked responses: vertex-ai/generative-ai/docs/multimodal/process-blocked-responses.md
+    #     - Medical text: vertex-ai/generative-ai/docs/medlm/overview.md
+    #   - Image generation:
+    #     - Generate images with Gemini: vertex-ai/generative-ai/docs/multimodal/image-generation.md
+    #     - Imagen overview: vertex-ai/generative-ai/docs/image/overview.md
+    #     - Generate images using text prompts: vertex-ai/generative-ai/docs/image/generate-images.md
+    #     - Edit images:
+    #       - Edit using inpainting (insert or remove objects): vertex-ai/generative-ai/docs/image/edit-inpainting.md
+    #       - Edit using outpainting: vertex-ai/generative-ai/docs/image/edit-outpainting.md
+    #       - Use product image editing: vertex-ai/generative-ai/docs/image/edit-product-image.md
+    #       - Edit using Personalization: vertex-ai/generative-ai/docs/image/edit-personalization.md
+    #       - Edit images (mask-free): vertex-ai/generative-ai/docs/image/edit-images.md
+    #     - Customize images:
+    #       - Subject customization: vertex-ai/generative-ai/docs/image/subject-customization.md
+    #       - Style customization: vertex-ai/generative-ai/docs/image/style-customization.md
+    #       - Controlled Customization: vertex-ai/generative-ai/docs/image/edit-controlled.md
+    #       - Instruct Customization: vertex-ai/generative-ai/docs/image/instruct-customization.md
+    #     - Upscale an image: vertex-ai/generative-ai/docs/image/upscale-image.md
+    #     - Prompt and image attribute guide: vertex-ai/generative-ai/docs/image/img-gen-prompt-guide.md
+    #     - Base64 encode and decode files: vertex-ai/generative-ai/docs/image/base64-encode.md
+    #     - Responsible AI and usage guidelines for Imagen: vertex-ai/generative-ai/docs/image/responsible-ai-imagen.md
+    #     - Legacy features:
+    #       - Text-to-Live images prompt guide: vertex-ai/generative-ai/docs/image/ttli-prompt-guide.md
+    #       - Create live images from text: vertex-ai/generative-ai/docs/image/text-to-live-images.md
+    #       - Get image descriptions using visual captioning: vertex-ai/generative-ai/docs/image/image-captioning.md
+    #       - Use Visual Question Answering: vertex-ai/generative-ai/docs/image/visual-question-answering.md
+    #       - Get video descriptions using Imagen: vertex-ai/generative-ai/docs/video/video-descriptions.md
+    #   - Video generation:
+    #     - Generate videos using text or image prompts: vertex-ai/generative-ai/docs/video/generate-videos.md
+    #     - Veo prompt guide: vertex-ai/generative-ai/docs/video/video-gen-prompt-guide.md
+    #   - Music generation:
+    #     - Generate music using Lyria: vertex-ai/generative-ai/docs/music/generate-music.md
+    #     - Lyria prompt guide: vertex-ai/generative-ai/docs/music/music-gen-prompt-guide.md
+    #   - Analyze:
+    #     - Image understanding: vertex-ai/generative-ai/docs/multimodal/image-understanding.md
+    #     - Video understanding: vertex-ai/generative-ai/docs/multimodal/video-understanding.md
+    #     - Audio understanding: vertex-ai/generative-ai/docs/multimodal/audio-understanding.md
+    #     - Document understanding: vertex-ai/generative-ai/docs/multimodal/document-understanding.md
+    #     - Bounding box detection: vertex-ai/generative-ai/docs/bounding-box-detection.md
+    #   - Grounding:
+    #     - Grounding with Google Search: vertex-ai/generative-ai/docs/grounding/grounding-with-google-search.md
+    #     - Grounding with Google Maps: vertex-ai/generative-ai/docs/grounding/grounding-with-google-maps.md
+    #     - Grounding with Vertex AI Search: vertex-ai/generative-ai/docs/grounding/grounding-with-vertex-ai-search.md
+    #     - Grounding with your search API: vertex-ai/generative-ai/docs/grounding/grounding-with-your-search-api.md
+    #     - Grounding responses using RAG: vertex-ai/generative-ai/docs/grounding/ground-responses-using-rag.md
+    #     - Grounding with Elasticsearch: vertex-ai/generative-ai/docs/grounding/grounding-with-elasticsearch.md
+    #     - Web Grounding for Enterprise: vertex-ai/generative-ai/docs/grounding/web-grounding-enterprise.md
+    #     - Use Google Search suggestions: vertex-ai/generative-ai/docs/grounding/grounding-search-suggestions.md
+    #   - Embeddings:
+    #     - Text embeddings:
+    #       - Get text embeddings: vertex-ai/generative-ai/docs/embeddings/get-text-embeddings.md
+    #       - Choose an embeddings task type: vertex-ai/generative-ai/docs/embeddings/task-types.md
+    #     - Get multimodal embeddings: vertex-ai/generative-ai/docs/embeddings/get-multimodal-embeddings.md
+    #     - Get batch embeddings predictions: vertex-ai/generative-ai/docs/embeddings/batch-prediction-genai-embeddings.md
+    #   - Translation: vertex-ai/generative-ai/docs/translate/translate-text.md
+    #   - Generate speech from text: vertex-ai/generative-ai/docs/speech/text-to-speech.md
+    #   - Transcribe speech: vertex-ai/generative-ai/docs/speech/speech-to-text.md
+    #   - Use AI-powered prompt writing tools:
+    #     - Optimize prompts: vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer.md
+    #     - Use prompt templates: vertex-ai/generative-ai/docs/learn/prompts/prompt-templates.md
+    #   - Tokenizer:
+    #     - List and count tokens: vertex-ai/generative-ai/docs/multimodal/list-token.md
+    #     - Use the Count Tokens API: vertex-ai/generative-ai/docs/multimodal/get-token-count.md
+    #   - Introduction to tuning: vertex-ai/generative-ai/docs/models/tune-models.md
+      # - Gemini models:
+      #   - Supervised fine-tuning:
+      #     - About supervised fine-tuning: vertex-ai/generative-ai/docs/models/gemini-supervised-tuning.md
+      #     - Prepare your data: vertex-ai/generative-ai/docs/models/gemini-supervised-tuning-prepare.md
+      #     - Use supervised fine-tuning: vertex-ai/generative-ai/docs/models/gemini-use-supervised-tuning.md
+      #     - Use tuning checkpoints: vertex-ai/generative-ai/docs/models/tuning-checkpoints.md
+      #     - Supported modalities:
+      #       - Text tuning: vertex-ai/generative-ai/docs/models/tune_gemini/text_tune.md
+      #       - Document tuning: vertex-ai/generative-ai/docs/models/tune_gemini/doc_tune.md
+      #       - Image tuning: vertex-ai/generative-ai/docs/models/tune_gemini/image_tune.md
+      #       - Audio tuning: vertex-ai/generative-ai/docs/models/tune_gemini/audio_tune.md
+      #     - Tune function calling: vertex-ai/generative-ai/docs/models/tune-function-calling.md
+      # - Embeddings models:
+      #   - Tune text embeddings models: vertex-ai/generative-ai/docs/models/tune-embeddings.md
+      # - Imagen models:
+      #   - Tune a subject model: vertex-ai/generative-ai/docs/image/fine-tune-model.md
+      #   - Create a custom style model: vertex-ai/generative-ai/docs/image/fine-tune-style.md
+      # - Translation models:
+      #   - Supervised fine-tuning: 
+      #     - About supervised fine-tuning: vertex-ai/generative-ai/docs/models/translation-supervised-tuning.md
+      #     - Prepare your data: vertex-ai/generative-ai/docs/models/translation-supervised-tuning-prepare.md
+      #     - Use supervised fine-tuning: vertex-ai/generative-ai/docs/models/translation-use-supervised-tuning.md
+      # - Tuning recommendations with LoRA and QLoRA: vertex-ai/generative-ai/docs/model-garden/lora-qlora.md
+      - Call Vertex AI models using OpenAI libraries:
+        - Authenticate: vertex-ai/generative-ai/docs/migrate/openai/auth-and-credentials.md
+        - Examples: vertex-ai/generative-ai/docs/migrate/openai/examples.md
+      - Migrate from Google AI to Vertex AI: vertex-ai/generative-ai/docs/migrate/migrate-google-ai.md
+    # - Evaluate:
+    #   - "Tutorial: Perform evaluation using the Python SDK": vertex-ai/generative-ai/docs/models/evaluation-quickstart.md
+    #   - Define your evaluation metrics: vertex-ai/generative-ai/docs/models/determine-eval.md
+    #   - Prepare your evaluation dataset: vertex-ai/generative-ai/docs/models/evaluation-dataset.md
+    #   - Run an evaluation: vertex-ai/generative-ai/docs/models/run-evaluation.md
+    #   - Interpret evaluation results: vertex-ai/generative-ai/docs/models/view-evaluation.md
+    #   - Templates for model-based metrics: vertex-ai/generative-ai/docs/models/metrics-templates.md
+    #   - Evaluate agents: vertex-ai/generative-ai/docs/models/evaluation-agents.md
+    #   - Evaluate a judge model: vertex-ai/generative-ai/docs/models/evaluate-judge-model.md
+    #   - Prompting for judge model customization: vertex-ai/generative-ai/docs/models/prompt-judge-model.md
+    #   - Configure a judge model: vertex-ai/generative-ai/docs/models/configure-judge-model.md
+    #   - Run AutoSxS pipeline: vertex-ai/generative-ai/docs/models/side-by-side-eval.md
+    #   - Run a computation-based evaluation pipeline: vertex-ai/generative-ai/docs/models/computation-based-eval-pipeline.md
+    - Deploy:
+    #   - Deployment best practices: vertex-ai/generative-ai/docs/learn/prompt-best-practices.md
+    #   - Cache reused prompt context:
+    #     - Create a context cache: vertex-ai/generative-ai/docs/context-cache/context-cache-create.md
+    #     - Use a context cache: vertex-ai/generative-ai/docs/context-cache/context-cache-use.md
+    #     - Get context cache information: vertex-ai/generative-ai/docs/context-cache/context-cache-getinfo.md
+    #     - Update a context cache: vertex-ai/generative-ai/docs/context-cache/context-cache-update.md
+    #     - Delete a context cache: vertex-ai/generative-ai/docs/context-cache/context-cache-delete.md
+    #     - Context cache for fine-tuned Gemini models: vertex-ai/generative-ai/docs/context-cache/context-cache-for-tuned-gemini.md
+    #   - Batch prediction: vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini.md
+      - Provisioned Throughput overview: vertex-ai/generative-ai/docs/provisioned-throughput/overview.md
+    #   - Calculate Provisioned Throughput requirements: vertex-ai/generative-ai/docs/provisioned-throughput/measure-provisioned-throughput.md
+    #   - Purchase Provisioned Throughput: vertex-ai/generative-ai/docs/provisioned-throughput/purchase-provisioned-throughput.md
+    #   - Use Provisioned Throughput: vertex-ai/generative-ai/docs/provisioned-throughput/use-provisioned-throughput.md
+      - Troubleshooting error code 429: vertex-ai/generative-ai/docs/provisioned-throughput/error-code-429.md
+    #   - Quotas and system limits: vertex-ai/generative-ai/docs/quotas.md
+    #   - Dynamic shared quota: vertex-ai/generative-ai/docs/dynamic-shared-quota.md
+    # - Administer:
+    #   - Access control: vertex-ai/generative-ai/docs/access-control.md
+    #   - Networking: vertex-ai/generative-ai/docs/networking.md
+    #   - Security controls: vertex-ai/generative-ai/docs/security-controls.md
+    #   - Control access to Model Garden models: vertex-ai/generative-ai/docs/control-model-access.md
+    #   - Enable Data Access audit logs: vertex-ai/generative-ai/docs/enable-audit-logs.md
+    #   - Monitor models: vertex-ai/generative-ai/docs/learn/model-observability.md
+    #   - Monitor cost using custom metadata labels: vertex-ai/generative-ai/docs/multimodal/add-labels-to-api-calls.md
+    #   - Request-response logging: vertex-ai/generative-ai/docs/multimodal/request-response-logging.md
+    #   - Secure a gen AI app by using IAP:
+    #     - Set up your project and source repository: vertex-ai/generative-ai/docs/streamlit/setup-environment.md
+    #     - Create a Cloud Run service: vertex-ai/generative-ai/docs/streamlit/create-cloudrun-service.md
+    #     - Create a load balancer: vertex-ai/generative-ai/docs/streamlit/create-loadbalancer.md
+    #     - Configure IAP: vertex-ai/generative-ai/docs/streamlit/configure-iap.md
+    #     - Test your IAP-secured app: vertex-ai/generative-ai/docs/streamlit/view-app.md
+    #     - Clean up your project: vertex-ai/generative-ai/docs/streamlit/clean-up.md
+    # - Vertex AI documentation: vertex-ai/docs.md
+    # - API reference:
+    # - Gemini API:
+    #   - Generate content: vertex-ai/generative-ai/docs/model-reference/inference.md
+    #   - Function calling: vertex-ai/generative-ai/docs/model-reference/function-calling.md
+    #   - Prompt classes: vertex-ai/generative-ai/docs/model-reference/prompt-classes.md
+    #   - Grounding: vertex-ai/generative-ai/docs/model-reference/grounding.md
+    #   - Code execution API: vertex-ai/generative-ai/docs/model-reference/code-execution-api.md
+    #   - Live API: vertex-ai/generative-ai/docs/model-reference/multimodal-live.md
+    #   - API errors: vertex-ai/generative-ai/docs/model-reference/api-errors.md
+    # - Embeddings API:
+    #   - Text embeddings: vertex-ai/generative-ai/docs/model-reference/text-embeddings-api.md
+    #   - Multimodal embeddings: vertex-ai/generative-ai/docs/model-reference/multimodal-embeddings-api.md
+    # - Imagen API:
+    #   - Generate images: vertex-ai/generative-ai/docs/model-reference/imagen-api.md
+    #   - Edit images: vertex-ai/generative-ai/docs/model-reference/imagen-api-edit.md
+    #   - Customize images (few-shot): vertex-ai/generative-ai/docs/model-reference/imagen-api-customization.md
+    #   - Image captioning: vertex-ai/generative-ai/docs/model-reference/image-captioning.md
+    #   - Visual question answering (VQA): vertex-ai/generative-ai/docs/model-reference/visual-question-answering.md
+    # - Veo video generation API: vertex-ai/generative-ai/docs/model-reference/veo-video-generation.md
+    # - Lyria music generation API: vertex-ai/generative-ai/docs/model-reference/lyria-music-generation.md
+    # - Batch prediction API: vertex-ai/generative-ai/docs/model-reference/batch-prediction-api.md
+    # - Tuning API: vertex-ai/generative-ai/docs/model-reference/tuning.md
+    # - Gen AI Evaluation API: vertex-ai/generative-ai/docs/model-reference/evaluation.md
+    # - RAG API:
+    #   - RAG API v1beta1: vertex-ai/generative-ai/docs/model-reference/rag-api.md
+    #   - RAG API v1: vertex-ai/generative-ai/docs/model-reference/rag-api-v1.md
+    #   - Retrieval and generation output of RAG: vertex-ai/generative-ai/docs/model-reference/rag-output-explained.md
+    # - CountTokens API: vertex-ai/generative-ai/docs/model-reference/count-tokens.md
+    # - Agent Engine API: vertex-ai/generative-ai/docs/model-reference/reasoning-engine.md
+    # - MedLM API: vertex-ai/generative-ai/docs/model-reference/medlm.md
+    # - Vertex AI in express mode:
+    #   - REST API reference: vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-express-mode-api-reference.md
+    #   - v1:
+    #     - Overview: vertex-ai/generative-ai/docs/reference/express-mode/rest/v1/publishers.models.md
+    #     - countTokens: vertex-ai/generative-ai/docs/reference/express-mode/rest/v1/publishers.models/countTokens.md
+    #     - generateContent: vertex-ai/generative-ai/docs/reference/express-mode/rest/v1/publishers.models/generateContent.md
+    #     - streamGenerateContent: vertex-ai/generative-ai/docs/reference/express-mode/rest/v1/publishers.models/streamGenerateContent.md
+    #   - v1beta1:
+    # - REST:
+    #   - All methods: vertex-ai/generative-ai/docs/reference/rest.md
+    #   - Shared types:
+    # - RPC:
+    # - Vertex AI Cookbook:
+    # - Vertex AI Cookbook: vertex-ai/generative-ai/docs/cookbook.md
+    # - All Generative AI on Vertex AI samples: vertex-ai/generative-ai/docs/samples.md
+    # - Generative AI on Vertex AI samples:
+    # - Google Gen AI SDK samples:
+    # - Resources:
+    # - Getting help: vertex-ai/generative-ai/docs/getting-help.md
+    # - Pricing: vertex-ai/generative-ai/pricing.md
+    # - Provisioned Throughput: vertex-ai/generative-ai/docs/resources/provisioned-throughput.md
+    - Dynamic shared quota: vertex-ai/generative-ai/docs/resources/dynamic-shared-quota.md
+    # - Release notes:
+    #   - Current: vertex-ai/generative-ai/docs/release-notes.md
+    #   - Archive: vertex-ai/generative-ai/docs/release-notes-archive.md
+    # - Security bulletins: vertex-ai/generative-ai/docs/security-bulletins.md
+    # - Locations:
+    #   - Deployments and endpoints: vertex-ai/generative-ai/docs/learn/locations.md
+    #   - Data residency: vertex-ai/generative-ai/docs/learn/data-residency.md
+    # - Data governance: vertex-ai/generative-ai/docs/data-governance.md
+    # - Service Level Agreement: vertex-ai/generative-ai/sla.md
+    # - FAQ:
+    # - FAQ: vertex-ai/generative-ai/docs/faq.md
