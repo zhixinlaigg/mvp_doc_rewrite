@@ -1,0 +1,1767 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Google Cloud Vertex AI Documentations">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/zhixinlaigg/doc_rewrite_mvp.github.io/vertex-ai/generative-ai/docs/migrate-to-v2/">
+      
+      
+        <link rel="prev" href="../start/express-mode/vertex-ai-express-mode-api-quickstart/">
+      
+      
+        <link rel="next" href="../learn/model-versions/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Migrate to Gemini 2 - Google Cloud Vertex AI Documentations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Google Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#migrate-your-application-to-gemini-2-with-the-gemini-api-in-vertex-ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Google Cloud Vertex AI Documentations" class="md-header__button md-logo" aria-label="Google Cloud Vertex AI Documentations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Google Cloud Vertex AI Documentations
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate to Gemini 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/zhixinlaigg/doc_rewrite_new.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    doc_rewrite_new.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Google Cloud Vertex AI Documentations" class="md-nav__button md-logo" aria-label="Google Cloud Vertex AI Documentations" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Google Cloud Vertex AI Documentations
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/zhixinlaigg/doc_rewrite_new.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    doc_rewrite_new.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Get started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Get started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/quickstarts/try-gen-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Send a text prompt to the Gemini API without an account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate text using the Gemini API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/quickstarts/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Send text prompts to Gemini using Vertex AI Studio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/quickstarts/deploy-vais-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/express-mode/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/express-mode/vertex-ai-studio-express-mode-quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Console tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/express-mode/vertex-ai-express-mode-api-quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Select models
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Select models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Gemini
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Gemini
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Migrate to Gemini 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migrate to Gemini 2
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-migrate-to-gemini-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Why migrate to Gemini 2?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-gemini-2-model-should-i-migrate-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Which Gemini 2 model should I migrate to?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Before you begin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Migration workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Migration steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Improving model performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Getting help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 What's next
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn/model-versions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model versions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Build
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Build
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Call Vertex AI models using OpenAI libraries
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Call Vertex AI models using OpenAI libraries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate/openai/auth-and-credentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Authenticate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate/openai/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate/migrate-google-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migrate from Google AI to Vertex AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Deploy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Deploy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../provisioned-throughput/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Provisioned Throughput overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../provisioned-throughput/error-code-429/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting error code 429
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/dynamic-shared-quota/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dynamic shared quota
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-migrate-to-gemini-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Why migrate to Gemini 2?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-gemini-2-model-should-i-migrate-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Which Gemini 2 model should I migrate to?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Before you begin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Migration workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Migration steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improving-model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Improving model performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Getting help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 What's next
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="migrate-your-application-to-gemini-2-with-the-gemini-api-in-vertex-ai">Migrate your application to Gemini 2 with the Gemini API in Vertex AI<a class="headerlink" href="#migrate-your-application-to-gemini-2-with-the-gemini-api-in-vertex-ai" title="Permanent link">&para;</a></h1>
+<p>This guide shows how to migrate generative AI applications from Gemini 1.x and PaLM models to Gemini 2 models.</p>
+<h2 id="why-migrate-to-gemini-2">📚 Why migrate to Gemini 2?<a class="headerlink" href="#why-migrate-to-gemini-2" title="Permanent link">&para;</a></h2>
+<p>Gemini 2 delivers significant performance improvements over Gemini 1.x and PaLM models, along with new capabilities. Additionally, each model version has its own <a href="../learn/model-versions/">version support and availability timeline</a>.</p>
+<p>Upgrading most generative AI applications to Gemini 2 shouldn't require significant reengineering of prompts or code. However, some applications might require prompt changes, which are difficult to predict without testing. Therefore, we recommend testing your application with Gemini 2 before migrating.</p>
+<p>Significant code changes are only needed to address certain breaking changes or to use new Gemini 2 capabilities.</p>
+<h2 id="which-gemini-2-model-should-i-migrate-to">📚 Which Gemini 2 model should I migrate to?<a class="headerlink" href="#which-gemini-2-model-should-i-migrate-to" title="Permanent link">&para;</a></h2>
+<p>When choosing a Gemini 2 model, consider the features your application requires and their associated costs.</p>
+<p>For an overview of Gemini 2 model features, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/gemini/gemini-2-overview">Gemini 2</a>. For an overview of all Google models, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models">Google models</a>.</p>
+<p>The following table provides a comparison of Gemini 1.x and Gemini 2 models.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Gemini 1.5 Pro</th>
+<th>Gemini 1.5 Flash</th>
+<th>Gemini 2.0 Flash</th>
+<th>Gemini 2.0 Flash-Lite</th>
+<th>Gemini 2.5 Pro</th>
+<th>Gemini 2.5 Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input modalities</strong></td>
+<td>text, documents, image, video, audio</td>
+<td>text, documents, image, video, audio</td>
+<td>text, documents, image, video, audio</td>
+<td>text, documents, image, video, audio</td>
+<td>text, documents, image, video, audio</td>
+<td>text, documents, image, video, audio</td>
+</tr>
+<tr>
+<td><strong>Output modalities</strong></td>
+<td>text</td>
+<td>text</td>
+<td>text</td>
+<td>text</td>
+<td>text</td>
+<td>text</td>
+</tr>
+<tr>
+<td><strong>Context window, total token limit</strong></td>
+<td>2,097,152</td>
+<td>1,048,576</td>
+<td>1,048,576</td>
+<td>1,048,576</td>
+<td>1,048,576</td>
+<td>1,048,576</td>
+</tr>
+<tr>
+<td><strong>Output context length</strong></td>
+<td>8,192</td>
+<td>8,192</td>
+<td>8,192</td>
+<td>8,192</td>
+<td>64,192</td>
+<td>64,192</td>
+</tr>
+<tr>
+<td><strong>Grounding with Search</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Function calling</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Code execution</strong></td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Context caching</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Batch prediction</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Live API</strong></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Latency</strong></td>
+<td>Most capable in 1.5 family</td>
+<td>Fastest in 1.5 family</td>
+<td>Fast + good cost efficiency</td>
+<td>Fast + most cost efficient</td>
+<td>Slower than Flash, but good cost efficiency</td>
+<td>Fast + most cost efficient</td>
+</tr>
+<tr>
+<td><strong>Fine-tuning</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Recommended SDK</strong></td>
+<td>Vertex AI SDK</td>
+<td>Vertex AI SDK</td>
+<td>Gen AI SDK</td>
+<td>Gen AI SDK</td>
+<td>Gen AI SDK</td>
+<td>Gen AI SDK</td>
+</tr>
+<tr>
+<td><strong>Pricing units</strong></td>
+<td>Character</td>
+<td>Character</td>
+<td>Token</td>
+<td>Token</td>
+<td>Token</td>
+<td>Token</td>
+</tr>
+</tbody>
+</table>
+<h2 id="before-you-begin">⚙️ Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<p><a name="before-you-begin"></a></p>
+<details open="open">
+<summary>Prerequisites for a seamless migration</summary>
+<p>For a seamless Gemini 2 migration, we recommend that you address the following concerns before you begin the migration process.</p>
+<ul>
+<li>
+<p><strong>Model retirement awareness</strong>: Note the <a href="../learn/model-versions/">model version support and availability timelines</a> for older Gemini models, and make sure your migration is completed before the model you're using is retired.</p>
+</li>
+<li>
+<p><strong>InfoSec, governance, and regulatory approvals</strong>: Proactively request the approvals you need for Gemini 2 from your information security (InfoSec), risk, and compliance stakeholders. Make sure that you cover domain-specific risk and compliance constraints, especially in heavily regulated industries such as healthcare and financial services. Note that Gemini security controls differ among Gemini 2 models.</p>
+</li>
+<li>
+<p><strong>Location availability</strong>: See the <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#available-regions">Generative AI on Google Cloud models and partner model availability</a> documentation, and make sure your chosen Gemini 2 model is available in the regions where you need it, or consider switching to the global endpoint.</p>
+</li>
+<li>
+<p><strong>Modality and tokenization-based pricing differences</strong>: Check Gemini 2 pricing for all the modalities (text, code, images, speech) in your application. For more information, see the <a href="https://cloud.google.com/vertex-ai/generative-ai/pricing">generative AI pricing page</a>. Note that Gemini 2 text input and output is priced per token, while Gemini 1 text input and output is priced per character.</p>
+</li>
+<li>
+<p><strong>Provisioned Throughput</strong>: If needed, <a href="../provisioned-throughput/purchase-provisioned-throughput/#place-an-order">purchase additional Provisioned Throughput</a> for Gemini 2 or <a href="../provisioned-throughput/purchase-provisioned-throughput/#change-order">change existing Provisioned Throughput orders</a>.</p>
+</li>
+<li>
+<p><strong>Supervised fine-tuning</strong>: If your Gemini application uses supervised fine-tuning, submit a new tuning job with Gemini 2. We recommend that you start with the default tuning hyperparameters instead of reusing the hyperparameter values that you used with previous Gemini versions. The tuning service has been optimized for Gemini 2. Therefore, reusing previous hyperparameter values might not yield the best results.</p>
+</li>
+<li>
+<p><strong>Regression testing</strong>: There are three main types of regression tests involved when upgrading to Gemini 2 models:</p>
+<ul>
+<li><strong>Code regression tests</strong>: Regression testing from a software engineering and DevOps perspective. This type of regression test is always required.</li>
+<li><strong>Model performance regression tests</strong>: Regression testing from a data science or machine learning perspective. This means ensuring that the new Gemini 2 model provides outputs that are at least as high-quality as outputs from the current production model. Model performance regression tests are just model evaluations done as part of a change to a system or to the underlying model.</li>
+<li><strong>Load testing</strong>: Assessing how the application handles high volumes of inference requests. This type of regression test is required for applications that require Provisioned Throughput.</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="migration-workflow">⚙️ Migration workflow<a class="headerlink" href="#migration-workflow" title="Permanent link">&para;</a></h2>
+<p>The following diagram shows the high-level workflow for migrating your application to Gemini 2. Click each step to see the detailed instructions.</p>
+<pre class="mermaid"><code>flowchart LR
+    A[Before you begin] --&gt; B(Step 1: Document evaluation requirements)
+    B --&gt; C(Step 2: Upgrade and test code)
+    C --&gt; D(Step 3: Perform offline evaluation)
+    D --&gt; E(Step 4: Assess results and tune)
+    E --&gt; F(Step 5: Perform load testing)
+    F --&gt; G(Step 6: Perform online evaluation)
+    G --&gt; H(Step 7: Deploy to production)
+
+    click A "#before-you-begin"
+    click B "#step1-doc-eval"
+    click C "#step2-code-upgrade"
+    click D "#step3-offline-eval"
+    click E "#step4-assess-results"
+    click F "#step5-load-testing"
+    click G "#step6-online-eval"
+    click H "#step7-deploy"</code></pre>
+<h2 id="migration-steps">⚙️ Migration steps<a class="headerlink" href="#migration-steps" title="Permanent link">&para;</a></h2>
+<details>
+<summary>Step 1: Document model evaluation and testing requirements</summary>
+<p><a name="step1-doc-eval"></a></p>
+<ol>
+<li>Prepare to repeat any relevant evaluations from when you originally built your application, along with any relevant evaluations you have done since then.</li>
+<li>If you feel your existing evaluations don't appropriately cover or measure the breadth of tasks that your application performs, you should design and prepare additional evaluations.</li>
+<li>If your application involves RAG, tool use, complex agentic workflows, or prompt chains, make sure that your existing evaluation data allows for assessing each component independently. If not, gather input-output examples for each component.</li>
+<li>If your application is especially high-impact, or if it's part of a larger user-facing real-time system, you should include online evaluation.</li>
+</ol>
+</details>
+<details>
+<summary>Step 2: Perform code upgrades and testing</summary>
+<p><a name="step2-code-upgrade"></a></p>
+<p><strong>Choose an SDK</strong></p>
+<p>If your Gemini 1.x application uses the Vertex AI SDK, consider upgrading to the Gen AI SDK. New Gemini 2 capabilities are only available in the Gen AI SDK. However, there is no need to switch if your application only requires capabilities that are available in the Vertex AI SDK.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Gen AI SDK</th>
+<th>Vertex AI SDK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Use Case</strong></td>
+<td>Recommended for all new Gemini 2 applications and for accessing the latest features.</td>
+<td>Suitable for existing applications that don't require new Gemini 2 features.</td>
+</tr>
+<tr>
+<td><strong>New Feature Support</strong></td>
+<td>Receives all new Gemini 2 features (e.g., Grounding with Search).</td>
+<td>Does not support all features of Gemini 2. New features will only be added to the Gen AI SDK.</td>
+</tr>
+<tr>
+<td><strong>Setup</strong></td>
+<td>Requires setting environment variables for Vertex AI integration.</td>
+<td>Standard Vertex AI SDK initialization.</td>
+</tr>
+<tr>
+<td><strong>Recommendation</strong></td>
+<td><strong>Upgrade to this SDK</strong> to leverage the full power of Gemini 2.</td>
+<td>Continue using if your application is stable and doesn't need new capabilities.</td>
+</tr>
+</tbody>
+</table>
+<p>If you're new to the Gen AI SDK, see the <a href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_genai_sdk.ipynb">Getting started with Google Generative AI using the Gen AI SDK</a> notebook.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="gen-ai-sdk-recommended" name="__tabbed_1" type="radio" /><input id="vertex-ai-sdk" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="gen-ai-sdk-recommended">Gen AI SDK (Recommended)</label><label for="vertex-ai-sdk">Vertex AI SDK</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>We recommend migrating to the Gen AI SDK when upgrading to Gemini 2. If you choose to use the Gen AI SDK, the setup process is different from the Vertex AI SDK. For more information, visit <a href="https://ai.google.dev/docs/sdk_setup">Google Gen AI SDK</a>.</p>
+<p><strong>Install the SDK</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install --upgrade google-genai
+</span></code></pre></div>
+<p>To learn more, see the <a href="https://googleapis.github.io/python-genai/">SDK reference documentation</a>.</p>
+<p><strong>Set environment variables and run code</strong></p>
+<p>Set environment variables to use the Gen AI SDK with Vertex AI:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Replace the `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION` values</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># with appropriate values for your project.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">export</span> <span class="n">GOOGLE_CLOUD_PROJECT</span><span class="o">=</span><span class="n">GOOGLE_CLOUD_PROJECT</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">export</span> <span class="n">GOOGLE_CLOUD_LOCATION</span><span class="o">=</span><span class="k">global</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">export</span> <span class="n">GOOGLE_GENAI_USE_VERTEXAI</span><span class="o">=</span><span class="kc">True</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google</span><span class="w"> </span><span class="kn">import</span> <span class="n">genai</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.genai.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpOptions</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">client</span> <span class="o">=</span> <span class="n">genai</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">http_options</span><span class="o">=</span><span class="n">HttpOptions</span><span class="p">(</span><span class="n">api_version</span><span class="o">=</span><span class="s2">&quot;v1&quot;</span><span class="p">))</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">generate_content</span><span class="p">(</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gemini-2.5-flash-preview-05-20&quot;</span><span class="p">,</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">contents</span><span class="o">=</span><span class="s2">&quot;How does AI work?&quot;</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">)</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1"># Example response:</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c1"># Okay, let&#39;s break down how AI works. It&#39;s a broad field, so I&#39;ll focus on the ...</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="c1">#</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="c1"># Here&#39;s a simplified overview:</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c1"># ...</span>
+</span></code></pre></div>
+<p>Replace <code>GOOGLE_CLOUD_PROJECT</code> with your Google Cloud project ID, and replace <code>GOOGLE_CLOUD_LOCATION</code> with the location of your Google Cloud project (for example, <code>us-central1</code>).</p>
+</div>
+<div class="tabbed-block">
+<p>If you reuse the Vertex AI SDK, the setup process is the same for the 1.0, 1.5, and 2.0 models. For more information, see <a href="https://cloud.google.com/vertex-ai/docs/python-sdk/use-vertex-ai-python-sdk">Introduction to the Vertex AI SDK for Python</a>.</p>
+<p><strong>Install the SDK</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip install --upgrade --quiet google-cloud-aiplatform
+</span></code></pre></div>
+<p><strong>Run code</strong></p>
+<p>The following is a short code sample that uses the Vertex AI SDK for Python:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">vertexai</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.generative_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">GenerativeModel</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># TODO(developer): Update and un-comment below line</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># PROJECT_ID = &quot;your-project-id&quot;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">vertexai</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJECT_ID</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s2">&quot;us-central1&quot;</span><span class="p">)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">model</span> <span class="o">=</span> <span class="n">GenerativeModel</span><span class="p">(</span><span class="s2">&quot;gemini-2.0-flash-001&quot;</span><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">generate_content</span><span class="p">(</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="s2">&quot;What&#39;s a good name for a flower shop that specializes in selling bouquets of dried flowers?&quot;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Example response:</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1"># **Emphasizing the Dried Aspect:**</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># * Everlasting Blooms</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="c1"># * Dried &amp; Delightful</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1"># * The Petal Preserve</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="c1"># ...</span>
+</span></code></pre></div>
+<p>Replace <code>PROJECT_ID</code> with your Google Cloud project ID, and replace <code>LOCATION</code> with the location of your Google Cloud project (for example, <code>us-central1</code>). Then, change the model ID to your target Gemini 2 model.</p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Troubleshooting</p>
+<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
+</div>
+<p><strong>Change your Gemini calls</strong></p>
+<p>Change your prediction code to use Gemini 2. At a minimum, this means changing the model endpoint name to a Gemini 2 model where you load your model. The exact code change will differ depending on which SDK you used. After you make your code changes, perform code regression testing to ensure that it runs correctly. This test is only meant to assess whether the code functions, not the quality of model responses.</p>
+<p><strong>Address breaking code changes</strong></p>
+<ul>
+<li><strong>Dynamic retrieval</strong>: Switch to using Grounding with Google Search. This feature requires using the Gen AI SDK; it's not supported by the Vertex AI SDK.</li>
+<li><strong>Content filters</strong>: Note the default content filter settings, and change your code if it relies on a default that has changed.</li>
+<li><strong><code>Top-K</code> token sampling parameter</strong>: Models after <code>gemini-1.0-pro-vision</code> don't support changing the <code>Top-K</code> parameter.</li>
+</ul>
+<p>Focus only on code changes in this step. You might need to make other adjustments based on evaluation results later.</p>
+</details>
+<details>
+<summary>Step 3: Perform offline evaluation</summary>
+<p><a name="step3-offline-eval"></a></p>
+<p>Repeat the evaluation that you did when you originally developed and launched your application, any further offline evaluation you did after launching, and any additional evaluation you identified in step 1. If you then feel that your evaluation doesn't fully capture the breadth and depth of your application, perform further evaluation.</p>
+<p>If you don't have an automated way to run your offline evaluations, consider using the <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluate-models">Gen AI evaluation service</a>.</p>
+<p>If your application uses fine-tuning, perform offline evaluation before retuning your model with Gemini 2. Gemini 2's improved output quality may mean that your application no longer requires a fine-tuned model.</p>
+</details>
+<details>
+<summary>Step 4: Assess evaluation results and tune prompts</summary>
+<p><a name="step4-assess-results"></a></p>
+<p>If your offline evaluation shows a drop in performance with Gemini 2, iterate on your application as follows until Gemini performance matches or exceeds the older model:</p>
+<ul>
+<li>Iteratively engineer your prompts to improve performance ("Hill Climbing"). If you are new to hill climbing, see the <a href="https://cloudonair.withgoogle.com/events/vertex-gemini-hill-climbing-your-way-to-optimal-prompts">Vertex Gemini hill climbing online training</a>. The Vertex AI prompt optimizer (<a href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/prompts/prompt_optimizer/vertex_ai_prompt_optimizer_sdk_custom_metric.ipynb">example notebook</a>) can also help.</li>
+<li>If your application already relies on fine-tuning, try fine-tuning Gemini 2.</li>
+<li>If your application is impacted by Dynamic Retrieval and Top-K breaking changes, experiment with changing your prompt and token sampling parameters.</li>
+</ul>
+</details>
+<details>
+<summary>Step 5: Perform load testing</summary>
+<p><a name="step5-load-testing"></a></p>
+<p>If your application requires a certain minimum throughput, perform load testing to make sure the Gemini 2 version of your application meets your throughput requirements.</p>
+<p>Load testing should happen before online evaluation, because online evaluation requires exposing Gemini 2 to production traffic. Use your existing load testing instrumentation to perform this step.</p>
+<p>If your application already meets throughput requirements, consider using <a href="../resources/provisioned-throughput/">Provisioned Throughput</a>. You'll need additional short-term Provisioned Throughput to cover load testing while your existing Provisioned Throughput order continues to serve production traffic.</p>
+</details>
+<details>
+<summary>Step 6: Perform online evaluation</summary>
+<p><a name="step6-online-eval"></a></p>
+<p>Only proceed to online evaluation if your offline evaluation shows adequate Gemini output quality <em>and</em> your application requires online evaluation.</p>
+<p>Online evaluation is a special case of online testing. Try to use your organization's existing tools and procedures for online evaluation. For example:</p>
+<ul>
+<li>If your organization regularly conducts <a href="https://en.wikipedia.org/wiki/A%2FB_testing">A/B tests</a>, perform an A/B test that evaluates the current implementation of your application compared to the Gemini 2 version.</li>
+<li>If your organization regularly conducts <a href="https://en.wikipedia.org/wiki/Feature_toggle#Canary_release">canary deployments</a>, be sure to do so with Gemini 2 and measure differences in user behavior.</li>
+</ul>
+<p>Online evaluation can also be done by building new feedback and measurement capabilities into your application. For example, adding thumbs-up/down buttons, presenting outputs side-by-side for user preference, or tracking how often users override model outputs.</p>
+<p>If online evaluation results differ significantly from offline evaluation results, your offline evaluation is not capturing key aspects of the live environment. Use the online findings to devise a new offline evaluation to cover the gap.</p>
+</details>
+<details>
+<summary>Step 7: Deploy to production</summary>
+<p><a name="step7-deploy"></a></p>
+<p>Once your evaluation shows that Gemini 2 meets or exceeds the performance of an older model, turn down the existing version of your application in favor of the Gemini 2 version. Follow your organization's existing procedures for production rollout.</p>
+<p>If you're using Provisioned Throughput, change your Provisioned Throughput order to your chosen Gemini 2 model.</p>
+</details>
+<h2 id="improving-model-performance">📚 Improving model performance<a class="headerlink" href="#improving-model-performance" title="Permanent link">&para;</a></h2>
+<p>As you complete your migration, use the following tips to maximize Gemini 2 model performance:</p>
+<ul>
+<li>Inspect your system instructions, prompts, and few-shot learning examples for any inconsistencies, contradictions, or irrelevant instructions and examples.</li>
+<li>Test a more powerful model. For example, if you evaluated Gemini 2.0 Flash-Lite, try Gemini 2.0 Flash.</li>
+<li>Examine any automated evaluation results to make sure they match human judgment, especially results that use a judge model.</li>
+<li>Fine-tune the Gemini 2 model.</li>
+<li>Examine evaluation outputs to look for patterns that show specific kinds of failures. This helps you create targeted evaluation data to adjust prompts more effectively.</li>
+<li>Make sure you are independently evaluating different generative AI components.</li>
+<li>Experiment with adjusting token sampling parameters.</li>
+</ul>
+<h2 id="getting-help">🔗 Getting help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h2>
+<p>If you need help, Google Cloud offers support packages to meet your needs, such as 24/7 coverage, phone support, and access to a technical support manager. For more information, see <a href="https://cloud.google.com/support">Google Cloud Support</a>.</p>
+<h2 id="whats-next">🔗 What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Read the list of <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/faq">frequently asked questions</a>.</li>
+<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/migrate/migrate-from-palm-api">Migrate from the PaLM API to the Gemini API in Vertex AI</a>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../start/express-mode/vertex-ai-express-mode-api-quickstart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API tutorial">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                API tutorial
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../learn/model-versions/" class="md-footer__link md-footer__link--next" aria-label="Next: Model versions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Model versions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Google 2025
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../../../../js/mermaid-google-theme.js"></script>
+      
+    
+  </body>
+</html>
