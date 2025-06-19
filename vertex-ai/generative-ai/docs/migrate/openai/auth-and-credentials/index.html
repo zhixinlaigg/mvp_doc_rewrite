@@ -874,7 +874,7 @@
         <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Before you begin
+      Before you begin
     </span>
   </a>
   
@@ -883,7 +883,7 @@
         <li class="md-nav__item">
   <a href="#authentication-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Authentication workflow
+      Authentication workflow
     </span>
   </a>
   
@@ -892,7 +892,7 @@
         <li class="md-nav__item">
   <a href="#choose-an-authentication-method" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Choose an authentication method
+      Choose an authentication method
     </span>
   </a>
   
@@ -901,7 +901,7 @@
         <li class="md-nav__item">
   <a href="#refresh-your-credentials-automatically" class="md-nav__link">
     <span class="md-ellipsis">
-      💻 Refresh your credentials automatically
+      Refresh your credentials automatically
     </span>
   </a>
   
@@ -910,7 +910,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1144,7 +1144,7 @@
         <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Before you begin
+      Before you begin
     </span>
   </a>
   
@@ -1153,7 +1153,7 @@
         <li class="md-nav__item">
   <a href="#authentication-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Authentication workflow
+      Authentication workflow
     </span>
   </a>
   
@@ -1162,7 +1162,7 @@
         <li class="md-nav__item">
   <a href="#choose-an-authentication-method" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Choose an authentication method
+      Choose an authentication method
     </span>
   </a>
   
@@ -1171,7 +1171,7 @@
         <li class="md-nav__item">
   <a href="#refresh-your-credentials-automatically" class="md-nav__link">
     <span class="md-ellipsis">
-      💻 Refresh your credentials automatically
+      Refresh your credentials automatically
     </span>
   </a>
   
@@ -1180,7 +1180,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1211,7 +1211,7 @@
 *   <strong>Client Setup</strong>: Programmatically configure authentication within your Python code.
 *   <strong>Environment Variables</strong>: Configure authentication by setting variables in your shell environment.</p>
 <p>After authenticating, your access token is valid for one hour. This guide also shows you how to create a client that automatically refreshes credentials.</p>
-<h2 id="before-you-begin">📚 Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <p><a name="before-you-begin"></a></p>
 <details open="open">
 <summary>Prerequisites</summary>
@@ -1228,7 +1228,7 @@
 <li><strong>Self-deployed models</strong>: Certain models in Model Garden and supported Hugging Face models must be deployed to a Vertex AI endpoint before they can serve requests. When calling these models, you must specify the endpoint ID. To list your existing Vertex AI endpoints, use the <code>gcloud ai endpoints list</code> command.</li>
 </ul>
 </details>
-<h2 id="authentication-workflow">⚙️ Authentication workflow<a class="headerlink" href="#authentication-workflow" title="Permanent link">&para;</a></h2>
+<h2 id="authentication-workflow">Authentication workflow<a class="headerlink" href="#authentication-workflow" title="Permanent link">&para;</a></h2>
 <p>The following diagram shows the workflow for authenticating to Vertex AI with the OpenAI SDK.</p>
 <pre class="mermaid"><code>flowchart LR
     A[Set up environment] --&gt; B{Choose authentication method};
@@ -1242,7 +1242,7 @@
     click C "#choose-an-authentication-method"
     click D "#choose-an-authentication-method"
     click E "#refresh-your-credentials-automatically"</code></pre>
-<h2 id="choose-an-authentication-method">⚙️ Choose an authentication method<a class="headerlink" href="#choose-an-authentication-method" title="Permanent link">&para;</a></h2>
+<h2 id="choose-an-authentication-method">Choose an authentication method<a class="headerlink" href="#choose-an-authentication-method" title="Permanent link">&para;</a></h2>
 <p><a name="choose-an-authentication-method"></a></p>
 <p>You can authenticate by either configuring the <code>OpenAI</code> client directly in your code or by setting environment variables that the client reads automatically. The following table helps you decide which method is best for your use case.</p>
 <table>
@@ -1363,7 +1363,7 @@
 </div>
 </div>
 </div>
-<h2 id="refresh-your-credentials-automatically">💻 Refresh your credentials automatically<a class="headerlink" href="#refresh-your-credentials-automatically" title="Permanent link">&para;</a></h2>
+<h2 id="refresh-your-credentials-automatically">Refresh your credentials automatically<a class="headerlink" href="#refresh-your-credentials-automatically" title="Permanent link">&para;</a></h2>
 <p><a name="refresh-credentials"></a></p>
 <p>Access tokens generated from Application Default Credentials expire after one hour. For long-running applications, it's best practice to build a credential refresher that automatically renews the token before it expires.</p>
 <p>The following example shows a wrapper class for the <code>OpenAI</code> client that checks credential validity before each API call and refreshes the token if necessary.</p>
@@ -1412,7 +1412,7 @@
 </span><span id="__span-6-41"><a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </span></code></pre></div>
 </details>
-<h2 id="whats-next">🔗 What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li>See examples of calling the <a href="../examples/">Chat Completions API</a> with the OpenAI-compatible syntax.</li>
 <li>See examples of calling the Inference API with the OpenAI-compatible syntax.</li>
