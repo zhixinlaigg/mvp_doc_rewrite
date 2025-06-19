@@ -1047,7 +1047,7 @@
         <li class="md-nav__item">
   <a href="#gsu-and-burndown-rate" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 GSU and burndown rate
+      GSU and burndown rate
     </span>
   </a>
   
@@ -1056,11 +1056,11 @@
         <li class="md-nav__item">
   <a href="#important-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Important Considerations
+      Important Considerations
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 Important Considerations">
+    <nav class="md-nav" aria-label="Important Considerations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1080,7 +1080,7 @@
         <li class="md-nav__item">
   <a href="#example-of-estimating-your-provisioned-throughput-needs" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Example of estimating your Provisioned Throughput needs
+      Example of estimating your Provisioned Throughput needs
     </span>
   </a>
   
@@ -1089,7 +1089,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1116,7 +1116,7 @@
 
 <h1 id="calculate-provisioned-throughput-requirements">Calculate Provisioned Throughput requirements<a class="headerlink" href="#calculate-provisioned-throughput-requirements" title="Permanent link">&para;</a></h1>
 <p>This document explains the concepts of generative AI scale units (GSUs) and burndown rates, which are used to calculate and price Provisioned Throughput.</p>
-<h2 id="gsu-and-burndown-rate">📚 GSU and burndown rate<a class="headerlink" href="#gsu-and-burndown-rate" title="Permanent link">&para;</a></h2>
+<h2 id="gsu-and-burndown-rate">GSU and burndown rate<a class="headerlink" href="#gsu-and-burndown-rate" title="Permanent link">&para;</a></h2>
 <p>A <strong>generative AI scale unit (GSU)</strong> is a measure of throughput for your prompts and responses. This amount specifies how much throughput to provision for a model.</p>
 <p>A <strong>burndown rate</strong> is a ratio that converts the input and output units (such as tokens, characters, or images) to a standard unit of throughput (e.g., input tokens per second). This ratio represents the processing cost and is used to standardize throughput measurement across different models.</p>
 <p>Different models consume different amounts of throughput. For information about the minimum GSU purchase amount and increments for each model, see <a href="../supported-models/">Supported models and burndown rates</a>.</p>
@@ -1127,7 +1127,7 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>throughput_per_second = (inputs_per_query + outputs_per_query) * queries_per_second
 </span></code></pre></div>
 <p>The calculated <code>throughput_per_second</code> determines the number of GSUs required for your use case.</p>
-<h2 id="important-considerations">📚 Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
+<h2 id="important-considerations">Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
 <p>To help you plan for your Provisioned Throughput needs, review the following important considerations:</p>
 <ul>
 <li>
@@ -1158,7 +1158,7 @@
 <p>Sending 1,000 input tokens to this model would result in a burndown of your Provisioned Throughput by 1,000 input tokens per second. However, if you send 1,000 cached tokens to Gemini 1.5 Pro, this results in a burndown of your Provisioned Throughput by 250 tokens per second.</p>
 <p>Note that this can lead to higher throughput for similar queries where the tokens aren't cached and the cache discount isn't applied.</p>
 <p>To view the burndown rates for models supported in Provisioned Throughput, see <a href="../supported-models/">Supported models and burndown rates</a>.</p>
-<h2 id="example-of-estimating-your-provisioned-throughput-needs">⚙️ Example of estimating your Provisioned Throughput needs<a class="headerlink" href="#example-of-estimating-your-provisioned-throughput-needs" title="Permanent link">&para;</a></h2>
+<h2 id="example-of-estimating-your-provisioned-throughput-needs">Example of estimating your Provisioned Throughput needs<a class="headerlink" href="#example-of-estimating-your-provisioned-throughput-needs" title="Permanent link">&para;</a></h2>
 <p>The following workflow outlines the process for estimating the amount of Provisioned Throughput for your model.</p>
 <pre class="mermaid"><code>flowchart LR
     A[Gather requirements] --&gt; B[Calculate throughput]
@@ -1235,7 +1235,7 @@ click C "#calculate-gsus"</code></pre>
 </li>
 </ul>
 </details>
-<h2 id="whats-next">🔗 What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../purchase-provisioned-throughput/">Purchase Provisioned Throughput</a>.</li>
 </ul>

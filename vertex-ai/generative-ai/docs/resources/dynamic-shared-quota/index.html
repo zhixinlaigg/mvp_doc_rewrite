@@ -1051,7 +1051,7 @@
         <li class="md-nav__item">
   <a href="#when-to-use-dynamic-shared-quota" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 When to use dynamic shared quota
+      When to use dynamic shared quota
     </span>
   </a>
   
@@ -1060,7 +1060,7 @@
         <li class="md-nav__item">
   <a href="#supported-models" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Supported models
+      Supported models
     </span>
   </a>
   
@@ -1069,7 +1069,7 @@
         <li class="md-nav__item">
   <a href="#how-dynamic-shared-quota-works" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 How dynamic shared quota works
+      How dynamic shared quota works
     </span>
   </a>
   
@@ -1078,7 +1078,7 @@
         <li class="md-nav__item">
   <a href="#understanding-429-resource-exhausted-errors" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Understanding 429 resource exhausted errors
+      Understanding 429 resource exhausted errors
     </span>
   </a>
   
@@ -1087,7 +1087,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1138,7 +1138,7 @@
         <li class="md-nav__item">
   <a href="#when-to-use-dynamic-shared-quota" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 When to use dynamic shared quota
+      When to use dynamic shared quota
     </span>
   </a>
   
@@ -1147,7 +1147,7 @@
         <li class="md-nav__item">
   <a href="#supported-models" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Supported models
+      Supported models
     </span>
   </a>
   
@@ -1156,7 +1156,7 @@
         <li class="md-nav__item">
   <a href="#how-dynamic-shared-quota-works" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 How dynamic shared quota works
+      How dynamic shared quota works
     </span>
   </a>
   
@@ -1165,7 +1165,7 @@
         <li class="md-nav__item">
   <a href="#understanding-429-resource-exhausted-errors" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Understanding 429 resource exhausted errors
+      Understanding 429 resource exhausted errors
     </span>
   </a>
   
@@ -1174,7 +1174,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1202,7 +1202,7 @@
 <h1 id="dynamic-shared-quota-dsq">Dynamic shared quota (DSQ)<a class="headerlink" href="#dynamic-shared-quota-dsq" title="Permanent link">&para;</a></h1>
 <p>Dynamic shared quota (DSQ) serves your pay-as-you-go (PayGo) requests with greater flexibility to adapt to your workload needs without you having to manage quotas or submit quota increase requests (QIR). With DSQ, there are no predefined quota limits on your usage. Instead, DSQ provides access to a large, shared pool of resources that are dynamically allocated based on real-time availability and demand across all customers for a given model.</p>
 <p>When more customers are active, each customer might receive a lower amount of throughput. Conversely, if there are fewer customers, each customer might receive higher throughput.</p>
-<h2 id="when-to-use-dynamic-shared-quota">📚 When to use dynamic shared quota<a class="headerlink" href="#when-to-use-dynamic-shared-quota" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use-dynamic-shared-quota">When to use dynamic shared quota<a class="headerlink" href="#when-to-use-dynamic-shared-quota" title="Permanent link">&para;</a></h2>
 <p>To help you decide if DSQ is the right choice for your workload, compare it with provisioned throughput, which offers reserved, dedicated capacity.</p>
 <table>
 <thead>
@@ -1236,7 +1236,7 @@
 </tbody>
 </table>
 <p>For production workloads that require high availability and predictable performance, see <a href="../provisioned-throughput/">Provisioned Throughput</a>.</p>
-<h2 id="supported-models">📚 Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h2>
+<h2 id="supported-models">Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h2>
 <p>The following models and their supervised fine-tuned versions support DSQ.</p>
 <blockquote>
 <p><strong>Preview</strong></p>
@@ -1254,11 +1254,11 @@
 <li>Gemini 1.5 Pro</li>
 <li>Gemini 1.5 Flash</li>
 </ul>
-<h2 id="how-dynamic-shared-quota-works">📚 How dynamic shared quota works<a class="headerlink" href="#how-dynamic-shared-quota-works" title="Permanent link">&para;</a></h2>
+<h2 id="how-dynamic-shared-quota-works">How dynamic shared quota works<a class="headerlink" href="#how-dynamic-shared-quota-works" title="Permanent link">&para;</a></h2>
 <p>DSQ adapts to your traffic patterns and needs to minimize usage friction. Your project's access to resources is not capped by a predefined limit. Instead, it's determined by the overall capacity of the shared pool and the current collective demand from all customers. This model offers significant flexibility, allowing your workloads to burst and consume more resources when available. It also ensures all customers have an opportunity to access resources without needing to configure per-project quotas.</p>
 <p>To ensure a fair and stable experience, DSQ intelligently manages requests, especially during periods of very high demand. Rather than a fixed cap, DSQ uses a dynamic prioritization approach. While the system is designed to accommodate bursts, unusually large and rapid spikes in traffic from a single project might be handled with a different priority than more consistent, steady traffic. This management ensures that broad user activity and regular workloads are protected from transient, extreme spikes, promoting overall system stability and equitable access.</p>
 <p>Gemini requests with multi-modal inputs are subject to corresponding system rate limits for images, audio, video, and documents.</p>
-<h2 id="understanding-429-resource-exhausted-errors">📚 Understanding <code>429 resource exhausted</code> errors<a class="headerlink" href="#understanding-429-resource-exhausted-errors" title="Permanent link">&para;</a></h2>
+<h2 id="understanding-429-resource-exhausted-errors">Understanding <code>429 resource exhausted</code> errors<a class="headerlink" href="#understanding-429-resource-exhausted-errors" title="Permanent link">&para;</a></h2>
 <p>Encountering a <code>429 resource exhausted</code> error with DSQ does not mean you have hit a project-specific quota limit. These errors indicate that the shared pool of resources for a specific model in a specific region is experiencing extremely high demand from many users simultaneously.</p>
 <p>This is a temporary state of contention for resources, not a fixed limit imposed on your project. DSQ constantly works to distribute available capacity fairly. A <code>429</code> error means that instantaneous demand has outstripped the available supply in the shared pool. Unlike a hard quota that would block you even if resources were idle, DSQ aims to grant you access whenever resources are free.</p>
 <p>We recommend implementing exponential backoff and retry mechanisms, as availability in this dynamic environment can change quickly. For more tactics on handling these errors, see <a href="../../provisioned-throughput/error-code-429/">Error code 429</a>.</p>
@@ -1266,7 +1266,7 @@
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with 429 errors or other problems, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Vertex AI Troubleshooting Guide</a>.</p>
 </div>
-<h2 id="whats-next">🔗 What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li>To learn about quotas and limits for Vertex AI, see <a href="https://cloud.google.com/vertex-ai/docs/quotas">Vertex AI quotas and limits</a>.</li>
 <li>To learn more about Google Cloud quotas and limits, see <a href="https://cloud.google.com/compute/docs/quotas/understanding-quota-values">Understand quota values and system limits</a>.</li>

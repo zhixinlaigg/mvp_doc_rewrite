@@ -1047,11 +1047,11 @@
         <li class="md-nav__item">
   <a href="#how-provisioned-throughput-works" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 How Provisioned Throughput works
+      How Provisioned Throughput works
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 How Provisioned Throughput works">
+    <nav class="md-nav" aria-label="How Provisioned Throughput works">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1080,11 +1080,11 @@
         <li class="md-nav__item">
   <a href="#control-overages-or-bypass-provisioned-throughput" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Control overages or bypass Provisioned Throughput
+      Control overages or bypass Provisioned Throughput
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚙️ Control overages or bypass Provisioned Throughput">
+    <nav class="md-nav" aria-label="Control overages or bypass Provisioned Throughput">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1104,11 +1104,11 @@
         <li class="md-nav__item">
   <a href="#monitor-provisioned-throughput" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Monitor Provisioned Throughput
+      Monitor Provisioned Throughput
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚙️ Monitor Provisioned Throughput">
+    <nav class="md-nav" aria-label="Monitor Provisioned Throughput">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1128,7 +1128,7 @@
         <li class="md-nav__item">
   <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 What's next
+      What's next
     </span>
   </a>
   
@@ -1155,7 +1155,7 @@
 
 <h1 id="use-provisioned-throughput">Use Provisioned Throughput<a class="headerlink" href="#use-provisioned-throughput" title="Permanent link">&para;</a></h1>
 <p>This page explains how Provisioned Throughput works, how to control overages or bypass Provisioned Throughput, and how to monitor usage.</p>
-<h2 id="how-provisioned-throughput-works">📚 How Provisioned Throughput works<a class="headerlink" href="#how-provisioned-throughput-works" title="Permanent link">&para;</a></h2>
+<h2 id="how-provisioned-throughput-works">How Provisioned Throughput works<a class="headerlink" href="#how-provisioned-throughput-works" title="Permanent link">&para;</a></h2>
 <p>This section explains how Provisioned Throughput works by using quota checking through the quota enforcement period.</p>
 <h3 id="provisioned-throughput-quota-checking">Provisioned Throughput quota checking<a class="headerlink" href="#provisioned-throughput-quota-checking" title="Permanent link">&para;</a></h3>
 <p>Your Provisioned Throughput maximum quota is a multiple of the number of generative AI scale units (GSUs) purchased and the throughput per GSU. It's checked each time you make a request within your <em>quota enforcement period</em>, which is how frequently the maximum Provisioned Throughput quota is enforced.</p>
@@ -1167,7 +1167,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>3,360 tokens per second * 30 seconds = 100,800 tokens
 </span></code></pre></div>
 <p>If, in a day, you submitted only one request that consumed 8,000 tokens in a second, it might still be processed as a Provisioned Throughput request, even though you exceeded your 3,360 tokens per second limit at the time of the request. This is because the request didn't exceed the threshold of 100,800 tokens per 30 seconds.</p>
-<h2 id="control-overages-or-bypass-provisioned-throughput">⚙️ Control overages or bypass Provisioned Throughput<a class="headerlink" href="#control-overages-or-bypass-provisioned-throughput" title="Permanent link">&para;</a></h2>
+<h2 id="control-overages-or-bypass-provisioned-throughput">Control overages or bypass Provisioned Throughput<a class="headerlink" href="#control-overages-or-bypass-provisioned-throughput" title="Permanent link">&para;</a></h2>
 <p>You can use the API to control overages when you exceed your purchased throughput or to bypass Provisioned Throughput on a per-request basis. The following table compares the available options.</p>
 <table>
 <thead>
@@ -1261,7 +1261,7 @@
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
-<h2 id="monitor-provisioned-throughput">⚙️ Monitor Provisioned Throughput<a class="headerlink" href="#monitor-provisioned-throughput" title="Permanent link">&para;</a></h2>
+<h2 id="monitor-provisioned-throughput">Monitor Provisioned Throughput<a class="headerlink" href="#monitor-provisioned-throughput" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>Preview</strong></p>
 <p>This feature is subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the <a href="/terms/service-terms#1">Service Specific Terms</a>. Pre-GA features are available "as is" and might have limited support. For more information, see the <a href="/products#product-launch-stages">launch stage descriptions</a>.</p>
@@ -1435,7 +1435,7 @@
 </li>
 </ol>
 </details>
-<h2 id="whats-next">🔗 What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Troubleshoot <a href="../error-code-429/#troubleshoot-provisioned-through">Error code <code>429</code></a>.</li>
 </ul>
