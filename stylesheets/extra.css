@@ -105,4 +105,29 @@
   transform-origin: top left;
 }*/
 
+.md-typeset details {
+  font-size: 1em;
+}
+
+.md-typeset table {
+  font-size: 1em; /* 与正文一致，或可改为 1.05em / 16px 等 */
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*.mermaid svg {
+  fill: inherit !important;
+  stroke: inherit !important;
+}*/
+
+.mermaid a {
+    outline: none;
+    text-decoration: none;
+}
+
 
