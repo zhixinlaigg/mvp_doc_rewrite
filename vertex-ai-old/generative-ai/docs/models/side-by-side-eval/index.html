@@ -10972,7 +10972,7 @@ click C "#view-evaluation-results"</code></pre>
 </span></code></pre></div>
 <p>You can also use the protected <code>default_instruction</code> keyword, which is replaced with the default inference instruction for the given task:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>model_prompt_parameters = {
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        &#39;prompt&#39;: {&#39;template&#39;: &#39;{{ default_instruction }}: &lt;function define_env.&lt;locals&gt;.context at 0x104c14a60&gt;&#39;},
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        &#39;prompt&#39;: {&#39;template&#39;: &#39;{{ default_instruction }}: &lt;function define_env.&lt;locals&gt;.context at 0x106860a60&gt;&#39;},
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>}
 </span></code></pre></div>
 <p>Here are examples for specific models:</p>
@@ -10990,7 +10990,7 @@ click C "#view-evaluation-results"</code></pre>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>model_a_prompt_parameters={
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    &#39;prompt&#39;: {
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        &#39;template&#39;: {
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>            &#39;Answer the following question from the point of view of a college professor: &lt;function define_env.&lt;locals&gt;.context at 0x104c14a60&gt;\n{{ question }}&#39;
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>            &#39;Answer the following question from the point of view of a college professor: &lt;function define_env.&lt;locals&gt;.context at 0x106860a60&gt;\n{{ question }}&#39;
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        },
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    },
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>},
@@ -11300,7 +11300,7 @@ click C "#view-evaluation-results"</code></pre>
 </span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">      </span><span class="nt">&quot;model_a&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;publishers/google/models/text-bison@002&quot;</span><span class="p">,</span>
 </span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">      </span><span class="nt">&quot;model_a_prompt_parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">        </span><span class="nt">&quot;prompt&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">          </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Answer the following question from the point of view of a college professor: {{ question }}\n&lt;function define_env.&lt;locals&gt;.context at 0x104c14a60&gt; }&quot;</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">          </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Answer the following question from the point of view of a college professor: {{ question }}\n&lt;function define_env.&lt;locals&gt;.context at 0x106860a60&gt; }&quot;</span>
 </span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">        </span><span class="p">}</span>
 </span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">      </span><span class="p">},</span>
 </span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">      </span><span class="nt">&quot;model_b&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>

@@ -565,9 +565,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-local-authentication-credentials" class="md-nav__link">
+  <a href="#set-up-application-default-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Create local authentication credentials
+      Set up Application Default Credentials
     </span>
   </a>
   
@@ -10692,9 +10692,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-local-authentication-credentials" class="md-nav__link">
+  <a href="#set-up-application-default-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Create local authentication credentials
+      Set up Application Default Credentials
     </span>
   </a>
   
@@ -10729,8 +10729,8 @@
 
 
 <h1 id="configure-application-default-credentials">Configure application default credentials<a class="headerlink" href="#configure-application-default-credentials" title="Permanent link">&para;</a></h1>
-<p>To use the Gemini API on Vertex AI, you need to authenticate your application. You can authenticate by using either a <strong>Google Cloud API key</strong> or <strong>application default credentials (ADC)</strong>.</p>
-<p>The following table compares the two authentication methods to help you decide which is best for your use case.</p>
+<p>To use the Gemini API on Vertex AI, you need to authenticate your application. You can authenticate by using either a <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/api-keys"><strong>Google Cloud API key</strong></a> or <strong>Application Default Credentials (ADC)</strong>.</p>
+<p>This page shows you how to set up Application Default Credentials for your local development environment.</p>
 <table>
 <thead>
 <tr>
@@ -10741,40 +10741,40 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Best for</strong></td>
-<td>Rapid prototyping and development when you can't use a service account.</td>
-<td>Production environments, development, and any application running on Google Cloud. Supports more authentication flows.</td>
+<td><strong>Best For</strong></td>
+<td>Prototyping and getting started quickly.</td>
+<td>Production applications and local development running against production services.</td>
+</tr>
+<tr>
+<td><strong>Authentication Method</strong></td>
+<td>A simple encrypted string passed with API requests.</td>
+<td>Finds credentials automatically based on the application environment (e.g., a VM, Cloud Run, or a local gcloud CLI configuration).</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Less secure; keys can be accidentally exposed. Not recommended for production.</td>
+<td>More secure; uses service accounts or user credentials, enabling fine-grained IAM permissions.</td>
 </tr>
 <tr>
 <td><strong>Setup</strong></td>
 <td>Simple to generate from the Google Cloud console.</td>
-<td>Requires setting up the gcloud CLI and logging in, or attaching a service account to the resource running the code.</td>
-</tr>
-<tr>
-<td><strong>Security</strong></td>
-<td>Less secure if exposed; should be managed carefully and not checked into source code.</td>
-<td>More secure; credentials are automatically discovered from the environment, reducing the risk of exposure. Follows the principle of least privilege.</td>
+<td>Requires initial setup using the gcloud CLI for local development. Seamless in most Google Cloud environments.</td>
 </tr>
 </tbody>
 </table>
-<p>This page shows you how to set up application default credentials for your local development environment.</p>
-<p>This tutorial shows you how to configure application default credentials.</p>
-<pre class="mermaid"><code>flowchart TD
-    A[Set up your environment] --&gt; B[Create local authentication credentials]
-    B --&gt; C[Make your first API request]
-
-    click A "#set-up-your-environment"
-    click B "#create-local-authentication-credentials"
-    click C "#whats-next"</code></pre>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
-<p><a name="set-up-your-environment"></a></p>
 <details>
 <summary>Concepts</summary>
-<p><strong>Application Default Credentials (ADC):</strong> A strategy used by Google client libraries to automatically find authentication credentials based on the application environment.
-<strong>Google Cloud API key:</strong> A simple encrypted string that can be used to call Google Cloud APIs that don't need to access private user data.</p>
+<ul>
+<li><strong>Application Default Credentials (ADC):</strong> A strategy used by Google client libraries to automatically find authentication credentials based on the environment where the code is running.</li>
+<li><strong>Google Cloud CLI (gcloud CLI):</strong> A command-line tool for managing Google Cloud resources and services.</li>
+<li><strong>Identity and Access Management (IAM):</strong> The service that lets you grant granular access to specific Google Cloud resources and prevents unwanted access to other resources.</li>
+</ul>
 </details>
 <details open="open">
-<summary>Set up your environment</summary>
+<summary>Prerequisites</summary>
+<p><a name="set-up-your-environment"></a>
+Before you can configure ADC, you need to complete the following setup:</p>
 <ol>
 <li>
 <p><strong>Sign in to your Google Account.</strong>
@@ -10783,10 +10783,10 @@
 <li>
 <p><strong>Select or create a Google Cloud project.</strong>
     In the Google Cloud console, go to the project selector page.</p>
-<blockquote>
-<p><strong>Note</strong>: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.</p>
-</blockquote>
 <p><a class="md-button" href="https://console.cloud.google.com/projectselector2/home/dashboard">Go to project selector</a></p>
+<blockquote>
+<p><strong>Note:</strong> If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with it.</p>
+</blockquote>
 </li>
 <li>
 <p><strong>Enable billing for your project.</strong>
@@ -10797,34 +10797,46 @@
 <p><a class="md-button" href="https://console.cloud.google.com/flows/enableapi?apiid=aiplatform.googleapis.com">Enable the API</a></p>
 </li>
 <li>
-<p><strong>Install the Google Cloud CLI.</strong>
-    <a href="https://cloud.google.com/sdk/docs/install">Follow the installation instructions</a> for your operating system.</p>
+<p><strong>Install and initialize the Google Cloud CLI.</strong>
+    The gcloud CLI is required to set up local authentication.</p>
+<ul>
+<li><a href="https://cloud.google.com/sdk/docs/install">Install the gcloud CLI</a>.</li>
+<li>Initialize the gcloud CLI by running the following command:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcloud<span class="w"> </span>init
+</span></code></pre></div></li>
+</ul>
 </li>
 <li>
-<p><strong>Sign in with a federated identity (if applicable).</strong>
-    If you're using an external identity provider (IdP), you must first <a href="https://cloud.google.com/iam/docs/workforce-identity-federation-gcloud-login">sign in to the gcloud CLI with your federated identity</a>.</p>
-</li>
-<li>
-<p><strong>Initialize the gcloud CLI.</strong>
-    Run the following command to initialize the gcloud CLI and configure your project:</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcloud<span class="w"> </span>init
-</span></code></pre></div>
+<p><strong>(Optional) Sign in with a federated identity.</strong>
+    If you're using an external identity provider (IdP), you must first sign in to the gcloud CLI with your federated identity.</p>
 </li>
 </ol>
 </details>
-<h2 id="create-local-authentication-credentials">Create local authentication credentials<a class="headerlink" href="#create-local-authentication-credentials" title="Permanent link">&para;</a></h2>
-<p><a name="create-local-authentication-credentials"></a></p>
-<p>To create local authentication credentials for your user account, run the following command. This step is not required if you are using Cloud Shell, as ADC is already configured.</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gcloud<span class="w"> </span>auth<span class="w"> </span>application-default<span class="w"> </span>login
+<p>This guide walks you through the following high-level steps:</p>
+<pre class="mermaid"><code>flowchart LR
+    A[Set up your environment] --&gt; B[Create local credentials]
+
+    click A "#set-up-your-environment"
+    click B "#create-local-credentials"</code></pre>
+<h2 id="set-up-application-default-credentials">Set up Application Default Credentials<a class="headerlink" href="#set-up-application-default-credentials" title="Permanent link">&para;</a></h2>
+<p>The following steps show you how to configure ADC in your local environment.</p>
+<details>
+<summary>Step 1: Create local authentication credentials</summary>
+<p><a name="create-local-credentials"></a></p>
+<p>To create local authentication credentials for your user account, run the following command in a local shell. You don't need to do this if you're using Cloud Shell.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gcloud<span class="w"> </span>auth<span class="w"> </span>application-default<span class="w"> </span>login
 </span></code></pre></div>
-<p>A browser-based sign-in screen opens. After you sign in, your credentials are saved to the local credential file used by ADC.</p>
+<p>A browser-based sign-in screen opens. After you sign in, your credentials are saved in the local credential file used by ADC.</p>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
-<p>If you encounter an authentication error, confirm that you have correctly set up your project and credentials. If you are using an external identity provider (IdP), ensure you have <a href="https://cloud.google.com/iam/docs/workforce-identity-federation-gcloud-login">signed in to the gcloud CLI with your federated identity</a>. For more help, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
+<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
+<p>If an authentication error is returned and you are using an external identity provider (IdP), confirm that you have signed in to the gcloud CLI with your federated identity as described in the prerequisites.</p>
+</details>
 <h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
-<p><a name="make-api-request"></a></p>
-<p>After configuring application default credentials, learn how to make your first request in the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/quickstart?usertype=adc">API quickstart</a>.</p>
+<ul>
+<li>After configuring application default credentials, learn how to make your first request in the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/quickstart?usertype=adc">API quickstart</a>.</li>
+</ul>
 
 
 
