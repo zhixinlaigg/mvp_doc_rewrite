@@ -1,0 +1,234 @@
+book_path: /vertex-ai/generative-ai/_book.yaml
+project_path: /vertex-ai/generative-ai/docs/_project.yaml
+title: Generative AI on Vertex AI
+landing_page:
+  custom_css_path: /vertex-ai/generative-ai/docs/css/site_style.css
+  nav: left
+  header:
+    description: <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:wght,GRAD@300,-25;400,0;700,200" rel="stylesheet">
+  rows:
+  - heading: Overview of Generative AI on Vertex AI
+  - description: >
+      Build production-ready generative AI agents and applications using Vertex AI using Google's
+      advanced models and infrastructure.
+  - options:
+    - no-image-background
+    - description-67
+    items:
+    - list:
+      - heading: Build, deploy, and connect agents
+        description: >
+          Build agents with an open approach and deploy them with enterprise-grade controls. Connect
+          agents across your enterprise ecosystem.
+        icon:
+          name: deployed_code_account
+      - heading: Enterprise ready
+        description: >
+          Deploy your generative AI agents and applications at scale with enterprise-grade security,
+          data residency and privacy, access transparency, and low latency.
+        icon:
+          name: enterprise
+      - heading: State-of-the-art features
+        description: >
+          Expand the capabilities of your applications by using the 2 million token context window
+          that Gemini supports, and the built-in multimodality and thinking capabilities from Gemini
+          2.5 models.
+        icon:
+          name: lightbulb_tips
+      - heading: Open and flexible platform
+        description: >
+          Vertex AI Model Garden provides a library of over 200 enterprise-ready models and Vertex
+          AI Model Builder helps you test, customize, deploy, and monitor Google proprietary and
+          select third-party models, including Anthropic's Claude 3.7 Sonnet, Meta's Llama 4,
+          Mistral's AI Mixtral 8x7B, and AI21 Labs's Jamba 1.5.
+        icon:
+          name: psychiatry
+      image_path: /vertex-ai/generative-ai/docs/images/landing/overview.png
+      classname: overview-row
+  - options:
+    - cards
+    heading: Get started
+    items:
+    - heading: Generate text using the Gemini API in Vertex AI
+      path: /vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal
+      classname: get-started-card
+      description: >
+        Use the Gen AI SDK to send requests to the Gemini API in Vertex AI
+      image_path: /vertex-ai/generative-ai/docs/images/landing/gemini_logo.svg
+    - heading: Browse the Vertex AI Studio Prompt Gallery
+      path: /vertex-ai/generative-ai/docs/start/quickstarts/quickstart
+      classname: get-started-card
+      description: >
+        Test out prompts with no setup required
+      image_path: /vertex-ai/generative-ai/docs/images/landing/square_swirl.svg
+    - heading: Generate images and verify watermarks using Imagen
+      path: /vertex-ai/generative-ai/docs/image/quickstart-image-generate-console
+      classname: get-started-card
+      description: >
+        Create a watermarked image using Imagen on Vertex AI
+      image_path: /vertex-ai/generative-ai/docs/images/landing/generate_wave.svg
+  - options:
+    - cards
+    heading: Featured capabilities
+    items:
+    - heading: Agent Builder
+      description: >
+        A suite of features for building and deploying AI agents
+      path: /vertex-ai/generative-ai/docs/agent-builder/overview
+    - heading: Live API
+      description: >
+        Use the Live API to provide your end users with the experience of natural, human-like voice
+        conversations
+      path: /vertex-ai/generative-ai/docs/live-api
+    - heading: Thinking
+      description: >
+        Solve complex requests and show the model's thought process behind its response using
+        Gemini's built-in reasoning capabilities
+      path: /vertex-ai/generative-ai/docs/thinking
+    - heading: Grounding
+      description: >
+        Ground your responses using Google Search, Maps, or even your own data
+      path: /vertex-ai/generative-ai/docs/grounding/overview
+    - heading: Generate embeddings
+      description: >
+        Generate embeddings to perform tasks such as search, classification, clustering, and
+        outlier detection
+      path: /vertex-ai/generative-ai/docs/embeddings
+    - heading: Tuning
+      description: >
+        Adapt your model to perform specific tasks with greater precision and accuracy
+      path: /vertex-ai/generative-ai/docs/models/tune-models
+    - heading: Image generation
+      description: >
+        Build next-generation AI products that transform your user's imagination into high quality
+        visual assets using AI generation in seconds
+      path: /vertex-ai/generative-ai/docs/image/overview
+    - heading: Video generation
+      description: >
+        Use Veo on Vertex AI to generate new videos from a text prompt or an image prompt
+      path: /vertex-ai/generative-ai/docs/video/generate-videos
+    - heading: Generative AI evaluation service
+      description: >
+        Vertex AI lets you evaluate any generative model or application and benchmark the evaluation
+        results against your own judgment, using your own evaluation criteria
+      path: /vertex-ai/generative-ai/docs/models/evaluation-overview
+
+  - heading: Build using the SDK
+  - columns:
+    - items:
+      - description: >
+          Use the Gen AI SDK to send requests to the Gemini API in Vertex AI
+    - items:
+      - heading: Java
+        icon:
+          background: light-blue
+          path: /docs/images/landing/platform-java-blue.svg
+          path_dark_theme: /docs/images/landing/platform-java-white.svg
+        path: /vertex-ai/generative-ai/docs/sdks/overview#googlegenaisdk_quickstart-java_genai_sdk
+      - heading: Python
+        icon:
+          background: light-blue
+          path: /docs/images/landing/platform-python-blue.svg
+          path_dark_theme: /docs/images/landing/platform-python-white.svg
+        path: /vertex-ai/generative-ai/docs/sdks/overview#googlegenaisdk_quickstart-python_genai_sdk
+    - items:
+      - heading: Node.js
+        icon:
+          background: light-blue
+          path: /docs/images/landing/platform-js-blue.svg
+          path_dark_theme: /docs/images/landing/platform-js-white.svg
+        path: /vertex-ai/generative-ai/docs/sdks/overview#googlegenaisdk_quickstart-nodejs_genai_sdk
+      - heading: Go
+        icon:
+          background: light-blue
+          path: /docs/images/landing/platform-go-blue.svg
+          path_dark_theme: /docs/images/landing/platform-go-white.svg
+        path: /vertex-ai/generative-ai/docs/sdks/overview#googlegenaisdk_quickstart-go_genai_sdk
+
+  - heading: Run example Jupyter notebooks
+  - columns:
+    - items:
+      - description: >
+          Explore various Gemini use cases with our example Jupyter notebooks
+    - items:
+      - heading: Run in Colab
+        icon:
+          path: https://cloud.google.com/ml-engine/images/colab-logo-32px.png
+        path: https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: colabLink
+      - heading: Run in Colab Enterprise
+        icon:
+          path: https://lh3.googleusercontent.com/JmcxdQi-qOpctIvWKgPtrzZdJJK-J3sWE1RsfjZNwshCFgE_9fULcNpuXYTilIR2hjwN
+        path: https://console.cloud.google.com/vertex-ai/colab/import/https:%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fgetting-started%2Fintro_gemini_2_0_flash.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: colabEnterpriseLink
+    - items:
+      - heading: Open in Vertex AI Workbench
+        icon:
+          path: https://lh3.googleusercontent.com/UiNooY4LUgW_oTvpsNhPpQzsstV5W8F7rYgxgGBD85cWJoLmrOzhVs_ksK_vgx40SHs7jCqkTkCk=e14-rj-sc0xffffff-h130-w32
+        path: https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url=https://raw.githubusercontent.com/GoogleCloudPlatform/generative-ai/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: workbenchLink
+      - heading: View on GitHub
+        icon:
+          path: https://cloud.google.com/ml-engine/images/github-logo-32px.png
+        path: https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: gitHubLink
+
+  - heading: Best practices for prompt design
+  - columns:
+    - items:
+      - description: >
+          Learn how to design prompts to improve the quality of your responses from the model
+    - items:
+      - heading: Run in Colab
+        icon:
+          path: https://cloud.google.com/ml-engine/images/colab-logo-32px.png
+        path: https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/prompts/intro_prompt_design.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: colabLink
+      - heading: Run in Colab Enterprise
+        icon:
+          path: https://lh3.googleusercontent.com/JmcxdQi-qOpctIvWKgPtrzZdJJK-J3sWE1RsfjZNwshCFgE_9fULcNpuXYTilIR2hjwN
+        path: https://console.cloud.google.com/vertex-ai/colab/import/https:%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fprompts%2Fintro_prompt_design.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: colabEnterpriseLink
+    - items:
+      - heading: Open in Vertex AI Workbench
+        icon:
+          path: https://lh3.googleusercontent.com/UiNooY4LUgW_oTvpsNhPpQzsstV5W8F7rYgxgGBD85cWJoLmrOzhVs_ksK_vgx40SHs7jCqkTkCk=e14-rj-sc0xffffff-h130-w32
+        path: https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url=https://raw.githubusercontent.com/GoogleCloudPlatform/generative-ai/main/gemini/prompts/intro_prompt_design.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: workbenchLink
+      - heading: View on GitHub
+        icon:
+          path: https://cloud.google.com/ml-engine/images/github-logo-32px.png
+        path: https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/prompts/intro_prompt_design.ipynb
+        path_attributes:
+        - name: track-type
+          value: notebookTutorial
+        - name: track-name
+          value: gitHubLink
