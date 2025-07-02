@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2110,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2419,6 +2446,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2797,8 +2922,6 @@
   
     
     
-      
-        
       
         
       
@@ -3519,10 +3642,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3590,52 +3709,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -4825,9 +4898,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basics-of-a-good-prompt" class="md-nav__link">
+  <a href="#prompt-basics" class="md-nav__link">
     <span class="md-ellipsis">
-      Basics of a good prompt
+      Prompt basics
     </span>
   </a>
   
@@ -4843,23 +4916,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-details-to-your-prompt" class="md-nav__link">
+  <a href="#refining-prompts-with-specific-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Add details to your prompt
+      Refining prompts with specific details
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-prompt-techniques" class="md-nav__link">
+  <a href="#advanced-prompting-techniques" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced prompt techniques
+      Advanced prompting techniques
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advanced prompt techniques">
+    <nav class="md-nav" aria-label="Advanced prompting techniques">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add audio
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#use-reference-images-to-generate-videos" class="md-nav__link">
@@ -4879,28 +4961,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#add-audio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add audio
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-specifications" class="md-nav__link">
+  <a href="#output-controls" class="md-nav__link">
     <span class="md-ellipsis">
-      Technical specifications
+      Output controls
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Technical specifications">
+    <nav class="md-nav" aria-label="Output controls">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4918,9 +4991,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-tips-for-writing-prompts" class="md-nav__link">
+  <a href="#general-tips-for-prompt-writing" class="md-nav__link">
     <span class="md-ellipsis">
-      General tips for writing prompts
+      General tips for prompt writing
     </span>
   </a>
   
@@ -6050,6 +6123,8 @@
       
         
       
+        
+      
     
     
     
@@ -6093,7 +6168,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6117,6 +6192,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6175,10 +6273,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6191,8 +6289,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6327,10 +6425,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6343,8 +6441,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7288,129 +7386,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7449,10 +7424,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7465,8 +7440,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8883,7 +8858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../docs/" class="md-nav__link">
         
   
   
@@ -10152,7 +10127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../samples/" class="md-nav__link">
         
   
   
@@ -10833,9 +10808,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basics-of-a-good-prompt" class="md-nav__link">
+  <a href="#prompt-basics" class="md-nav__link">
     <span class="md-ellipsis">
-      Basics of a good prompt
+      Prompt basics
     </span>
   </a>
   
@@ -10851,23 +10826,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-details-to-your-prompt" class="md-nav__link">
+  <a href="#refining-prompts-with-specific-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Add details to your prompt
+      Refining prompts with specific details
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-prompt-techniques" class="md-nav__link">
+  <a href="#advanced-prompting-techniques" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced prompt techniques
+      Advanced prompting techniques
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advanced prompt techniques">
+    <nav class="md-nav" aria-label="Advanced prompting techniques">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add audio
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#use-reference-images-to-generate-videos" class="md-nav__link">
@@ -10887,28 +10871,19 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#add-audio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add audio
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-specifications" class="md-nav__link">
+  <a href="#output-controls" class="md-nav__link">
     <span class="md-ellipsis">
-      Technical specifications
+      Output controls
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Technical specifications">
+    <nav class="md-nav" aria-label="Output controls">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -10926,9 +10901,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-tips-for-writing-prompts" class="md-nav__link">
+  <a href="#general-tips-for-prompt-writing" class="md-nav__link">
     <span class="md-ellipsis">
-      General tips for writing prompts
+      General tips for prompt writing
     </span>
   </a>
   
@@ -10954,221 +10929,277 @@
 
 
 <h1 id="vertex-ai-video-generation-prompt-guide">Vertex AI video generation prompt guide<a class="headerlink" href="#vertex-ai-video-generation-prompt-guide" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Preview</strong></p>
+<p>Veo and some of its features are in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+</blockquote>
 <p>This guide provides examples of the types of videos that you can create using Veo and shows you how to modify specific parts of a prompt to produce different results.</p>
 <p><a class="md-button" href="https://docs.google.com/forms/d/e/1FAIpQLSciY6O_qGg2J0A8VUcK4egJ3_Tysh-wGTl-l218XtC0e7lM_w/viewform">Request access: Advanced features &amp; Veo waitlist</a></p>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <details>
 <summary>Concepts</summary>
 <ul>
+<li><strong>Veo</strong>: A text-to-video and image-to-video generation model on Vertex AI.</li>
 <li><strong>Prompt</strong>: A text description of what you want a generative AI model to create.</li>
-<li><strong>Image-to-video</strong>: A capability that generates a video based on a starting reference image and a text prompt.</li>
+<li><strong>Image-to-video</strong>: A capability to generate a video based on a starting reference image.</li>
 <li><strong>Negative prompt</strong>: A parameter that specifies what elements to exclude from the generated video.</li>
-<li><strong>Aspect ratio</strong>: The proportional relationship between the width and height of the video.</li>
+<li><strong>Aspect ratio</strong>: The proportional relationship between the width and height of the video frame.</li>
 </ul>
 </details>
 <h3 id="safety-filters">Safety filters<a class="headerlink" href="#safety-filters" title="Permanent link">&para;</a></h3>
-<p>Veo applies safety filters across Vertex AI to help ensure that generated videos and uploaded photos don't contain offensive content. Prompts that violate <a href="../../learn/responsible-ai/">responsible AI guidelines</a> are blocked.</p>
+<p>Veo applies safety filters across Vertex AI to help ensure that generated videos and uploaded photos don't contain offensive content. For example, prompts that violate <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/responsible-ai">responsible AI guidelines</a> are blocked.</p>
 <p>If you suspect abuse of Veo or any generated output that contains inappropriate material or inaccurate information, use the <a href="https://support.google.com/code/contact/cloud_platform_report">Report suspected abuse on Google Cloud form</a>.</p>
-<h2 id="basics-of-a-good-prompt">Basics of a good prompt<a class="headerlink" href="#basics-of-a-good-prompt" title="Permanent link">&para;</a></h2>
-<p>Good prompts are descriptive and clear. To get your generated video closer to what you want, start with your core idea and then refine it by adding keywords and modifiers.</p>
+<h2 id="prompt-basics">Prompt basics<a class="headerlink" href="#prompt-basics" title="Permanent link">&para;</a></h2>
+<p>Good prompts are descriptive and clear. To generate a video that aligns with your vision, start by identifying your core idea and then refine it by adding keywords and modifiers.</p>
 <p>A comprehensive prompt should include the following elements:</p>
 <ol>
 <li><strong>Subject</strong>: The main object, person, animal, or scenery in your video.</li>
 <li><strong>Context</strong>: The background or setting where the subject is placed.</li>
-<li><strong>Action</strong>: What the subject is doing (for example, walking, running, or turning their head).</li>
+<li><strong>Action</strong>: What the subject is doing (for example, walking, running, or turning).</li>
 <li><strong>Style</strong>: The artistic look of the video. This can be general (e.g., <code>photorealistic</code>) or specific (e.g., <code>film noir</code>, <code>3D cartoon style</code>).</li>
-<li><strong>Camera motion</strong>: How the camera moves (e.g., <code>aerial view</code>, <code>top-down shot</code>, <code>low-angle shot</code>).</li>
-<li><strong>Composition</strong>: How the shot is framed (e.g., <code>wide shot</code>, <code>close-up</code>, <code>extreme close-up</code>).</li>
-<li><strong>Ambiance</strong>: How color and light contribute to the scene's mood (e.g., <code>blue tones</code>, <code>night</code>, <code>warm tones</code>).</li>
+<li><strong>Camera motion</strong> (Optional): The movement of the camera (e.g., <code>aerial view</code>, <code>dolly shot</code>, <code>low-angle shot</code>).</li>
+<li><strong>Composition</strong> (Optional): How the shot is framed (e.g., <code>wide shot</code>, <code>close-up</code>, <code>extreme close-up</code>).</li>
+<li><strong>Ambiance</strong> (Optional): The color and lighting that contribute to the scene's mood (e.g., <code>warm tones</code>, <code>blue tones</code>, <code>night</code>).</li>
 </ol>
 <h2 id="prompt-examples">Prompt examples<a class="headerlink" href="#prompt-examples" title="Permanent link">&para;</a></h2>
-<p>The following examples demonstrate how providing different levels of detail in your prompt allows you to get closer to your desired output.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="refining-a-prompt-step-by-step" name="__tabbed_1" type="radio" /><input id="creating-a-stylized-character" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="refining-a-prompt-step-by-step">Refining a prompt step-by-step</label><label for="creating-a-stylized-character">Creating a stylized character</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>These videos demonstrate how you can revise your prompt with more specific details to get a more focused and richer result.</p>
+<p>The following examples demonstrate how adding or refining details in your prompt can influence the final generated video.</p>
 <details>
-<summary>Initial prompt</summary>
-<p><strong>Prompt</strong>: <code>The camera dollies to show a close up of a desperate man in a green trench coat that's making a call on a rotary-style wall phone with a green neon light and a movie scene.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/phonebooth.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;">
-  <figcaption>The first generated video based on the initial prompt.</figcaption>
-</figure></p>
+<summary>Example: Icicles</summary>
+<p>This video demonstrates how you can combine several prompt elements to create a specific scene.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Close up shot (composition) of melting icicles (subject) on a frozen rock wall (context) with cool blue tones (ambiance), zoomed in (camera motion) maintaining close-up detail of water drips (action).</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/icicles2.gif" alt="Dripping icicles with a blue background." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video of dripping icicles.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
 <details>
-<summary>More detailed prompt</summary>
-<p><strong>Prompt</strong>: <code>A close-up cinematic shot follows a desperate man in a weathered green trench coat as he dials a rotary phone mounted on a gritty brick wall, bathed in the eerie glow of a green neon sign. The camera dollies in, revealing the tension in his jaw and the desperation etched on his face as he struggles to make the call. The shallow depth of field focuses on his furrowed brow and the black rotary phone, blurring the background into a sea of neon colors and indistinct shadows, creating a sense of urgency and isolation.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/phonebooth2.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;">
-  <figcaption>A more detailed prompt results in a video that is more focused with a richer environment.</figcaption>
-</figure></p>
+<summary>Example: Refining a prompt for 'Man on the phone'</summary>
+<p>These videos demonstrate how you can iteratively revise your prompt with more specific details to achieve a desired result.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Initial Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The camera dollies to show a close up of a desperate man in a green trench coat that's making a call on a rotary-style wall phone with a green neon light and a movie scene.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/phonebooth.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;"><figcaption>First generated video based on the initial prompt.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Refined Prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>A close-up cinematic shot follows a desperate man in a weathered green trench coat as he dials a rotary phone mounted on a gritty brick wall, bathed in the eerie glow of a green neon sign. The camera dollies in, revealing the tension in his jaw and the desperation etched on his face as he struggles to make the call. The shallow depth of field focuses on his furrowed brow and the black rotary phone, blurring the background into a sea of neon colors and indistinct shadows, creating a sense of urgency and isolation.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/phonebooth2.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;"><figcaption>A more detailed prompt results in a video that is more focused with a richer environment.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Final Prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>A video with smooth motion that dollies in on a desperate man in a green trench coat, using a vintage rotary phone against a wall bathed in an eerie green neon glow. The camera starts from a medium distance, slowly moving closer to the man's face, revealing his frantic expression and the sweat on his brow as he urgently dials the phone. The focus is on the man's hands, his fingers fumbling with the dial as he desperately tries to connect. The green neon light casts long shadows on the wall, adding to the tense atmosphere. The scene is framed to emphasize the isolation and desperation of the man, highlighting the stark contrast between the vibrant glow of the neon and the man's grim determination.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/phonebooth3.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;"><figcaption>Adding more detail gave the subject a realistic expression and created an intense and vibrant scene.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
 <details>
-<summary>Highly detailed prompt</summary>
-<p><strong>Prompt</strong>: <code>A video with smooth motion that dollies in on a desperate man in a green trench coat, using a vintage rotary phone against a wall bathed in an eerie green neon glow. The camera starts from a medium distance, slowly moving closer to the man's face, revealing his frantic expression and the sweat on his brow as he urgently dials the phone. The focus is on the man's hands, his fingers fumbling with the dial as he desperately tries to connect. The green neon light casts long shadows on the wall, adding to the tense atmosphere. The scene is framed to emphasize the isolation and desperation of the man, highlighting the stark contrast between the vibrant glow of the neon and the man's grim determination.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/phonebooth3.gif" alt="Man talking on the phone." style="max-width: 100%; border-radius: 8px;">
-  <figcaption>Adding more detail gave the subject a realistic expression and created an intense and vibrant scene.</figcaption>
-</figure></p>
+<summary>Example: Adding detail for 'Snow leopard'</summary>
+<p>This example shows how a more descriptive prompt can transform a simple animation into a more dynamic and engaging scene.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Simple Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A cute creature with snow leopard-like fur is walking in winter forest, 3D cartoon style render.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/snow_leopard_short.gif" alt="A cartoon snow leopard walking slowly." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video from a simple prompt.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Detailed Prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>Create a short 3D animated scene in a joyful cartoon style. A cute creature with snow leopard-like fur, large expressive eyes, and a friendly, rounded form happily prances through a whimsical winter forest. The scene should feature rounded, snow-covered trees, gentle falling snowflakes, and warm sunlight filtering through the branches. The creature's bouncy movements and wide smile should convey pure delight. Aim for an upbeat, heartwarming tone with bright, cheerful colors and playful animation. Consider adding subtle, whimsical sound effects to enhance the joyful winter atmosphere.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/running_snow_leopard.gif" alt="A happy cartoon snow leopard running through a forest." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video from a more detailed and descriptive prompt.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
-</div>
-<div class="tabbed-block">
-<p>These prompts demonstrate how adding more detail can generate an output that is closer to what you want for a stylized character.</p>
+<h2 id="refining-prompts-with-specific-details">Refining prompts with specific details<a class="headerlink" href="#refining-prompts-with-specific-details" title="Permanent link">&para;</a></h2>
+<p>You can refine your prompts by providing more detail for each of the core components.</p>
 <details>
-<summary>Simple prompt</summary>
-<p><strong>Prompt</strong>: <code>A cute creature with snow leopard-like fur is walking in winter forest, 3D cartoon style render.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/snow_leopard_short.gif" alt="A 3D cartoon snow leopard walking slowly." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<summary>Example: Add a descriptive subject</summary>
+<p>Specify the subject with as much detail as needed, including multiple subjects or actions.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An architectural rendering of a white concrete apartment building with flowing organic shapes, seamlessly blending with lush greenery and futuristic elements.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/white_building.gif" alt="A white concrete apartment building with organic shapes." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video of a futuristic building.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
 <details>
-<summary>Detailed prompt</summary>
-<p><strong>Prompt</strong>: <code>Create a short 3D animated scene in a joyful cartoon style. A cute creature with snow leopard-like fur, large expressive eyes, and a friendly, rounded form happily prances through a whimsical winter forest. The scene should feature rounded, snow-covered trees, gentle falling snowflakes, and warm sunlight filtering through the branches. The creature's bouncy movements and wide smile should convey pure delight. Aim for an upbeat, heartwarming tone with bright, cheerful colors and playful animation. Consider adding subtle, whimsical sound effects to enhance the joyful winter atmosphere.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/running_snow_leopard.gif" alt="A happy 3D cartoon snow leopard running in a forest." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<summary>Example: Set the context</summary>
+<p>The background is critical for setting the scene. Try placing your subject in different environments.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A satellite floating through outer space with the moon and some stars in the background.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/satellite2.gif" alt="Satellite floating in space." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video of a satellite in space.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
-</div>
-</div>
-</div>
-<h2 id="add-details-to-your-prompt">Add details to your prompt<a class="headerlink" href="#add-details-to-your-prompt" title="Permanent link">&para;</a></h2>
-<p>These examples show how to refine your prompts by specifying different elements to control the generated video.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:7"><input checked="checked" id="subject" name="__tabbed_2" type="radio" /><input id="context" name="__tabbed_2" type="radio" /><input id="action" name="__tabbed_2" type="radio" /><input id="style" name="__tabbed_2" type="radio" /><input id="camera-motion" name="__tabbed_2" type="radio" /><input id="composition" name="__tabbed_2" type="radio" /><input id="ambiance" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="subject">Subject</label><label for="context">Context</label><label for="action">Action</label><label for="style">Style</label><label for="camera-motion">Camera Motion</label><label for="composition">Composition</label><label for="ambiance">Ambiance</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>The subject description can include a single subject, multiple subjects, and their actions.</p>
-<p><strong>Prompt</strong>: <code>An architectural rendering of a white concrete apartment building with flowing organic shapes, seamlessly blending with lush greenery and futuristic elements.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/white_building.gif" alt="Architectural rendering of a white concrete building." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</div>
-<div class="tabbed-block">
-<p>The background or context in which the subject is placed is very important. Try placing your subject in a variety of backgrounds, such as on a busy street or in outer space.</p>
-<p><strong>Prompt</strong>: <code>A satellite floating through outer space with the moon and some stars in the background.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/satellite2.gif" alt="Satellite floating in space." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</div>
-<div class="tabbed-block">
-<p>Specify what the subject is doing, such as walking, running, or turning their head.</p>
-<p><strong>Prompt</strong>: <code>A wide shot of a woman walking along the beach, looking content and relaxed and looking towards the horizon at sunset.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/sunset.gif" alt="Woman walking on a beach at sunset." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</div>
-<div class="tabbed-block">
-<p>Add keywords to improve generation quality and steer it closer to your intended style, such as <code>shallow depth of field</code>, <code>movie still</code>, <code>minimalistic</code>, <code>surreal</code>, <code>vintage</code>, <code>futuristic</code>, or <code>double-exposure</code>.</p>
-<p><strong>Prompt</strong>: <code>Film noir style, man and woman walk on the street, mystery, cinematic, black and white.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/film_noir.gif" alt="Man and woman in film noir style." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</div>
-<div class="tabbed-block">
-<p>Specify the camera's movement, such as <code>POV shot</code>, <code>aerial view</code>, <code>tracking drone view</code>, or <code>tracking shot</code>.</p>
-<p><strong>Prompt</strong>: <code>A POV shot from a vintage car driving in the rain, Canada at night, cinematic.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/pov_shot.gif" alt="Point-of-view shot from a car driving in the rain." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</div>
-<div class="tabbed-block">
+<details>
+<summary>Example: Specify an action</summary>
+<p>Clearly state what the subject is doing.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A wide shot of a woman walking along the beach, looking content and relaxed and looking towards the horizon at sunset.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/sunset.gif" alt="A woman walking on the beach at sunset." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video of a woman on a beach.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>Example: Define the style</summary>
+<p>Add keywords to steer the generation towards a specific aesthetic. Examples include <code>shallow depth of field</code>, <code>movie still</code>, <code>minimalistic</code>, <code>surreal</code>, <code>vintage</code>, <code>futuristic</code>, or <code>double-exposure</code>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Film noir style, man and woman walk on the street, mystery, cinematic, black and white.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/film_noir.gif" alt="A man and woman in film noir style." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video in a film noir style.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>Example: Control the camera motion</summary>
+<p>Describe the camera's movement, such as <code>POV shot</code>, <code>aerial view</code>, <code>tracking drone view</code>, or <code>tracking shot</code>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A POV shot from a vintage car driving in the rain, Canada at night, cinematic.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/pov_shot.gif" alt="A point-of-view shot from a car driving in the rain." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video using a POV camera shot.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>Example: Frame the composition</summary>
 <p>Define how the shot is framed, such as <code>wide shot</code>, <code>close-up</code>, or <code>low angle</code>.</p>
-<details>
-<summary>Extreme close-up</summary>
-<p><strong>Prompt</strong>: <code>Extreme close-up of an eye with city reflected in it.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/composition_eye_close_up.gif" alt="Extreme close-up of an eye." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extreme close-up of an eye with a city reflected in it.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/composition_eye_close_up.gif" alt="An extreme close-up of an eye." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video using an extreme close-up.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Create a video of a wide shot of a surfer walking on a beach with a surfboard, beautiful sunset, cinematic.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/composition_surfer.gif" alt="A wide shot of a surfer on the beach." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video using a wide shot.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
 <details>
-<summary>Wide shot</summary>
-<p><strong>Prompt</strong>: <code>Create a video of a wide shot of surfer walking on a beach with a surfboard, beautiful sunset, cinematic.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/composition_surfer.gif" alt="Wide shot of a surfer on a beach." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<summary>Example: Set the ambiance</summary>
+<p>Use color and lighting descriptions to convey a mood. Color palettes like <code>pastel blue and pink tones</code>, <code>dim ambient lighting</code>, or <code>cold muted tones</code> can make the style consistent.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A close-up of a girl holding an adorable golden retriever puppy in the park, sunlight.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/ambiance_puppy.gif" alt="A girl holding a puppy in the sunlight." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video with warm, sunny ambiance.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Cinematic close-up shot of a sad woman riding a bus in the rain, cool blue tones, sad mood.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/ambiance_sad.gif" alt="A sad woman on a bus in the rain." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video with a sad, blue-toned ambiance.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </details>
-</div>
-<div class="tabbed-block">
-<p>Adding colors helps make the video look unique and convey intended emotions. Color palettes play a vital role, influencing the mood and emotional impact. For example, a warm, golden palette can infuse a romantic and atmospheric feel. Examples of color palettes include <code>pastel blue and pink tones</code>, <code>dim ambient lighting</code>, and <code>cold muted tones</code>.</p>
-<details>
-<summary>Warm tones</summary>
-<p><strong>Prompt</strong>: <code>A close-up of a girl holding adorable golden retriever puppy in the park, sunlight.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/ambiance_puppy.gif" alt="A girl holding a puppy in the park with warm sunlight." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</details>
-<details>
-<summary>Cool tones</summary>
-<p><strong>Prompt</strong>: <code>Cinematic close-up shot of a sad woman riding a bus in the rain, cool blue tones, sad mood.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/ambiance_sad.gif" alt="A sad woman on a bus in the rain with cool blue tones." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</details>
-</div>
-</div>
-</div>
-<h2 id="advanced-prompt-techniques">Advanced prompt techniques<a class="headerlink" href="#advanced-prompt-techniques" title="Permanent link">&para;</a></h2>
-<h3 id="use-reference-images-to-generate-videos">Use reference images to generate videos<a class="headerlink" href="#use-reference-images-to-generate-videos" title="Permanent link">&para;</a></h3>
-<p>You can bring images to life by using Veo's image-to-video capability. Use your existing assets or generate a new image with a model like Imagen.</p>
-<p>When using image-to-video, we recommend the following:</p>
-<ul>
-<li>Ensure that actions and speech descriptions align with each subject present in the input image.</li>
-<li>When multiple subjects are present, clearly specify which character is performing an action or speaking. Use distinguishing descriptive details, for example:<ul>
-<li>The man in the red hat.</li>
-<li>The woman in the blue dress.</li>
-</ul>
-</li>
-</ul>
-<details>
-<summary>View an image-to-video example</summary>
-<p><strong>Reference image and prompt</strong>: <code>Bunny with a chocolate candy bar.</code></p>
-<p><figure style="text-align: center;">
-  <img src="../images/static_bunny.png" alt="A static image of a bunny holding a chocolate bar." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-<p><strong>Action prompt</strong>: <code>Bunny runs away.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/bunny_runs_away.gif" alt="An animated GIF of the bunny running away." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</details>
-<h3 id="use-negative-prompts">Use negative prompts<a class="headerlink" href="#use-negative-prompts" title="Permanent link">&para;</a></h3>
-<p>Negative prompts are a powerful tool to specify what elements to exclude from the video. Instead of using instructive language like "no" or "don't," describe what you want to discourage the model from generating.</p>
-<ul>
-<li>❌ <strong>Don't</strong>: "No walls" or "don't show walls".</li>
-<li>✅ <strong>Do</strong>: "wall, frame".</li>
-</ul>
-<details>
-<summary>View a negative prompt example</summary>
-<p><strong>Initial prompt</strong>: <code>Generate a short, stylized animation of a large, solitary oak tree with leaves blowing vigorously in a strong wind. The tree should have a slightly exaggerated, whimsical form, with dynamic, flowing branches. The leaves should display a variety of autumn colors, swirling and dancing in the wind. The animation should feature a gentle, atmospheric soundtrack and use a warm, inviting color palette.</code></p>
-<p><strong>Generated output (without negative prompt)</strong>:
-<figure style="text-align: center;">
-  <img src="../images/tree_with_no_negative.gif" alt="Oak tree with leaves blowing in the wind." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-<p><strong>Negative prompt added</strong>: <code>urban background, man-made structures, dark, stormy, or threatening atmosphere.</code></p>
-<p><strong>Generated output (with negative prompt)</strong>:
-<figure style="text-align: center;">
-  <img src="../images/tree_with_negative.gif" alt="Oak tree without urban background elements." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
-</details>
+<h2 id="advanced-prompting-techniques">Advanced prompting techniques<a class="headerlink" href="#advanced-prompting-techniques" title="Permanent link">&para;</a></h2>
 <h3 id="add-audio">Add audio<a class="headerlink" href="#add-audio" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>Preview</strong></p>
-<p>Audio is supported by <code>veo-3.0-generate-preview</code>.</p>
+<p>Audio is supported by <code>veo-3.0-generate-preview</code> in Preview.</p>
 </blockquote>
-<p>Clearly specify if you want audio in your video. We recommend that you use separate sentences in your prompt to describe the audio.</p>
+<p>Clearly specify if you want audio in your video. We recommend using separate sentences in your prompt to describe the audio.</p>
 <ul>
 <li><strong>Sound effects</strong>:<ul>
 <li><code>The audio features water splashing in the background.</code></li>
@@ -11180,9 +11211,62 @@
 </ul>
 </li>
 </ul>
-<h2 id="technical-specifications">Technical specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
+<h3 id="use-reference-images-to-generate-videos">Use reference images to generate videos<a class="headerlink" href="#use-reference-images-to-generate-videos" title="Permanent link">&para;</a></h3>
+<p>You can bring static images to life by providing a reference image along with a prompt. This image-to-video capability lets you animate your existing assets.</p>
+<p>When using image-to-video, we recommend the following:</p>
+<ul>
+<li>Ensure that actions and speech descriptions align with each subject present in the input image.</li>
+<li>When multiple subjects are present, clearly specify which character is performing an action or speaking by using distinguishing details (e.g., <code>The man in the red hat</code> or <code>The woman in the blue dress</code>).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Reference Image and Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Image</strong>:<br><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/static_bunny.png" alt="A static image of a bunny with a chocolate bar." style="max-width: 100%; border-radius: 8px;"></figure><br><strong>Prompt</strong>:<br><code>Bunny runs away.</code></td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/bunny_runs_away.gif" alt="The bunny from the image is now running away." style="max-width: 100%; border-radius: 8px;"><figcaption>The generated video animates the bunny from the reference image.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-negative-prompts">Use negative prompts<a class="headerlink" href="#use-negative-prompts" title="Permanent link">&para;</a></h3>
+<p>Negative prompts are a powerful tool for specifying what to exclude from your video. Instead of instructing the model what <em>not</em> to do, describe the elements you want to avoid.</p>
+<ul>
+<li>✅ <strong>Do</strong>: Describe what you don't want to see. For example, to exclude walls or frames, use <code>wall, frame</code>.</li>
+<li>❌ <strong>Don't</strong>: Use instructive language like <code>no</code> or <code>don't</code>. For example, avoid "No walls" or "don't show walls".</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt without negative prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate a short, stylized animation of a large, solitary oak tree with leaves blowing vigorously in a strong wind. The tree should have a slightly exaggerated, whimsical form, with dynamic, flowing branches. The leaves should display a variety of autumn colors, swirling and dancing in the wind. The animation should feature a gentle, atmospheric soundtrack and use a warm, inviting color palette.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/tree_with_no_negative.gif" alt="An oak tree with leaves blowing." style="max-width: 100%; border-radius: 8px;"><figcaption>Video generated without a negative prompt.</figcaption></figure></td>
+</tr>
+<tr>
+<td><strong>Prompt with negative prompt</strong></td>
+<td><strong>Generated output</strong></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Generate a short, stylized animation of a large, solitary oak tree... (same as above)<br><br><strong>Negative prompt</strong>: <code>urban background, man-made structures, dark, stormy, or threatening atmosphere</code></td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/tree_with_negative.gif" alt="An oak tree with leaves blowing, without a stormy background." style="max-width: 100%; border-radius: 8px;"><figcaption>Video generated with a negative prompt to ensure a non-urban, non-stormy setting.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-controls">Output controls<a class="headerlink" href="#output-controls" title="Permanent link">&para;</a></h2>
 <h3 id="aspect-ratios">Aspect ratios<a class="headerlink" href="#aspect-ratios" title="Permanent link">&para;</a></h3>
-<p>Vertex AI Veo video generation supports the following two aspect ratios:</p>
+<p>Vertex AI Veo supports the following aspect ratios for video generation.</p>
 <table>
 <thead>
 <tr>
@@ -11193,44 +11277,58 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Widescreen (16:9)</strong></td>
-<td style="text-align: left;">The most common aspect ratio for televisions, monitors, and landscape mobile phone screens. Use this when you want to capture more of the background, such as scenic landscapes.</td>
+<td style="text-align: left;">The most common aspect ratio for televisions, monitors, and landscape mobile videos. Use this to capture more of the background, such as scenic landscapes.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Portrait (9:16)</strong></td>
-<td style="text-align: left;">A rotated widescreen, popularized by short-form video applications. Use this for portraits or tall objects with strong vertical orientations, such as buildings, trees, or waterfalls. <br> <strong>Note:</strong> The 9:16 aspect ratio isn't supported by <code>veo-3.0-generate-preview</code>.</td>
+<td style="text-align: left;">A rotated widescreen, popularized by short-form video applications. Use this for portraits or tall subjects with strong vertical orientations, such as skyscrapers, trees, or waterfalls. <br><strong>Note:</strong> The 9:16 aspect ratio isn't supported by <code>veo-3.0-generate-preview</code>.</td>
 </tr>
 </tbody>
 </table>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="widescreen-169" name="__tabbed_3" type="radio" /><input id="portrait-916" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="widescreen-169">Widescreen (16:9)</label><label for="portrait-916">Portrait (9:16)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="widescreen-169" name="__tabbed_1" type="radio" /><input id="portrait-916" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="widescreen-169">Widescreen (16:9)</label><label for="portrait-916">Portrait (9:16)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><strong>Prompt</strong>: <code>Create a video with a tracking drone view of a man driving a red convertible car in Palm Springs, 1970s, warm sunlight, long shadows.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/widescreen_palm_springs.gif" alt="Widescreen video of a man driving a convertible." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create a video with a tracking drone view of a man driving a red convertible car in Palm Springs, 1970s, warm sunlight, long shadows.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/widescreen_palm_springs.gif" alt="A man driving a convertible in Palm Springs." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video in 16:9 widescreen aspect ratio.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="tabbed-block">
-<p><strong>Prompt</strong>: <code>Create a video with a smooth motion of a majestic Hawaiian waterfall within a lush rainforest. Focus on realistic water flow, detailed foliage, and natural lighting to convey tranquility. Capture the rushing water, misty atmosphere, and dappled sunlight filtering through the dense canopy. Use smooth, cinematic camera movements to showcase the waterfall and its surroundings. Aim for a peaceful, realistic tone, transporting the viewer to the serene beauty of the Hawaiian rainforest.</code></p>
-<p><strong>Generated output</strong>:
-<figure style="text-align: center;">
-  <img src="../images/waterfall.gif" alt="Portrait video of a Hawaiian waterfall." style="max-width: 100%; border-radius: 8px;">
-</figure></p>
+<table>
+<thead>
+<tr>
+<th><strong>Prompt</strong></th>
+<th><strong>Generated output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create a video with a smooth motion of a majestic Hawaiian waterfall within a lush rainforest. Focus on realistic water flow, detailed foliage, and natural lighting to convey tranquility. Capture the rushing water, misty atmosphere, and dappled sunlight filtering through the dense canopy. Use smooth, cinematic camera movements to showcase the waterfall and its surroundings. Aim for a peaceful, realistic tone, transporting the viewer to the serene beauty of the Hawaiian rainforest.</td>
+<td><figure style="text-align: center;"><img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/video/images/waterfall.gif" alt="A majestic Hawaiian waterfall." style="max-width: 100%; border-radius: 8px;"><figcaption>Generated video in 9:16 portrait aspect ratio.</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
-<h2 id="general-tips-for-writing-prompts">General tips for writing prompts<a class="headerlink" href="#general-tips-for-writing-prompts" title="Permanent link">&para;</a></h2>
+<h2 id="general-tips-for-prompt-writing">General tips for prompt writing<a class="headerlink" href="#general-tips-for-prompt-writing" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Use descriptive language</strong>: Use adjectives and adverbs to paint a clear picture for Veo.</li>
-<li><strong>Provide context</strong>: If necessary, include background information to help the model understand what you want.</li>
-<li><strong>Reference specific artistic styles</strong>: If you have a particular aesthetic in mind, reference specific artistic styles or art movements.</li>
-<li><strong>Utilize prompt engineering tools</strong>: Consider exploring prompt engineering tools or resources to help you refine your prompts and achieve optimal results. For more information, see <a href="../../learn/prompts/introduction-prompt-design/">Introduction to prompting</a>.</li>
-<li><strong>Enhance facial details</strong>: To improve facial details in your personal and group images, specify facial details as a focus by using words like <code>portrait</code> in the prompt.</li>
+<li><strong>Use descriptive language</strong>: Use adjectives and adverbs to paint a clear picture for the model.</li>
+<li><strong>Provide context</strong>: Include background information to help the model understand the scene you want to create.</li>
+<li><strong>Reference specific artistic styles</strong>: If you have a particular aesthetic in mind, reference specific artists, art movements, or film styles.</li>
+<li><strong>Enhance facial details</strong>: To improve facial details in images of people, use words like <code>portrait</code> or <code>close-up on face</code> in your prompt.</li>
+<li><strong>Explore prompt engineering</strong>: For more advanced techniques, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design">Introduction to prompt design</a>.</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Troubleshooting</p>
-<p>If you encounter issues, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Vertex AI Troubleshooting Guide</a>.</p>
-</div>
 
 
 

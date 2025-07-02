@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploy-and-inference-gemma-using-model-garden-and-vertex-ai-tpu-backed-endpoints" class="md-skip">
+        <a href="#deploy-gemma-and-get-inferences-using-model-garden-and-tpu-backed-endpoints" class="md-skip">
           Skip to content
         </a>
       
@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2112,6 +2137,8 @@
       
         
       
+        
+      
     
     
     
@@ -2439,6 +2466,104 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2649,27 +2774,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-deploy-the-gemma-model" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Deploy the Gemma model
+      Prerequisites
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-get-the-endpoint-id" class="md-nav__link">
+  <a href="#set-up-a-google-cloud-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Get the endpoint ID
+      Set up a Google Cloud project
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-run-inference" class="md-nav__link">
+  <a href="#set-up-the-google-cloud-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Run inference
+      Set up the Google Cloud CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-sdk-for-your-programming-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the SDK for your programming language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-individual-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete individual resources
     </span>
   </a>
   
@@ -2910,8 +3062,6 @@
   
     
     
-      
-        
       
         
       
@@ -3632,10 +3782,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3703,52 +3849,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -5993,6 +6093,8 @@
       
         
       
+        
+      
     
     
     
@@ -6036,7 +6138,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6060,6 +6162,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6118,10 +6243,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6134,8 +6259,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6270,10 +6395,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6286,8 +6411,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7231,129 +7356,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../lora-qlora/" class="md-nav__link">
         
@@ -7392,10 +7394,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7408,8 +7410,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8826,7 +8828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../docs/" class="md-nav__link">
         
   
   
@@ -10095,7 +10097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../samples/" class="md-nav__link">
         
   
   
@@ -10780,27 +10782,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-deploy-the-gemma-model" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Deploy the Gemma model
+      Prerequisites
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-get-the-endpoint-id" class="md-nav__link">
+  <a href="#set-up-a-google-cloud-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Get the endpoint ID
+      Set up a Google Cloud project
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-run-inference" class="md-nav__link">
+  <a href="#set-up-the-google-cloud-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Run inference
+      Set up the Google Cloud CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-sdk-for-your-programming-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the SDK for your programming language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-individual-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete individual resources
     </span>
   </a>
   
@@ -10839,9 +10868,9 @@
   
 
 
-<h1 id="deploy-and-inference-gemma-using-model-garden-and-vertex-ai-tpu-backed-endpoints">Deploy and inference Gemma using Model Garden and Vertex AI TPU-backed endpoints<a class="headerlink" href="#deploy-and-inference-gemma-using-model-garden-and-vertex-ai-tpu-backed-endpoints" title="Permanent link">&para;</a></h1>
-<p>In this tutorial, you use Model Garden to deploy the <a href="../../open-models/use-gemma/">Gemma 2B</a> open model to a TPU-backed Vertex AI endpoint. You must deploy a model to an endpoint before that model can be used to serve online predictions. Deploying a model associates physical resources with the model so it can serve online predictions with low latency.</p>
-<p>After you deploy the Gemma 2B model, you get online predictions from the model by using the <a href="/python/docs/reference/aiplatform/1.18.2/google.cloud.aiplatform_v1beta1.services.prediction_service.PredictionServiceClient"><code>PredictionServiceClient</code></a>. Online predictions are synchronous requests made to a model that is deployed to an endpoint.</p>
+<h1 id="deploy-gemma-and-get-inferences-using-model-garden-and-tpu-backed-endpoints">Deploy Gemma and get inferences using Model Garden and TPU-backed endpoints<a class="headerlink" href="#deploy-gemma-and-get-inferences-using-model-garden-and-tpu-backed-endpoints" title="Permanent link">&para;</a></h1>
+<p>In this tutorial, you use Model Garden to deploy the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/use-gemma">Gemma 2B</a> open model to a TPU-backed Vertex AI endpoint. You must deploy a model to an endpoint before that model can be used to serve online predictions. Deploying a model associates physical resources with it so it can serve online predictions with low latency.</p>
+<p>After you deploy the Gemma 2B model, you get online predictions from the deployed model by using the <code>PredictionServiceClient</code>. Online predictions are synchronous requests made to a model that is deployed to an endpoint.</p>
 <h2 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
 <p>This tutorial shows you how to perform the following tasks:</p>
 <ul>
@@ -10851,58 +10880,76 @@
 <h2 id="costs">Costs<a class="headerlink" href="#costs" title="Permanent link">&para;</a></h2>
 <p>In this document, you use the following billable components of Google Cloud:</p>
 <ul>
-<li>A <code>ct5lp-hightpu-1t</code> machine type with one TPU_V5 accelerator. For more information, see <a href="../../../pricing/#custom-trained_models">Custom-trained models pricing</a>.</li>
-<li>Vertex AI prediction and explanation. For more information, see <a href="../../../pricing/#prediction-prices">Prediction and explanation pricing</a>.</li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/pricing#custom-trained_models">A <code>ct5lp-hightpu-1t</code> machine type</a> with one TPU_V5 accelerator</li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/pricing#prediction-prices">Vertex AI prediction and explanation</a></li>
 </ul>
-<p>To generate a cost estimate based on your projected usage, use the <a href="/products/calculator">Pricing Calculator</a>. New Google Cloud users might be eligible for a <a href="/free">free trial</a>.</p>
-<p>When you finish the tasks that are described in this document, you can avoid continued billing by deleting the resources that you created. For more information, see <a href="#clean-up-resources">Clean up</a>.</p>
+<p>To generate a cost estimate based on your projected usage, use the <a href="https://cloud.google.com/products/calculator">pricing calculator</a>. New Google Cloud users might be eligible for a <a href="https://cloud.google.com/free">free trial</a>.</p>
+<p>When you finish the tasks that are described in this document, you can avoid continued billing by deleting the resources that you created. For more information, see <a href="#clean-up-resources">Clean up resources</a>.</p>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <details open="open">
 <summary>Before you begin</summary>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>Model Garden:</strong> A curated platform in Vertex AI for discovering, testing, and deploying foundation models.</li>
-<li><strong>Vertex AI Endpoint:</strong> A service that makes a deployed model available for online prediction requests.</li>
-<li><strong>TPU (Tensor Processing Unit):</strong> Google's custom-developed accelerator for machine learning workloads, optimized for large-scale training and inference.</li>
-<li><strong>Gemma:</strong> A family of lightweight, state-of-the-art open models from Google.</li>
-<li><strong>Instruction-tuned model:</strong> A model that has been further fine-tuned on examples of instructions and their desired outputs to improve its ability to follow user commands.</li>
+<li><strong>Gemma</strong>: A family of lightweight, state-of-the-art open models from Google.</li>
+<li><strong>Model Garden</strong>: A central repository in Vertex AI for discovering, testing, and deploying foundation models.</li>
+<li><strong>Vertex AI endpoint</strong>: A service that makes a deployed model available for online prediction requests.</li>
+<li><strong>Cloud TPU</strong>: Google's custom-designed accelerators optimized for high-performance machine learning workloads.</li>
 </ul>
 </details>
-<p><strong>Set up a Google Cloud project</strong></p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<p>This tutorial requires you to complete the following setup tasks:</p>
+<ul>
+<li>Set up a Google Cloud project and enable the Vertex AI API.</li>
+<li>On your local machine:<ul>
+<li>Install, initialize, and authenticate with the Google Cloud CLI.</li>
+<li>Install the SDK for your programming language.</li>
+</ul>
+</li>
+</ul>
+<h3 id="set-up-a-google-cloud-project">Set up a Google Cloud project<a class="headerlink" href="#set-up-a-google-cloud-project" title="Permanent link">&para;</a></h3>
+<p><a name="set-up-a-google-cloud-project"></a></p>
 <ol>
 <li>Sign in to your Google Cloud account. If you're new to Google Cloud, <a href="https://console.cloud.google.com/freetrial">create an account</a> to evaluate how our products perform in real-world scenarios. New customers also get $300 in free credits to run, test, and deploy workloads.</li>
 <li>
 <p>In the Google Cloud console, on the project selector page, select or create a Google Cloud project.</p>
-<p><strong>Note</strong>: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.</p>
+</div>
 <p><a class="md-button" href="https://console.cloud.google.com/projectselector2/home/dashboard">Go to project selector</a></p>
 </li>
 <li>
-<p><a href="/billing/docs/how-to/verify-billing-enabled#confirm_billing_is_enabled_on_a_project">Make sure that billing is enabled for your Google Cloud project</a>.</p>
+<p>Make sure that billing is enabled for your Google Cloud project.</p>
 </li>
 <li>
 <p>Enable the Vertex AI API.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/flows/enableapi?apiid=aiplatform.googleapis.com">Enable the API</a></p>
 </li>
 </ol>
-<p><strong>Set up your local environment</strong></p>
+<h3 id="set-up-the-google-cloud-cli">Set up the Google Cloud CLI<a class="headerlink" href="#set-up-the-google-cloud-cli" title="Permanent link">&para;</a></h3>
+<p><a name="set-up-the-google-cloud-cli"></a></p>
+<p>On your local machine, set up the Google Cloud CLI.</p>
 <ol>
-<li>
-<p><a href="/sdk/docs/install">Install and initialize</a> the Google Cloud CLI.</p>
-</li>
+<li>Install and initialize the Google Cloud CLI.</li>
 <li>
 <p>If you previously installed the gcloud CLI, ensure your <code>gcloud</code> components are updated by running this command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcloud components update
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcloud<span class="w"> </span>components<span class="w"> </span>update
 </span></code></pre></div>
 </li>
 <li>
 <p>To authenticate with the gcloud CLI, generate a local Application Default Credentials (ADC) file by running this command. The web flow launched by the command is used to provide your user credentials.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gcloud auth application-default login
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gcloud<span class="w"> </span>auth<span class="w"> </span>application-default<span class="w"> </span>login
 </span></code></pre></div>
-<p>For more information, see <a href="/docs/authentication/gcloud#gcloud-credentials">gcloud CLI authentication configuration and ADC configuration</a>.</p>
-<p><strong>Note:</strong> To avoid providing your project ID and region to the Google Cloud CLI, you can use the <a href="/sdk/gcloud/reference/config/set"><code>gcloud config set</code></a> command to set a default project and region.</p>
 </li>
-<li>
+</ol>
+<p>For more information, see <a href="https://cloud.google.com/sdk/docs/authorizing">gcloud CLI authentication configuration</a> and <a href="https://cloud.google.com/docs/authentication/provide-credentials-adc">ADC configuration</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To avoid providing your project ID and region to the Google Cloud CLI, you can use the <code>gcloud config set</code> command to set a default project and region.</p>
+</div>
+<h3 id="set-up-the-sdk-for-your-programming-language">Set up the SDK for your programming language<a class="headerlink" href="#set-up-the-sdk-for-your-programming-language" title="Permanent link">&para;</a></h3>
+<p><a name="set-up-the-sdk-for-your-programming-language"></a></p>
 <p>To set up the environment used in this tutorial, install the Vertex AI SDK for your language and the Protocol Buffers library. The code samples use functions from the Protocol Buffers library to convert the input dictionary to the JSON format that is expected by the API.</p>
 <p>On your local machine, click one of the following tabs to install the SDK for your programming language.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="python" name="__tabbed_1" type="radio" /><input id="nodejs" name="__tabbed_1" type="radio" /><input id="java" name="__tabbed_1" type="radio" /><input id="go" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="python">Python</label><label for="nodejs">Node.js</label><label for="java">Java</label><label for="go">Go</label></div>
@@ -10911,19 +10958,19 @@
 <ul>
 <li>
 <p>Install and update the Vertex AI SDK for Python by running this command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip3 install --upgrade &quot;google-cloud-aiplatform&gt;=1.64&quot;
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip3<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span><span class="s2">&quot;google-cloud-aiplatform&gt;=1.64&quot;</span>
 </span></code></pre></div>
 </li>
 <li>
 <p>Install the Protocol Buffers library for Python by running this command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip3 install --upgrade &quot;protobuf&gt;=5.28&quot;
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip3<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span><span class="s2">&quot;protobuf&gt;=5.28&quot;</span>
 </span></code></pre></div>
 </li>
 </ul>
 </div>
 <div class="tabbed-block">
 <p>Install or update the <code>aiplatform</code> SDK for Node.js by running the following command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm install @google-cloud/aiplatform
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@google-cloud/aiplatform
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -10986,33 +11033,30 @@
 <li><a href="https://pkg.go.dev/google.golang.org/protobuf#section-readme">Go support for Protocol Buffers</a></li>
 <li><a href="https://github.com/googleapis/gax-go">Google API Extensions for Go (gax-go)</a></li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>go get cloud.google.com/go/aiplatform
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>go get google.golang.org/protobuf
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>go get github.com/googleapis/gax-go/v2
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>go<span class="w"> </span>get<span class="w"> </span>cloud.google.com/go/aiplatform
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>go<span class="w"> </span>get<span class="w"> </span>google.golang.org/protobuf
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/googleapis/gax-go/v2
 </span></code></pre></div>
 </div>
 </div>
 </div>
-</li>
-</ol>
 </details>
 <p>This tutorial follows the workflow below.</p>
 <pre class="mermaid"><code>flowchart TD
-    A["Deploy the Gemma model"] --&gt; B["Get the endpoint ID"]
-    B --&gt; C["Run inference"]
-    C --&gt; D["Clean up resources"]
+    A[Set up environment] --&gt; B[Deploy Gemma model]
+    B --&gt; C[Get online predictions]
+    C --&gt; D[Clean up resources]
 
-click A "#deploy-the-gemma-model"
-click B "#get-the-endpoint-id"
-click C "#run-inference"
+click A "#before-you-begin"
+click B "#deploy-gemma-model"
+click C "#get-online-predictions"
 click D "#clean-up-resources"</code></pre>
-<details open="open">
-<summary>Tutorial: Deploy and run inference with Gemma</summary>
-<h3 id="step-1-deploy-the-gemma-model">Step 1: Deploy the Gemma model<a class="headerlink" href="#step-1-deploy-the-gemma-model" title="Permanent link">&para;</a></h3>
-<p><a name="deploy-the-gemma-model"></a></p>
-<p>You deploy the Gemma 2B model to a <code>ct5lp-hightpu-1t</code> Compute Engine machine type that is optimized for small to medium scale training. This machine has one <a href="/tpu/docs/v5e">TPU v5e</a> accelerator. For more information on training models using TPUs, see <a href="/tpu/docs/v5e-training">Cloud TPU v5e training</a>.</p>
-<p>In this tutorial, you deploy the instruction-tuned Gemma 2B open model by using the model card in Model Garden. The specific model version is <code>gemma2-2b-it</code> -- <code>-it</code> stands for <a href="../../open-models/use-gemma/#gem-model-sizes">instruction-tuned</a>.</p>
-<p>The Gemma 2B model has a lower parameter size which means lower resource requirements and more deployment flexibility.</p>
+<details>
+<summary>Step 1: Deploy Gemma model</summary>
+<p><a name="deploy-gemma-model"></a></p>
+<p>You deploy the Gemma 2B model to a <code>ct5lp-hightpu-1t</code> Compute Engine machine type that is optimized for small to medium scale training. This machine has one TPU v5e accelerator. For more information on training models using TPUs, see <a href="https://cloud.google.com/tpu/docs/v5e-training">Cloud TPU v5e training</a>.</p>
+<p>In this tutorial, you deploy the instruction-tuned Gemma 2B open model by using the model card in Model Garden. The specific model version is <code>gemma2-2b-it</code>—<code>-it</code> stands for <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/use-gemma#gem-model-sizes">instruction-tuned</a>.</p>
+<p>The Gemma 2B model has a lower parameter size, which means lower resource requirements and more deployment flexibility.</p>
 <ol>
 <li>
 <p>In the Google Cloud console, go to the <strong>Model Garden</strong> page.</p>
@@ -11028,9 +11072,7 @@ click D "#clean-up-resources"</code></pre>
 <li>
 <p>In the <strong>Deploy model</strong> pane, specify these details.</p>
 <ol>
-<li>
-<p>For <strong>Deployment environment</strong> click <strong>Vertex AI</strong>.</p>
-</li>
+<li>For <strong>Deployment environment</strong>, click <strong>Vertex AI</strong>.</li>
 <li>
 <p>In the <strong>Deploy model</strong> section:</p>
 <ol>
@@ -11050,7 +11092,7 @@ click D "#clean-up-resources"</code></pre>
 <ol>
 <li>Accept the default option for <strong>Basic</strong> settings.</li>
 <li>For <strong>Region</strong>, accept the default value or choose a region from the list. Make a note of the region. You'll need it for the code samples.</li>
-<li>For <strong>Machine spec</strong>, choose the TPU backed instance: <code>ct5lp-hightpu-1t (1 TPU_V5_LITEPOD; ct5lp-hightpu-1t)</code>.</li>
+<li>For <strong>Machine spec</strong>, choose the TPU-backed instance: <code>ct5lp-hightpu-1t (1 TPU_V5_LITEPOD; ct5lp-hightpu-1t)</code>.</li>
 </ol>
 </li>
 </ol>
@@ -11060,20 +11102,22 @@ click D "#clean-up-resources"</code></pre>
 <p><a class="md-button" href="https://console.cloud.google.com/vertex-ai/online-prediction/endpoints">Go to Endpoints</a></p>
 </li>
 </ol>
-<h3 id="step-2-get-the-endpoint-id">Step 2: Get the endpoint ID<a class="headerlink" href="#step-2-get-the-endpoint-id" title="Permanent link">&para;</a></h3>
-<p><a name="get-the-endpoint-id"></a></p>
-<p>To run inference, you need your project ID, region, and endpoint ID.</p>
+</details>
+<details>
+<summary>Step 2: Get online predictions from Gemma 2B</summary>
+<p><a name="get-online-predictions"></a></p>
+<p>After you deploy Gemma 2B, you use the <code>PredictionServiceClient</code> to get online predictions for the prompt: "Why is the sky blue?"</p>
+<p><strong>Code parameters</strong></p>
+<p>The <code>PredictionServiceClient</code> code samples require you to update the following variables:</p>
 <ul>
 <li>
-<p><strong>Project ID</strong>: To <a href="/resource-manager/docs/creating-managing-projects#identifying_projects">find your project ID</a>, go to the <strong>Welcome</strong> page in the Google Cloud console. The project ID appears after the <strong>Welcome</strong> heading.</p>
+<p><code>PROJECT_ID</code>: To find your project ID, go to the <strong>Welcome</strong> page in the Google Cloud console. From the project picker at the top of the page, select your project. The project name, project number, and project ID appear after the <strong>Welcome</strong> heading.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/welcome">Go to Welcome</a></p>
 </li>
 <li>
-<p><strong>Region</strong>: This is the region where you deployed the endpoint.</p>
+<p><code>ENDPOINT_REGION</code>: This is the region where you deployed the endpoint.</p>
 </li>
-<li>
-<p><strong>Endpoint ID</strong>: Use one of the following methods to find your endpoint ID. You'll need the endpoint name and region from the <strong>Deploy model</strong> pane.</p>
-</li>
+<li><code>ENDPOINT_ID</code>: To find your endpoint ID, use one of the following methods. You'll need the endpoint name and region from the <strong>Deploy model</strong> pane.</li>
 </ul>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="console" name="__tabbed_2" type="radio" /><input id="gcloud" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="console">Console</label><label for="gcloud">gcloud</label></div>
 <div class="tabbed-content">
@@ -11082,31 +11126,29 @@ click D "#clean-up-resources"</code></pre>
 <p><a class="md-button" href="https://console.cloud.google.com/vertex-ai/online-prediction/endpoints">Go to Endpoints</a></p>
 </div>
 <div class="tabbed-block">
-<p>You can view the endpoint details by running the <a href="/sdk/gcloud/reference/ai/endpoints/list"><code>gcloud ai endpoints list</code></a> command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>gcloud ai endpoints list \
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  --region=ENDPOINT_REGION \
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  --filter=display_name=ENDPOINT_NAME
+<p>You can view the endpoint details by running the <code>gcloud ai endpoints list</code> command.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>endpoints<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span>--region<span class="o">=</span>ENDPOINT_REGION<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span>--filter<span class="o">=</span><span class="nv">display_name</span><span class="o">=</span>ENDPOINT_NAME
 </span></code></pre></div>
 <p>The output looks like this.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Using endpoint [https://us-central1-aiplatform.googleapis.com/]
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ENDPOINT_ID: 1234567891234567891
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>DISPLAY_NAME: gemma2-2b-it-mg-one-click-deploy
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Using<span class="w"> </span>endpoint<span class="w"> </span><span class="o">[</span>https://us-central1-aiplatform.googleapis.com/<span class="o">]</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ENDPOINT_ID:<span class="w"> </span><span class="m">1234567891234567891</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>DISPLAY_NAME:<span class="w"> </span>gemma2-2b-it-mg-one-click-deploy
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="step-3-run-inference">Step 3: Run inference<a class="headerlink" href="#step-3-run-inference" title="Permanent link">&para;</a></h3>
-<p><a name="run-inference"></a></p>
-<p>After you deploy Gemma 2B, use the <code>PredictionServiceClient</code> to get online predictions for the prompt: "Why is the sky blue?"</p>
-<p>In the sample code for your language, update the <code>PROJECT_ID</code>, <code>ENDPOINT_REGION</code>, and <code>ENDPOINT_ID</code> with the values you collected. Then run your code.</p>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
+<p><strong>Sample code</strong></p>
+<p>In the sample code for your language, update the <code>PROJECT_ID</code>, <code>ENDPOINT_REGION</code>, and <code>ENDPOINT_ID</code>. Then run your code.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="python_1" name="__tabbed_3" type="radio" /><input id="nodejs_1" name="__tabbed_3" type="radio" /><input id="java_1" name="__tabbed_3" type="radio" /><input id="go_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="python_1">Python</label><label for="nodejs_1">Node.js</label><label for="java_1">Java</label><label for="go_1">Go</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>To learn how to install or update the Vertex AI SDK for Python, see <a href="#set-up-your-local-environment">Install the Vertex AI SDK for Python</a>. For more information, see the <a href="/python/docs/reference/aiplatform/latest">Vertex AI SDK for Python API reference documentation</a>.</p>
+<p>To learn how to install or update the Vertex AI SDK for Python, see <a href="#set-up-the-sdk-for-your-programming-language">Install the Vertex AI SDK for Python</a>. For more information, see the <a href="https://cloud.google.com/python/docs/reference/aiplatform/latest">Vertex AI SDK for Python API reference documentation</a>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="sd">Sample to run inference on a Gemma2 model deployed to a Vertex AI endpoint with TPU accellerators.</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="sd">&quot;&quot;&quot;</span>
@@ -11153,8 +11195,8 @@ click D "#clean-up-resources"</code></pre>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Before trying this sample, follow the Node.js setup instructions in the <a href="#set-up-your-local-environment">Before you begin</a> section. For more information, see the <a href="/nodejs/docs/reference/aiplatform/latest">Vertex AI Node.js API reference documentation</a>.</p>
-<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="/docs/authentication/set-up-adc-local-dev-environment">Set up authentication for a local development environment</a>.</p>
+<p>Before trying this sample, follow the Node.js setup instructions in the <a href="https://cloud.google.com/vertex-ai/docs/start/client-libraries#node.js">Vertex AI quickstart using client libraries</a>. For more information, see the <a href="https://cloud.google.com/nodejs/docs/reference/aiplatform/latest">Vertex AI Node.js API reference documentation</a>.</p>
+<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev">Set up authentication for a local development environment</a>.</p>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">// Imports the Google Cloud Prediction Service Client library</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="c1">// TODO(developer): Uncomment PredictionServiceClient before running the sample.</span>
@@ -11206,8 +11248,8 @@ click D "#clean-up-resources"</code></pre>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Before trying this sample, follow the Java setup instructions in the <a href="#set-up-your-local-environment">Before you begin</a> section. For more information, see the <a href="/java/docs/reference/google-cloud-aiplatform/latest/com.google.cloud.aiplatform.v1">Vertex AI Java API reference documentation</a>.</p>
-<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="/docs/authentication/set-up-adc-local-dev-environment">Set up authentication for a local development environment</a>.</p>
+<p>Before trying this sample, follow the Java setup instructions in the <a href="https://cloud.google.com/vertex-ai/docs/start/client-libraries#java">Vertex AI quickstart using client libraries</a>. For more information, see the <a href="https://cloud.google.com/java/docs/reference/google-cloud-aiplatform/latest/overview">Vertex AI Java API reference documentation</a>.</p>
+<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev">Set up authentication for a local development environment</a>.</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">com.google.cloud.aiplatform.v1.EndpointName</span><span class="p">;</span>
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">com.google.cloud.aiplatform.v1.PredictResponse</span><span class="p">;</span>
 </span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">com.google.cloud.aiplatform.v1.PredictionServiceClient</span><span class="p">;</span>
@@ -11286,8 +11328,8 @@ click D "#clean-up-resources"</code></pre>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Before trying this sample, follow the Go setup instructions in the <a href="#set-up-your-local-environment">Before you begin</a> section. For more information, see the <a href="/go/docs/reference/cloud.google.com/go/aiplatform/latest/apiv1">Vertex AI Go API reference documentation</a>.</p>
-<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="/docs/authentication/set-up-adc-local-dev-environment">Set up authentication for a local development environment</a>.</p>
+<p>Before trying this sample, follow the Go setup instructions in the <a href="https://cloud.google.com/vertex-ai/docs/start/client-libraries#go">Vertex AI quickstart using client libraries</a>. For more information, see the <a href="https://cloud.google.com/go/docs/reference/cloud.google.com/go/aiplatform/latest">Vertex AI Go API reference documentation</a>.</p>
+<p>To authenticate to Vertex AI, set up Application Default Credentials. For more information, see <a href="https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev">Set up authentication for a local development environment</a>.</p>
 <div class="language-go highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="s">&quot;context&quot;</span>
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="s">&quot;fmt&quot;</span>
@@ -11351,19 +11393,17 @@ click D "#clean-up-resources"</code></pre>
 </div>
 </div>
 </details>
-<details open="open">
-<summary>Clean up</summary>
+<details>
+<summary>Step 3: Clean up resources</summary>
 <p><a name="clean-up-resources"></a></p>
 <p>To avoid incurring charges to your Google Cloud account for the resources used in this tutorial, either delete the project that contains the resources, or keep the project and delete the individual resources.</p>
-<p><strong>Delete the project</strong></p>
-<blockquote>
-<p><strong>Caution</strong></p>
-<p>Deleting a project has the following effects:</p>
-<ul>
-<li><strong>Everything in the project is deleted.</strong> If you used an existing project for the tasks in this document, when you delete it, you also delete any other work you've done in the project.</li>
-<li><strong>Custom project IDs are lost.</strong> When you created this project, you might have created a custom project ID that you want to use in the future. To preserve the URLs that use the project ID, such as an <code>appspot.com</code> URL, delete selected resources inside the project instead of deleting the whole project.</li>
-</ul>
-</blockquote>
+<h3 id="delete-the-project">Delete the project<a class="headerlink" href="#delete-the-project" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>Deleting a project has the following effects:
+*   <strong>Everything in the project is deleted.</strong> If you used an existing project for the tasks in this document, when you delete it, you also delete any other work you've done in the project.
+*   <strong>Custom project IDs are lost.</strong> When you created this project, you might have created a custom project ID that you want to use in the future. To preserve the URLs that use the project ID, such as an <code>appspot.com</code> URL, delete selected resources inside the project instead of deleting the whole project.</p>
+</div>
 <p>If you plan to explore multiple architectures, tutorials, or quickstarts, reusing projects can help you avoid exceeding project quota limits.</p>
 <ol>
 <li>
@@ -11375,17 +11415,21 @@ click D "#clean-up-resources"</code></pre>
 </li>
 <li>In the dialog, type the project ID, and then click <strong>Shut down</strong> to delete the project.</li>
 </ol>
-<p><strong>Delete individual resources</strong></p>
-<p>If you're keeping your project, delete the resources used in this tutorial.</p>
-<p><strong>Undeploy the model and delete the endpoint</strong></p>
-<p>Use one of the following methods to undeploy a model and delete the endpoint.</p>
-<blockquote>
-<p><strong>Note</strong></p>
+<h3 id="delete-individual-resources">Delete individual resources<a class="headerlink" href="#delete-individual-resources" title="Permanent link">&para;</a></h3>
+<p>If you're keeping your project, delete the resources used in this tutorial:</p>
+<ul>
+<li>Undeploy the model and delete the endpoint.</li>
+<li>Delete the model from Model Registry.</li>
+</ul>
+<p>Use one of the following methods to undeploy the model, delete the endpoint, and delete the model.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>You can only delete the endpoint after all models have been undeployed from it.</p>
-</blockquote>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="console_1" name="__tabbed_4" type="radio" /><input id="gcloud_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="console_1">Console</label><label for="gcloud_1">gcloud</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
+<p><strong>Undeploy the model and delete the endpoint</strong></p>
 <ol>
 <li>
 <p>In the Google Cloud console, go to the <strong>Endpoints</strong> page.</p>
@@ -11394,78 +11438,14 @@ click D "#clean-up-resources"</code></pre>
 <li>
 <p>In the <strong>Region</strong> drop-down list, choose the region where you deployed your endpoint.</p>
 </li>
-<li>Click the endpoint name to open the details page. For example: <code>gemma2-2b-it-mg-one-click-deploy</code>.</li>
+<li>Click the endpoint name to open the details page (for example, <code>gemma2-2b-it-mg-one-click-deploy</code>).</li>
 <li>On the row for the <code>Gemma 2 (Version 1)</code> model, click <strong>more_vert Actions</strong>, and then click <strong>Undeploy model from endpoint</strong>.</li>
 <li>In the <strong>Undeploy model from endpoint</strong> dialog, click <strong>Undeploy</strong>.</li>
 <li>Click the <strong>Back</strong> button to return to the <strong>Endpoints</strong> page.</li>
 <li>At the end of the <code>gemma2-2b-it-mg-one-click-deploy</code> row, click <strong>more_vert Actions</strong>, and then select <strong>Delete endpoint</strong>.</li>
 <li>In the confirmation prompt, click <strong>Confirm</strong>.</li>
 </ol>
-</div>
-<div class="tabbed-block">
-<p>To undeploy the model and delete the endpoint using the Google Cloud CLI, follow these steps. In these commands, replace the placeholder variables with your specific information.</p>
-<ol>
-<li>
-<p>Get the endpoint ID by running the <a href="/sdk/gcloud/reference/ai/endpoints/list"><code>gcloud ai endpoints list</code></a> command. This command lists the endpoint IDs for all endpoints in your project. Make a note of the ID of the endpoint used in this tutorial.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>gcloud ai endpoints list \
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    --project=PROJECT_ID \
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    --region=LOCATION_ID
-</span></code></pre></div>
-<p>The output looks like this. In the output, the ID is called <code>ENDPOINT_ID</code>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Using endpoint [https://us-central1-aiplatform.googleapis.com/]
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>ENDPOINT_ID: 1234567891234567891
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>DISPLAY_NAME: gemma2-2b-it-mg-one-click-deploy
-</span></code></pre></div>
-</li>
-<li>
-<p>Get the model ID by running the <a href="/sdk/gcloud/reference/ai/models/describe"><code>gcloud ai models describe</code></a> command. Make a note of the ID of the model you deployed in this tutorial.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>gcloud ai models describe DEPLOYED_MODEL_NAME \
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    --project=PROJECT_ID \
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    --region=LOCATION_ID
-</span></code></pre></div>
-<p>The abbreviated output looks like this. In the output, the ID is called <code>deployedModelId</code>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Using endpoint [https://us-central1-aiplatform.googleapis.com/]
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>artifactUri: [URI removed]
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>baseModelSource:
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  modelGardenSource:
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    publicModelName: publishers/google/models/gemma2
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>...
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>deployedModels:
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>- deployedModelId: &#39;1234567891234567891&#39;
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  endpoint: projects/12345678912/locations/us-central1/endpoints/12345678912345
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>displayName: gemma2-2b-it-12345678912345
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>etag: [ETag removed]
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>modelSourceInfo:
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>  sourceType: MODEL_GARDEN
-</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>name: projects/123456789123/locations/us-central1/models/gemma2-2b-it-12345678912345
-</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>...
-</span></code></pre></div>
-</li>
-<li>
-<p>Undeploy the model from the endpoint. You'll need the endpoint ID and model ID from the previous commands.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>gcloud ai endpoints undeploy-model ENDPOINT_ID \
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    --project=PROJECT_ID \
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    --region=LOCATION_ID \
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    --deployed-model-id=DEPLOYED_MODEL_ID
-</span></code></pre></div>
-<p>This command produces no output.</p>
-</li>
-<li>
-<p>Run the <a href="/sdk/gcloud/reference/ai/endpoints/delete"><code>gcloud ai endpoints delete</code></a> command to delete the endpoint.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>gcloud ai endpoints delete ENDPOINT_ID \
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    --project=PROJECT_ID \
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    --region=LOCATION_ID
-</span></code></pre></div>
-<p>When prompted, type <code>y</code> to confirm. This command produces no output.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
 <p><strong>Delete the model</strong></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="console_2" name="__tabbed_5" type="radio" /><input id="gcloud_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="console_2">Console</label><label for="gcloud_2">gcloud</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
 <ol>
 <li>
 <p>Go to the <strong>Model Registry</strong> page from the Vertex AI section in the Google Cloud console.</p>
@@ -11480,12 +11460,69 @@ click D "#clean-up-resources"</code></pre>
 </ol>
 </div>
 <div class="tabbed-block">
-<p>To delete the model using the Google Cloud CLI, provide the model's display name and region to the <a href="/sdk/gcloud/reference/ai/models/delete"><code>gcloud ai models delete</code></a> command.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>gcloud ai models delete DEPLOYED_MODEL_NAME \
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    --project=PROJECT_ID \
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    --region=LOCATION_ID
+<p>To undeploy the model and delete the endpoint using the Google Cloud CLI, follow these steps. In these commands, replace the placeholder variables with your specific IDs and names.</p>
+<ol>
+<li>
+<p><strong>Get the endpoint ID</strong> by running the <code>gcloud ai endpoints list</code> command. This command lists the endpoint IDs for all endpoints in your project. Make a note of the ID of the endpoint used in this tutorial.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>endpoints<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span>--project<span class="o">=</span>PROJECT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span>--region<span class="o">=</span>LOCATION_ID
 </span></code></pre></div>
-<p>Replace <code>DEPLOYED_MODEL_NAME</code> with the model's display name. Replace <code>PROJECT_ID</code> with your project name. Replace <code>LOCATION_ID</code> with the region where you deployed the model.</p>
+<p>The output looks like this. In the output, the ID is called <code>ENDPOINT_ID</code>.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Using<span class="w"> </span>endpoint<span class="w"> </span><span class="o">[</span>https://us-central1-aiplatform.googleapis.com/<span class="o">]</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>ENDPOINT_ID:<span class="w"> </span><span class="m">1234567891234567891</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>DISPLAY_NAME:<span class="w"> </span>gemma2-2b-it-mg-one-click-deploy
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Get the model ID</strong> by running the <code>gcloud ai models describe</code> command. Make a note of the ID of the model you deployed in this tutorial.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>models<span class="w"> </span>describe<span class="w"> </span>DEPLOYED_MODEL_NAME<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span>--project<span class="o">=</span>PROJECT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span>--region<span class="o">=</span>LOCATION_ID
+</span></code></pre></div>
+<p>The abbreviated output looks like this. In the output, the ID is called <code>deployedModelId</code>.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Using<span class="w"> </span>endpoint<span class="w"> </span><span class="o">[</span>https://us-central1-aiplatform.googleapis.com/<span class="o">]</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>artifactUri:<span class="w"> </span><span class="o">[</span>URI<span class="w"> </span>removed<span class="o">]</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>baseModelSource:
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span>modelGardenSource:
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span>publicModelName:<span class="w"> </span>publishers/google/models/gemma2
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>...
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>deployedModels:
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>-<span class="w"> </span>deployedModelId:<span class="w"> </span><span class="s1">&#39;1234567891234567891&#39;</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span>endpoint:<span class="w"> </span>projects/12345678912/locations/us-central1/endpoints/12345678912345
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>displayName:<span class="w"> </span>gemma2-2b-it-12345678912345
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>etag:<span class="w"> </span><span class="o">[</span>ETag<span class="w"> </span>removed<span class="o">]</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>modelSourceInfo:
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">  </span>sourceType:<span class="w"> </span>MODEL_GARDEN
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>name:<span class="w"> </span>projects/123456789123/locations/us-central1/models/gemma2-2b-it-12345678912345
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>...
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Undeploy the model</strong> from the endpoint. You'll need the endpoint ID and model ID from the previous commands.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>endpoints<span class="w"> </span>undeploy-model<span class="w"> </span>ENDPOINT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span>--project<span class="o">=</span>PROJECT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span>--region<span class="o">=</span>LOCATION_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span>--deployed-model-id<span class="o">=</span>DEPLOYED_MODEL_ID
+</span></code></pre></div>
+<p>This command produces no output.</p>
+</li>
+<li>
+<p><strong>Delete the endpoint</strong> by running the <code>gcloud ai endpoints delete</code> command.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>endpoints<span class="w"> </span>delete<span class="w"> </span>ENDPOINT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span>--project<span class="o">=</span>PROJECT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span>--region<span class="o">=</span>LOCATION_ID
+</span></code></pre></div>
+<p>When prompted, type <code>y</code> to confirm. This command produces no output.</p>
+</li>
+<li>
+<p><strong>Delete the model</strong> using the <code>gcloud ai models delete</code> command.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>gcloud<span class="w"> </span>ai<span class="w"> </span>models<span class="w"> </span>delete<span class="w"> </span>DEPLOYED_MODEL_NAME<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">    </span>--project<span class="o">=</span>PROJECT_ID<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span>--region<span class="o">=</span>LOCATION_ID
+</span></code></pre></div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -11494,10 +11531,10 @@ click D "#clean-up-resources"</code></pre>
 <ul>
 <li>Learn more about <a href="https://ai.google.dev/gemma/docs">Gemma open models</a>.</li>
 <li>Read the <a href="https://ai.google.dev/gemma/terms">Gemma Terms of Use</a>.</li>
-<li>Learn more about <a href="../open-models/overview.md">open models</a>.</li>
-<li>Learn how to <a href="../../deploy/overview/#deploy_a_tuned_model">deploy a tuned model</a>.</li>
-<li>Learn how to <a href="/kubernetes-engine/docs/tutorials/serve-gemma-gpu-tgi">deploy Gemma 2 to Google Kubernetes Engine using HuggingFace Textgen Inference (TGI)</a>.</li>
-<li>Learn more about the <code>PredictionServiceClient</code> in your preferred language: <a href="/python/docs/reference/aiplatform/1.18.2/google.cloud.aiplatform_v1beta1.services.prediction_service.PredictionServiceClient">Python</a>, <a href="/nodejs/docs/reference/aiplatform/3.13.0/aiplatform/v1.predictionserviceclient">Node.js</a>, <a href="/java/docs/reference/google-cloud-aiplatform/latest/com.google.cloud.aiplatform.v1.PredictionServiceClient">Java</a>, or <a href="/go/docs/reference/cloud.google.com/go/aiplatform/1.0.0/apiv1#cloud_google_com_go_aiplatform_apiv1_PredictionClient_Predict">Go</a>.</li>
+<li>Learn more about <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/use-open-models">open models</a>.</li>
+<li>Learn how to <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/deploy/overview#deploy_a_tuned_model">deploy a tuned model</a>.</li>
+<li>Learn how to <a href="https://cloud.google.com/blog/products/ai-machine-learning/deploy-gemma-2-on-gke-using-huggingface-tgi">deploy Gemma 2 to Google Kubernetes Engine using HuggingFace Textgen Inference (TGI)</a>.</li>
+<li>Learn more about the <code>PredictionServiceClient</code> in your preferred language: <a href="https://cloud.google.com/python/docs/reference/aiplatform/latest/google.cloud.aiplatform_v1.services.prediction_service">Python</a>, <a href="https://cloud.google.com/nodejs/docs/reference/aiplatform/latest/google.cloud.aiplatform.v1.predictionserviceclient">Node.js</a>, <a href="https://cloud.google.com/java/docs/reference/google-cloud-aiplatform/latest/com.google.cloud.aiplatform.v1.PredictionServiceClient">Java</a>, or <a href="https://pkg.go.dev/cloud.google.com/go/aiplatform/apiv1#PredictionClient">Go</a>.</li>
 </ul>
 
 

@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2110,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2419,6 +2446,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2797,8 +2922,6 @@
   
     
     
-      
-        
       
         
       
@@ -3348,42 +3471,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#medlm-use-cases-and-models" class="md-nav__link">
+  <a href="#supported-models-and-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      MedLM use cases and models
+      Supported models and use cases
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="MedLM use cases and models">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use cases
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#supported-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported models
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interact-with-medlm-models" class="md-nav__link">
+  <a href="#ways-to-send-prompts" class="md-nav__link">
     <span class="md-ellipsis">
-      Interact with MedLM models
+      Ways to send prompts
     </span>
   </a>
   
@@ -3400,20 +3499,68 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#question-answering-prompts" class="md-nav__link">
+  <a href="#question-answering" class="md-nav__link">
     <span class="md-ellipsis">
-      Question answering prompts
+      Question answering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Question answering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#long-form-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-form question answering
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#summarization-prompts" class="md-nav__link">
+  <a href="#multiple-choice-question-answering" class="md-nav__link">
     <span class="md-ellipsis">
-      Summarization prompts
+      Multiple choice question answering
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summarization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compose-an-after-visit-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compose an after-visit summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compose-a-history-and-physical-examination-hp-note-from-a-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compose a history and physical examination (H&amp;P) note from a transcript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3665,10 +3812,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3736,52 +3879,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -6026,6 +6123,8 @@
       
         
       
+        
+      
     
     
     
@@ -6069,7 +6168,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6093,6 +6192,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6151,10 +6273,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6167,8 +6289,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6303,10 +6425,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6319,8 +6441,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7264,129 +7386,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7425,10 +7424,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7441,8 +7440,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8859,7 +8858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../docs/" class="md-nav__link">
         
   
   
@@ -10128,7 +10127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../samples/" class="md-nav__link">
         
   
   
@@ -10803,42 +10802,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#medlm-use-cases-and-models" class="md-nav__link">
+  <a href="#supported-models-and-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      MedLM use cases and models
+      Supported models and use cases
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="MedLM use cases and models">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use cases
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#supported-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported models
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interact-with-medlm-models" class="md-nav__link">
+  <a href="#ways-to-send-prompts" class="md-nav__link">
     <span class="md-ellipsis">
-      Interact with MedLM models
+      Ways to send prompts
     </span>
   </a>
   
@@ -10855,20 +10830,68 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#question-answering-prompts" class="md-nav__link">
+  <a href="#question-answering" class="md-nav__link">
     <span class="md-ellipsis">
-      Question answering prompts
+      Question answering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Question answering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#long-form-question-answering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-form question answering
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#summarization-prompts" class="md-nav__link">
+  <a href="#multiple-choice-question-answering" class="md-nav__link">
     <span class="md-ellipsis">
-      Summarization prompts
+      Multiple choice question answering
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summarization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compose-an-after-visit-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compose an after-visit summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compose-a-history-and-physical-examination-hp-note-from-a-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compose a history and physical examination (H&amp;P) note from a transcript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -10909,288 +10932,260 @@
 <blockquote>
 <p><strong>Caution:</strong> MedLM is deprecated. Access to MedLM will no longer be available on or after September 29, 2025.</p>
 </blockquote>
-<p>The available MedLM models, <code>MedLM-medium</code> and <code>MedLM-large</code>, are foundation models designed for medical question answering and summarization. You can access these models using the Vertex AI MedLM API. This page provides an overview of the MedLM models, the different ways to interact with them, and how to design prompts to customize their behavior.</p>
+<p>The available MedLM models, <code>MedLM-medium</code> and <code>MedLM-large</code>, are foundation models for medical question answering and summarization. You can access the models using the Vertex AI MedLM API. This page gives you an overview of the available MedLM models, the APIs you use to interact with the models, and ways to customize their behaviors.</p>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <details open="open">
-<summary>Prerequisites and Concepts</summary>
-<p><strong>Prerequisites</strong></p>
+<summary>Prerequisites</summary>
 <ul>
-<li>See <a href="../overview/">MedLM models overview</a> for information including customer responsibilities, regulatory information, and <a href="../../learn/responsible-ai/">Responsible AI</a> best practices.</li>
+<li>See <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/medlm/overview">MedLM models overview</a> for information including customer responsibilities, regulatory information, and <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/responsible-ai">Responsible AI</a> best practices.</li>
 <li>See the MedLM model card for model details, such as MedLM's intended use, data overview, and safety information. Click the following link to download a PDF version of the MedLM model card:</li>
 </ul>
-<p><a class="md-button" href="MedLM-model-card.pdf">Download the MedLM model card</a></p>
+<p><a class="md-button" href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/medlm/MedLM-model-card.pdf">Download the MedLM model card</a></p>
+</details>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>Prompt</strong>: Natural language instructions that you send to a model to elicit a specific response.</li>
-<li><strong>Large Language Model (LLM)</strong>: A type of AI model trained on vast amounts of text data to understand and generate human-like text.</li>
-<li><strong>REST API</strong>: A standardized way for applications to communicate over the web, allowing you to send prompts to the model programmatically.</li>
-<li><strong>Vertex AI SDK for Python</strong>: A Python library that provides a high-level interface for interacting with Vertex AI services, including MedLM models.</li>
-<li><strong>Model Parameters</strong>: Settings that control the behavior of the model's response, such as <code>temperature</code> (randomness) and <code>maxOutputTokens</code> (response length).</li>
+<li><strong>Prompt</strong>: Natural language instructions sent to a model to tell it what you want it to generate.</li>
+<li><strong>Large Language Model (LLM)</strong>: A type of AI model trained on vast amounts of text data to understand and generate human-like language.</li>
+<li><strong>Temperature</strong>: A parameter that controls the randomness of the output; lower values make the output more deterministic.</li>
+<li><strong>Top-K</strong>: A parameter that limits the model's selection of the next word to the K most likely words.</li>
+<li><strong>Top-P</strong>: A parameter that selects the next word from a cumulative probability distribution of the most likely words.</li>
 </ul>
-</details>
 </details>
 <h2 id="prompt-design">Prompt design<a class="headerlink" href="#prompt-design" title="Permanent link">&para;</a></h2>
-<p>To interact with the MedLM models, you send natural language instructions, also called prompts, that tell the model what you want it to generate. For example, a simple prompt for question answering would be:</p>
-<p><code>"Question: What causes you to get ringworm?"</code></p>
-<p>However, LLMs can sometimes behave in unpredictable ways. Prompt design is an iterative process of trial and error that takes time and practice to become proficient in. To learn about general prompt design strategies, see <a href="../../learn/prompts/introduction-prompt-design/">Introduction to prompt design</a>. For task-specific prompt design guidance for text, see <a href="../../learn/prompts/prompt-design-strategies/">Overview of prompting strategies</a>.</p>
-<h2 id="medlm-use-cases-and-models">MedLM use cases and models<a class="headerlink" href="#medlm-use-cases-and-models" title="Permanent link">&para;</a></h2>
-<h3 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<p>To interact with the MedLM models, you send natural language instructions, also called prompts, that tell the model what you want it to generate. However, LLMs can sometimes behave in unpredictable ways. Prompt design is an iterative process of trial and error that takes time and practice to become proficient in. To learn about general prompt design strategies, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design">Introduction to prompt design</a>. For task-specific prompt design guidance for text, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies">Overview of prompting strategies</a>.</p>
+<h2 id="supported-models-and-use-cases">Supported models and use cases<a class="headerlink" href="#supported-models-and-use-cases" title="Permanent link">&para;</a></h2>
+<p>The <code>medlm-medium</code> and <code>medlm-large</code> models support the following primary use cases:</p>
 <ul>
 <li><strong>Summarization</strong>: Create a shorter version of a document that incorporates pertinent information from the original text. For example, you might want to summarize a medical note describing an outpatient visit and extract relevant information for specific data points.</li>
-<li><strong>Question answering</strong>: Provide answers to questions in text. For example, you might want to ask a general medical question to generate answers from the model's knowledge base.</li>
+<li><strong>Question answering</strong>: Provide answers to questions in text. For example, you might want to ask a general medical question to generate answers from the knowledge base.</li>
 </ul>
-<h3 id="supported-models">Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>medlm-medium</code></li>
-<li><code>medlm-large</code></li>
-</ul>
-<h2 id="interact-with-medlm-models">Interact with MedLM models<a class="headerlink" href="#interact-with-medlm-models" title="Permanent link">&para;</a></h2>
-<p>You can interact with MedLM models using the Vertex AI REST API, the Vertex AI SDK for Python, or the Vertex AI Studio UI. Choose the method that best suits your workflow and technical requirements.</p>
+<h2 id="ways-to-send-prompts">Ways to send prompts<a class="headerlink" href="#ways-to-send-prompts" title="Permanent link">&para;</a></h2>
+<p>You can interact with MedLM models using several methods. The following table provides a high-level comparison to help you choose the best option for your workflow.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Method</th>
-<th style="text-align: left;">Best for</th>
-<th style="text-align: left;">Pros</th>
-<th style="text-align: left;">Cons</th>
+<th>Method</th>
+<th>Description</th>
+<th>Best for...</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Vertex AI Studio</strong></td>
-<td style="text-align: left;">Rapid prototyping and prompt testing.</td>
-<td style="text-align: left;">Easy-to-use graphical interface, no coding required. Quickly experiment with models and parameters.</td>
-<td style="text-align: left;">Not suitable for integrating into production applications or automating workflows.</td>
+<td><strong>REST API</strong></td>
+<td>Sending requests directly to the API endpoint using tools like <code>curl</code> or <code>PowerShell</code>.</td>
+<td>Quick testing, scripting, and integration into applications where a client library is not available or desired.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Vertex AI SDK for Python</strong></td>
-<td style="text-align: left;">Integrating MedLM into Python applications.</td>
-<td style="text-align: left;">High-level, intuitive library that simplifies interaction with the API. Ideal for developers working in a Python environment like Colaboratory.</td>
-<td style="text-align: left;">Requires setting up a Python environment and familiarity with the SDK.</td>
+<td><strong>Vertex AI SDK for Python</strong></td>
+<td>Using the Python library to integrate MedLM into your Python applications and notebooks.</td>
+<td>Developing applications in Python, especially within Google Cloud environments like Colaboratory notebooks.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REST API</strong></td>
-<td style="text-align: left;">Integrating MedLM into any application, regardless of language.</td>
-<td style="text-align: left;">Language-agnostic, offers maximum flexibility and control.</td>
-<td style="text-align: left;">Requires manual construction of HTTP requests and handling of authentication tokens.</td>
+<td><strong>Vertex AI Studio</strong></td>
+<td>A web-based UI in the Google Cloud console for interactively designing, testing, and customizing prompts.</td>
+<td>Rapid prototyping, experimenting with different prompts and parameters, and non-programmatic use.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="prompt-examples">Prompt examples<a class="headerlink" href="#prompt-examples" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Caution:</strong> The generated output may not always be completely reliable. Due to the nature of Large Language Models (LLMs) and Generative AI, outputs may contain incorrect or biased information and should be reviewed. All summaries or answers should be considered drafts and not final.</p>
+</blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="vertex-ai-studio" name="__tabbed_1" type="radio" /><input id="python-sdk" name="__tabbed_1" type="radio" /><input id="rest-api" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="vertex-ai-studio">Vertex AI Studio</label><label for="python-sdk">Python SDK</label><label for="rest-api">REST API</label></div>
+<h3 id="question-answering">Question answering<a class="headerlink" href="#question-answering" title="Permanent link">&para;</a></h3>
+<p>This section provides examples of how to create prompts for question-answering tasks.</p>
+<h4 id="long-form-question-answering">Long-form question answering<a class="headerlink" href="#long-form-question-answering" title="Permanent link">&para;</a></h4>
+<p>The following examples show how to ask a general medical question.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="rest-api" name="__tabbed_1" type="radio" /><input id="python-sdk" name="__tabbed_1" type="radio" /><input id="vertex-ai-studio" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="rest-api">REST API</label><label for="python-sdk">Python SDK</label><label for="vertex-ai-studio">Vertex AI Studio</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Use Vertex AI Studio to design, test, and customize your prompts in a user-friendly interface. Before using Vertex AI Studio for MedLM, see <a href="../../start/quickstarts/quickstart.md">Send text prompts to Gemini using Vertex AI Studio</a> for prerequisites.</p>
-<p>The following workflow outlines the process of testing a prompt in Vertex AI Studio.</p>
-<pre class="mermaid"><code>flowchart TD
-    A[Go to Vertex AI Studio] --&gt; B{Select MedLM Model};
-    B --&gt; C[Enter Prompt];
-    C --&gt; D[Adjust Parameters];
-    D --&gt; E[Submit and Review];
-    E --&gt; F((Save or Get Code));
-
-click A "#go-to-vertex-ai-studio"
-click B "#select-medlm-model"
-click C "#enter-prompt"
-click D "#adjust-parameters"
-click E "#submit-and-review"
-click F "#save-or-get-code"</code></pre>
-<details open="open">
-<summary>Test a prompt in Vertex AI Studio</summary>
-<p><a name="go-to-vertex-ai-studio"></a>
-<strong>1. Go to Vertex AI Studio</strong></p>
-<p>In the Vertex AI section of the Google Cloud console, go to the Vertex AI Studio page.</p>
-<p><a class="md-button" href="https://console.cloud.google.com/vertex-ai/generative/language">Go to Vertex AI Studio</a></p>
-<p><a name="select-medlm-model"></a>
-<strong>2. Select MedLM Model</strong></p>
-<ul>
-<li>Click <strong>Get started</strong>.</li>
-<li>Click <strong>Create prompt</strong>.</li>
-<li>In the <strong>Model</strong> menu, select <code>MedLM-Medium</code> or <code>MedLM-Large</code>.</li>
-</ul>
-<p><a name="enter-prompt"></a>
-<strong>3. Enter Prompt</strong></p>
-<p>In the <strong>Prompt</strong> field, enter your prompt text.</p>
-<p><a name="adjust-parameters"></a>
-<strong>4. Adjust Parameters (Optional)</strong></p>
-<p>You can adjust the <strong>Temperature</strong> and <strong>Token limit</strong> values to experiment with how they affect the response. We recommend using the default values if you're unsure.</p>
-<p><a name="submit-and-review"></a>
-<strong>5. Submit and Review</strong></p>
-<p>Click <strong>Submit</strong> to generate a response from the model.</p>
-<p><a name="save-or-get-code"></a>
-<strong>6. Save or Get Code (Optional)</strong></p>
-<ul>
-<li>To save a prompt for later use, click <strong>Save</strong>.</li>
-<li>To view the Python code or a <code>curl</code> command for your prompt, click <strong>Get code</strong>.</li>
-</ul>
-</details>
-</div>
-<div class="tabbed-block">
-<p>Run the following code in a <a href="https://colab.research.google.com/">Colaboratory</a> notebook to send a prompt using the Vertex AI SDK for Python.</p>
-<blockquote>
-<p><strong>Caution:</strong> The generated output may not always be completely reliable. Due to the nature of LLMs and Generative AI, outputs may have incorrect or biased information and should be reviewed. All summaries or answers should be considered draft and not final.</p>
-</blockquote>
-<p><strong>1. Install the SDK</strong></p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">google</span><span class="o">-</span><span class="n">cloud</span><span class="o">-</span><span class="n">aiplatform</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># The following restarts the runtime.</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">IPython</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">app</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Note that this will result in a pop-up telling you that the session has</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># crashed for an unknown reason. This can be safely ignored and you can continue</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># with the following cells after getting this message.</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">app</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">do_shutdown</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>2. Send a prediction request</strong></p>
-<p>Run the following code in your Colaboratory notebook.
-*   Replace <code>my-project</code> with your Google Cloud project ID. To find your project ID, see <a href="https://support.google.com/googleapi/answer/7014113">Locate the project ID</a>.
-*   Replace the sample prompt with your own.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">auth</span> <span class="k">as</span> <span class="n">google_auth</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">vertexai</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.preview.language_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextGenerationModel</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">google_auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># TODO: Replace with project ID from Cloud Console</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># (https://support.google.com/googleapi/answer/7014113)</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">PROJECT_ID</span> <span class="o">=</span> <span class="s1">&#39;my-project&#39;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># MedLM models are only available in us-central1.</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">vertexai</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJECT_ID</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s1">&#39;us-central1&#39;</span><span class="p">)</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="s2">&quot;candidate_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="s2">&quot;max_output_tokens&quot;</span><span class="p">:</span> <span class="mi">256</span><span class="p">,</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="s2">&quot;temperature&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="s2">&quot;top_k&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="s2">&quot;top_p&quot;</span><span class="p">:</span> <span class="mf">0.80</span><span class="p">,</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">}</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="n">model_instance</span> <span class="o">=</span> <span class="n">TextGenerationModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;medlm-medium&quot;</span><span class="p">)</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model_instance</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="s2">&quot;Question: What causes you to get ringworm?&quot;</span><span class="p">,</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="o">**</span><span class="n">parameters</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="p">)</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Response from Model: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>You can send prediction requests to the MedLM model using a <code>curl</code> command or PowerShell.</p>
-<blockquote>
-<p><strong>Caution:</strong> The generated output may not always be completely reliable. Due to the nature of LLMs and Generative AI, outputs may have incorrect or biased information and should be reviewed. All summaries or answers should be considered draft and not final.</p>
-</blockquote>
 <p>Before using any of the request data, make the following replacements:</p>
 <ul>
 <li><code>PROJECT_ID</code>: Your project ID.</li>
 <li><code>MEDLM_MODEL</code>: The MedLM model, either <code>medlm-medium</code> or <code>medlm-large</code>.</li>
 </ul>
 <p><strong>HTTP method and URL:</strong></p>
-<p><code>POST https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict</code></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>POST https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict
+</span></code></pre></div>
 <p><strong>Request JSON body:</strong></p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;instances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Question: What causes you to get ringworm?&quot;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p">],</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">&quot;maxOutputTokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span><span class="p">,</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="nt">&quot;topK&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">&quot;topP&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.95</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;instances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Question: What causes you to get ringworm?&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;maxOutputTokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span><span class="p">,</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&quot;topK&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">&quot;topP&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.95</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>To send your request, choose one of these options:</p>
-<p><strong>curl</strong></p>
-<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code>, or by using Cloud Shell, which automatically logs you into the <code>gcloud</code> CLI. You can check the currently active account by running <code>gcloud auth list</code>.</p>
-<ol>
-<li>
-<p>Save the request body in a file named <code>request.json</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>request.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="s">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s">  &quot;instances&quot;: [</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s">    {</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s">      &quot;content&quot;: &quot;Question: What causes you to get ringworm?&quot;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s">    }</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s">  ],</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s">  &quot;parameters&quot;: {</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s">    &quot;temperature&quot;: 0,</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="s">    &quot;maxOutputTokens&quot;: 256,</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="s">    &quot;topK&quot;: 40,</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="s">    &quot;topP&quot;: 0.95</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="s">  }</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="s">}</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="s">EOF</span>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="curl" name="__tabbed_2" type="radio" /><input id="powershell" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="curl">curl</label><label for="powershell">PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> , or by using Cloud Shell, which automatically logs you into the <code>gcloud</code> CLI . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>. Run the following command in the terminal to create or overwrite this file in the current directory:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>request.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="s">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="s">  &quot;instances&quot;: [</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="s">    {</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s">      &quot;content&quot;: &quot;Question: What causes you to get ringworm?&quot;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s">    }</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s">  ],</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s">  &quot;parameters&quot;: {</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s">    &quot;maxOutputTokens&quot;: 256,</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s">    &quot;topP&quot;: 0.95</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s">  }</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="s">}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="s">EOF</span>
 </span></code></pre></div>
-</li>
-<li>
-<p>Execute the following command to send your REST request:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">     </span><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">     </span><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span>
 </span></code></pre></div>
-</li>
-</ol>
-<p><strong>PowerShell</strong></p>
-<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code>. You can check the currently active account by running <code>gcloud auth list</code>.</p>
-<ol>
-<li>
-<p>Save the request body in a file named <code>request.json</code>.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="sh">@&#39;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="sh">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="sh">  &quot;instances&quot;: [</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="sh">    {</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="sh">      &quot;content&quot;: &quot;Question: What causes you to get ringworm?&quot;</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="sh">    }</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="sh">  ],</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="sh">  &quot;parameters&quot;: {</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="sh">    &quot;temperature&quot;: 0,</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="sh">    &quot;maxOutputTokens&quot;: 256,</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="sh">    &quot;topK&quot;: 40,</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="sh">    &quot;topP&quot;: 0.95</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="sh">  }</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="sh">}</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="sh">&#39;@</span>  <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="n">-Encoding</span> <span class="n">utf8</span>
+</div>
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>. Run the following command in the terminal to create or overwrite this file in the current directory:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="sh">@&#39;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="sh">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="sh">  &quot;instances&quot;: [</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="sh">    {</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="sh">      &quot;content&quot;: &quot;Question: What causes you to get ringworm?&quot;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="sh">    }</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="sh">  ],</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="sh">  &quot;parameters&quot;: {</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="sh">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="sh">    &quot;maxOutputTokens&quot;: 256,</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="sh">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="sh">    &quot;topP&quot;: 0.95</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="sh">  }</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="sh">}</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="sh">&#39;@</span>  <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="n">-Encoding</span> <span class="n">utf8</span>
 </span></code></pre></div>
-</li>
-<li>
-<p>Execute the following command to send your REST request:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>  
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>  
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>  
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>  
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>  
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>  
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>  
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
 </span></code></pre></div>
-</li>
-</ol>
 </div>
 </div>
 </div>
-<h2 id="prompt-examples">Prompt examples<a class="headerlink" href="#prompt-examples" title="Permanent link">&para;</a></h2>
-<p>The following sections contain prompt examples for different use cases. You can use these prompts with any of the interaction methods described above (REST API, Python SDK, or Vertex AI Studio) by replacing the sample prompt content with the examples provided.</p>
-<h3 id="question-answering-prompts">Question answering prompts<a class="headerlink" href="#question-answering-prompts" title="Permanent link">&para;</a></h3>
-<details>
-<summary>Long-form question answering</summary>
-<p>This prompt asks a long-form medical question.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Question: What causes you to get ringworm?
+</div>
+<div class="tabbed-block">
+<p>Run the following Python code in <a href="https://colab.research.google.com/">Colaboratory</a>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">google</span><span class="o">-</span><span class="n">cloud</span><span class="o">-</span><span class="n">aiplatform</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># The following restarts the runtime.</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">IPython</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">app</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Note that this will result in a pop-up telling you that the session has</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1"># crashed for an unknown reason. This can be safely ignored and you can continue</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># with the following cells after getting this message.</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">app</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">do_shutdown</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </span></code></pre></div>
+<p>Run the following code in your Colaboratory notebook. Enter your Google Cloud project ID where indicated. To find your project ID, see <a href="https://support.google.com/googleapi/answer/7014113">Locate the project ID</a>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">auth</span> <span class="k">as</span> <span class="n">google_auth</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">vertexai</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.preview.language_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextGenerationModel</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">google_auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># TODO: Replace with project ID from Cloud Console</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># (https://support.google.com/googleapi/answer/7014113)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">PROJECT_ID</span> <span class="o">=</span> <span class="s1">&#39;my-project&#39;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="c1"># MedLM models are only available in us-central1.</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">vertexai</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJECT_ID</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s1">&#39;us-central1&#39;</span><span class="p">)</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    <span class="s2">&quot;candidate_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="s2">&quot;max_output_tokens&quot;</span><span class="p">:</span> <span class="mi">256</span><span class="p">,</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    <span class="s2">&quot;temperature&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    <span class="s2">&quot;top_k&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    <span class="s2">&quot;top_p&quot;</span><span class="p">:</span> <span class="mf">0.80</span><span class="p">,</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="p">}</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="n">model_instance</span> <span class="o">=</span> <span class="n">TextGenerationModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;medlm-medium&quot;</span><span class="p">)</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model_instance</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>    <span class="s2">&quot;Question: What causes you to get ringworm?&quot;</span><span class="p">,</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>    <span class="o">**</span><span class="n">parameters</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="p">)</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Response from Model: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>This section shows how to test a prompt using Vertex AI Studio in the Google Cloud console.</p>
+<p>The following diagram shows the workflow for testing a prompt in Vertex AI Studio.</p>
+<pre class="mermaid"><code>flowchart TD
+    A[Go to Vertex AI Studio] --&gt; B{Create prompt}
+    B --&gt; C[Select MedLM model]
+    C --&gt; D[Enter prompt]
+    D --&gt; E{Adjust parameters (Optional)}
+    E --&gt; F[Submit]
+    F --&gt; G{Save or Get code (Optional)}
+
+    click A "#go-to-vertex-ai-studio"
+    click B "#create-prompt"
+    click C "#select-medlm-model"
+    click D "#enter-prompt"
+    click E "#adjust-parameters"
+    click F "#submit"
+    click G "#save-or-get-code"</code></pre>
+<details open="open">
+<summary>Test a prompt in Vertex AI Studio</summary>
+<p>Before using Vertex AI Studio for MedLM, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/quickstarts/quickstart">Send text prompts to Gemini using Vertex AI Studio</a> for prerequisites.</p>
+<p><a name="go-to-vertex-ai-studio"></a>
+<strong>Go to Vertex AI Studio</strong></p>
+<p>In the Vertex AI section of the Google Cloud console, go to the Vertex AI Studio page.</p>
+<p><a class="md-button" href="https://console.cloud.google.com/vertex-ai/generative/language">Go to Vertex AI Studio</a></p>
+<p><a name="create-prompt"></a>
+<strong>Create prompt</strong></p>
+<p>Click <strong>Get started</strong>, then click <strong>Create prompt</strong>.</p>
+<p><a name="select-medlm-model"></a>
+<strong>Select MedLM model</strong></p>
+<p>In the <strong>Model</strong> menu, select <code>MedLM-Medium</code> or <code>MedLM-Large</code>.</p>
+<p><a name="enter-prompt"></a>
+<strong>Enter prompt</strong></p>
+<p>In the <strong>Prompt</strong> field, enter your prompt.</p>
+<p><a name="adjust-parameters"></a>
+<strong>Adjust parameters (Optional)</strong></p>
+<p>You can adjust the <strong>Temperature</strong> and <strong>Token limit</strong> values to experiment with how they affect the response. We recommend using the default values. If you're unsure about which values to use, use the default values.</p>
+<p><a name="submit"></a>
+<strong>Submit</strong></p>
+<p>Click <strong>Submit</strong> to generate a response.</p>
+<p><a name="save-or-get-code"></a>
+<strong>Save or Get code (Optional)</strong></p>
+<ul>
+<li>To save a prompt, click <strong>Save</strong>.</li>
+<li>To view the Python code or a <code>curl</code> command for your prompt, click <strong>Get code</strong>.</li>
+</ul>
 </details>
-<details>
-<summary>Multiple choice question answering</summary>
-<p>This is a few-shot prompt that provides examples of multiple-choice questions and answers to guide the model.</p>
+</div>
+</div>
+</div>
+<h4 id="multiple-choice-question-answering">Multiple choice question answering<a class="headerlink" href="#multiple-choice-question-answering" title="Permanent link">&para;</a></h4>
+<p>The following samples show how the MedLM API answers a multiple choice medical question. The prompt is the following:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Instructions: This text contains multiple-choice questions about medical knowledge. Solve each question step-by-step, starting by summarizing the available information. Select a single option from the four choices provided as the final answer.
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Question 1: Which medication causes the maximum increase in prolactin level?
@@ -11243,72 +11238,406 @@ click F "#save-or-get-code"</code></pre>
 </span><span id="__span-8-50"><a id="__codelineno-8-50" name="__codelineno-8-50" href="#__codelineno-8-50"></a>
 </span><span id="__span-8-51"><a id="__codelineno-8-51" name="__codelineno-8-51" href="#__codelineno-8-51"></a>Answer: (C)
 </span></code></pre></div>
-</details>
-<h3 id="summarization-prompts">Summarization prompts<a class="headerlink" href="#summarization-prompts" title="Permanent link">&para;</a></h3>
-<details>
-<summary>Compose an after-visit summary</summary>
-<p>This prompt instructs the model to generate an after-visit summary for a patient based on an outpatient visit note. The prompt contains a preamble with instructions and a description of each field to extract. Replace <code>INPUT_NOTE</code> with the actual medical note.</p>
-<p>The format of the after-visit summary is based on <a href="https://journals.sagepub.com/doi/abs/10.1177/2327857919081019">Sieferd et al. (2019)</a> and recommendations from the <a href="https://www.aomrc.org.uk/wp-content/uploads/2018/09/Please_write_to_me_Guidance_010918.pdf">UK Academy of Medical Royal Colleges</a>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Please read through the provided medical note describing an outpatient visit and extract the relevant information for each of the following 12 fields:
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>- Patient name/age/gender: This should summarize the patient&#39;s name, age and gender. It should use the format: &quot;[Patient name], [age] year old [gender]&quot;. If the name is not mentioned in the note, please answer &quot;Not available&quot;.
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>- Today I was seen by: This field should provide the name of the provider. If the provider seen for the note being summarized is not mentioned, please answer &quot;Not available&quot;.
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>- I came in today for: This field should indicate the chief complaint or complaints that caused the visit.
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>- New health issues identified today are: This field should indicate any new diagnoses or other issues identified as a result of the visit being summarized. If the issue is a pre-existing condition identified in the past, please answer &quot;No new diagnosis&quot;.
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>- Other health issues I have are: This field should indicate any pre-existing health issues identified in notes.
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>- Today we accomplished: This field should summarize the main topics of discussion and results of any procedures performed during the current visit. The summary could be a short list of procedures, or could be a text description of the patient&#39;s experience. Please be as brief as possible when providing details, such as test results or medication names. Describing the experience from the patient&#39;s point of view, using phrases like &quot;my visit&quot;, &quot;my condition&quot;.
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>- My important numbers: This field should provide the results of any measurements relevant to the  visit, including vitals. Provide the results of any numeric measurements relevant to the visit, including vitals, laboratory studies, or pain scores. Please include the numbers that should be monitored. Do not fabricate numbers that are not presented in the note.
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>- Changes to my medications are: This field should specify any medications that were added, for which the doses were updated, or which are no longer needed after the visit. Please specify both newly added and stopped medications when possible. If no changes are apparent from the note, please answer &quot;no changes&quot;.
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>- Other medications I have are: If the note indicates any existing medications for the patient that the patient should continue taking without changes, list them here. If no medications are indicated in the note, please  &quot;Not specified&quot;.
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>- My next steps are: This field should document the patient&#39;s next steps, including any actions they should take, test results they should expect, and follow-up visits they should schedule, along with the appropriate time frames for each.
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>- I should seek immediate medical attention if: If the note specifies any conditions for which the patient should immediately seek care, specify it here. Be sure to only include conditions that are mentioned in the note. If no conditions are mentioned, write &quot;Not specified&quot;.
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>- Other comments from my provider: This is an optional extra field that captures any additional relevant information the provider indicated in the notes that it would be useful for the patient to know. Do not include information that is already listed in the previous field.
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>For each field, write at a sixth-grade reading level and avoid using abbreviations or jargon.
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>Output the summary in the following format:
-</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>- Patient name/age/gender:
-</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>- Today I was seen by:
-</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>- I came in today for:
-</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>- New health issues identified today are:
-</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>- Other health issues I have are:
-</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>- Today we accomplished:
-</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>- My important numbers:
-</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>- Changes to my medications are:
-</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>- Other medications I have are:
-</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>- My next steps are:
-</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>- I should seek immediate medical attention if:
-</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>- Other comments from my provider:
-</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>
-</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>Note:
-</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>
-</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>INPUT_NOTE
-</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>
-</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>After Visit Summary:
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="rest-api_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="rest-api_1">REST API</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Before using any of the request data, make the following replacements:</p>
+<ul>
+<li><code>PROJECT_ID</code>: Your project ID.</li>
+<li><code>MEDLM_MODEL</code>: The MedLM model, either <code>medlm-medium</code> or <code>medlm-large</code>.</li>
+</ul>
+<p><strong>HTTP method and URL:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>POST https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict
 </span></code></pre></div>
-</details>
-<details>
-<summary>Compose a history and physical examination (H&amp;P) note from a transcript</summary>
-<p>This prompt instructs the model to write a draft history and physical examination (H&amp;P) note from the transcript of a medical conversation. Replace the example transcript with your own.</p>
-<blockquote>
-<p><strong>Caution:</strong> The generated output may not always be completely reliable. Due to the nature of LLMs and Generative AI, outputs may have incorrect or biased information and should be reviewed. All summaries or answers should be considered draft and not final.</p>
-<p>Note the following:
-*   The generated note may have inaccuracies and must be reviewed by a physician before sign-off.
-*   The generated note may not strictly adhere to the format or the required template of the clinical department or specialty. It is intended as a starting point for charting the patient.
-*   The quality of the generated note is limited by the accuracy of the provided transcript.</p>
-</blockquote>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>You are charting a patient record. Read through the provided transcript of a conversation between a healthcare provider and a patient and write a history and physical examination note.
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Transcript: 
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a> PROVIDER: Welcome! How can we help you this morning?
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>PATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>PROVIDER: I am sorry to hear that. Can you tell me how it happened?
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>PATIENT: I was playing soccer last night and I think I trip and twisted my ankle.
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>PROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>PATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>History and Physical Note:
+<p><strong>Request JSON body:</strong></p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="nt">&quot;instances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Instructions: The following are multiple choice questions about medical knowledge. Solve them in a step-by-step fashion, starting by summarizing the available information. Output a single option from the four options as the final answer. \n \nQuestion: Maximum increase in prolactin level is caused by: \n(A) Risperidone (B) Clozapine (C) Olanzapine (D) Aripiprazole \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Clozapine generally does not raise prolactin levels. Atypicals such as olanzapine and aripiprazole cause small if no elevation. Risperidone is known to result in a sustained elevated prolactin level. Therefore risperidone is likely to cause the maximum increase in prolactin level. \nAnswer: (A) \n \nQuestion: What is the age of routine screening mammography? \n(A) 20 years (B) 30 years (C) 40 years (D) 50 years \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. The age of routine screening depends on the country you are interested in and varies widely. For the US, it is 40 years of age according to the American Cancer Society. In Europe, it is typically closer to 50 years. For a patient based in the US, the best answer is 40 years. \nAnswer: (C) \n \nQuestion: A 65-year-old male complains of severe back pain and inability to move his left lower limb. Radiographic studies demonstrate the compression of nerve elements at the intervertebral foramen between vertebrae L5 and S1. Which structure is most likely responsible for this space-occupying lesion? \n(A) Anulus fibrosus (B) Nucleus pulposus (C) Posterior longitudinal ligament (D) Anterior longitudinal ligament \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. This man describes a herniated invertebral disk through a tear in the surrounding annulus fibrosus. The soft, gelatinous \&quot;nucleus pulposus\&quot; is forced out through a weakened part of the disk, resulting in back pain and nerve root irritation. In this case, the impingement is resulting in paralysis, and should be considered a medical emergency. Overall, the structure that is causing the compression and symptoms is the nucleus pulposus. \nAnswer: (B) \n \nQuestion: Neuroendocrine cells in the lungs are: \n(A) Dendritic cells (B) Type I pneumocytes (C) Type II pneumocytes (D) APUD cells \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Neuroendocrine cells, which are also known as Kultschitsky-type cells, Feyrter cells and APUD cells, are found in the basal layer of the surface epithelium and in the bronchial glands. \nAnswer: (D) \n \nQuestion: Presence of it indicates remote contamination of water \n(A) Streptococci (B) Staphalococci (C) Clastridium pertringes (D) Nibrio \n&quot;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="nt">&quot;maxOutputTokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="p">}</span>
 </span></code></pre></div>
-</details>
+<p>To send your request, choose one of these options:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="curl_1" name="__tabbed_4" type="radio" /><input id="powershell_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="curl_1">curl</label><label for="powershell_1">PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> , or by using Cloud Shell, which automatically logs you into the <code>gcloud</code> CLI . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>request.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="s">{</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="s">  &quot;instances&quot;: [</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="s">    {</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="s">      &quot;content&quot;: &quot;Instructions: The following are multiple choice questions about medical knowledge. Solve them in a step-by-step fashion, starting by summarizing the available information. Output a single option from the four options as the final answer. \n \nQuestion: Maximum increase in prolactin level is caused by: \n(A) Risperidone (B) Clozapine (C) Olanzapine (D) Aripiprazole \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Clozapine generally does not raise prolactin levels. Atypicals such as olanzapine and aripiprazole cause small if no elevation. Risperidone is known to result in a sustained elevated prolactin level. Therefore risperidone is likely to cause the maximum increase in prolactin level. \nAnswer: (A) \n \nQuestion: What is the age of routine screening mammography? \n(A) 20 years (B) 30 years (C) 40 years (D) 50 years \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. The age of routine screening depends on the country you are interested in and varies widely. For the US, it is 40 years of age according to the American Cancer Society. In Europe, it is typically closer to 50 years. For a patient based in the US, the best answer is 40 years. \nAnswer: (C) \n \nQuestion: A 65-year-old male complains of severe back pain and inability to move his left lower limb. Radiographic studies demonstrate the compression of nerve elements at the intervertebral foramen between vertebrae L5 and S1. Which structure is most likely responsible for this space-occupying lesion? \n(A) Anulus fibrosus (B) Nucleus pulposus (C) Posterior longitudinal ligament (D) Anterior longitudinal ligament \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. This man describes a herniated invertebral disk through a tear in the surrounding annulus fibrosus. The soft, gelatinous \&quot;nucleus pulposus\&quot; is forced out through a weakened part of the disk, resulting in back pain and nerve root irritation. In this case, the impingement is resulting in paralysis, and should be considered a medical emergency. Overall, the structure that is causing the compression and symptoms is the nucleus pulposus. \nAnswer: (B) \n \nQuestion: Neuroendocrine cells in the lungs are: \n(A) Dendritic cells (B) Type I pneumocytes (C) Type II pneumocytes (D) APUD cells \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Neuroendocrine cells, which are also known as Kultschitsky-type cells, Feyrter cells and APUD cells, are found in the basal layer of the surface epithelium and in the bronchial glands. \nAnswer: (D) \n \nQuestion: Presence of it indicates remote contamination of water \n(A) Streptococci (B) Staphalococci (C) Clastridium pertringes (D) Nibrio \n&quot;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="s">    }</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="s">  ],</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="s">  &quot;parameters&quot;: {</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="s">    &quot;temperature&quot;: 0.2,</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="s">    &quot;maxOutputTokens&quot;: 256</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="s">  }</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="s">}</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="s">EOF</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">     </span><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="sh">@&#39;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="sh">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="sh">  &quot;instances&quot;: [</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="sh">    {</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="sh">      &quot;content&quot;: &quot;Instructions: The following are multiple choice questions about medical knowledge. Solve them in a step-by-step fashion, starting by summarizing the available information. Output a single option from the four options as the final answer. \n \nQuestion: Maximum increase in prolactin level is caused by: \n(A) Risperidone (B) Clozapine (C) Olanzapine (D) Aripiprazole \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Clozapine generally does not raise prolactin levels. Atypicals such as olanzapine and aripiprazole cause small if no elevation. Risperidone is known to result in a sustained elevated prolactin level. Therefore risperidone is likely to cause the maximum increase in prolactin level. \nAnswer: (A) \n \nQuestion: What is the age of routine screening mammography? \n(A) 20 years (B) 30 years (C) 40 years (D) 50 years \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. The age of routine screening depends on the country you are interested in and varies widely. For the US, it is 40 years of age according to the American Cancer Society. In Europe, it is typically closer to 50 years. For a patient based in the US, the best answer is 40 years. \nAnswer: (C) \n \nQuestion: A 65-year-old male complains of severe back pain and inability to move his left lower limb. Radiographic studies demonstrate the compression of nerve elements at the intervertebral foramen between vertebrae L5 and S1. Which structure is most likely responsible for this space-occupying lesion? \n(A) Anulus fibrosus (B) Nucleus pulposus (C) Posterior longitudinal ligament (D) Anterior longitudinal ligament \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. This man describes a herniated invertebral disk through a tear in the surrounding annulus fibrosus. The soft, gelatinous \&quot;nucleus pulposus\&quot; is forced out through a weakened part of the disk, resulting in back pain and nerve root irritation. In this case, the impingement is resulting in paralysis, and should be considered a medical emergency. Overall, the structure that is causing the compression and symptoms is the nucleus pulposus. \nAnswer: (B) \n \nQuestion: Neuroendocrine cells in the lungs are: \n(A) Dendritic cells (B) Type I pneumocytes (C) Type II pneumocytes (D) APUD cells \nExplanation: Let&#39;s solve this step-by-step, referring to authoritative sources as needed. Neuroendocrine cells, which are also known as Kultschitsky-type cells, Feyrter cells and APUD cells, are found in the basal layer of the surface epithelium and in the bronchial glands. \nAnswer: (D) \n \nQuestion: Presence of it indicates remote contamination of water \n(A) Streptococci (B) Staphalococci (C) Clastridium pertringes (D) Nibrio \n&quot;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="sh">    }</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="sh">  ],</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="sh">  &quot;parameters&quot;: {</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="sh">    &quot;temperature&quot;: 0.2,</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="sh">    &quot;maxOutputTokens&quot;: 256</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="sh">  }</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="sh">}</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="sh">&#39;@</span>  <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="n">-Encoding</span> <span class="n">utf8</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>  
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>  
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>  
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>  
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>  
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>  
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>  
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="summarization">Summarization<a class="headerlink" href="#summarization" title="Permanent link">&para;</a></h3>
+<p>This section provides examples of how to create prompts for summarization tasks.</p>
+<h4 id="compose-an-after-visit-summary">Compose an after-visit summary<a class="headerlink" href="#compose-an-after-visit-summary" title="Permanent link">&para;</a></h4>
+<p>The following samples show how to generate an after-visit summary for a patient based on an outpatient visit note. The prompt contains a preamble with instructions and a description of each field to extract. The format is based on <a href="https://journals.sagepub.com/doi/abs/10.1177/2327857919081019">Sieferd et al. (2019)</a> and recommendations from the <a href="https://www.aomrc.org.uk/wp-content/uploads/2018/09/Please_write_to_me_Guidance_010918.pdf">UK Academy of Medical Royal Colleges</a>.</p>
+<p>The prompt is the following:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Please read through the provided medical note describing an outpatient visit and extract the relevant information for each of the following 12 fields:
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>- Patient name/age/gender: This should summarize the patient&#39;s name, age and gender. It should use the format: &quot;[Patient name], [age] year old [gender]&quot;. If the name is not mentioned in the note, please answer &quot;Not available&quot;.
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>- Today I was seen by: This field should provide the name of the provider. If the provider seen for the note being summarized is not mentioned, please answer &quot;Not available&quot;.
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>- I came in today for: This field should indicate the chief complaint or complaints that caused the visit.
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>- New health issues identified today are: This field should indicate any new diagnoses or other issues identified as a result of the visit being summarized. If the issue is a pre-existing condition identified in the past, please answer &quot;No new diagnosis&quot;.
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>- Other health issues I have are: This field should indicate any pre-existing health issues identified in notes.
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>- Today we accomplished: This field should summarize the main topics of discussion and results of any procedures performed during the current visit. The summary could be a short list of procedures, or could be a text description of the patient&#39;s experience. Please be as brief as possible when providing details, such as test results or medication names. Describing the experience from the patient&#39;s point of view, using phrases like &quot;my visit&quot;, &quot;my condition&quot;.
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>- My important numbers: This field should provide the results of any measurements relevant to the  visit, including vitals. Provide the results of any numeric measurements relevant to the visit, including vitals, laboratory studies, or pain scores. Please include the numbers that should be monitored. Do not fabricate numbers that are not presented in the note.
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>- Changes to my medications are: This field should specify any medications that were added, for which the doses were updated, or which are no longer needed after the visit. Please specify both newly added and stopped medications when possible. If no changes are apparent from the note, please answer &quot;no changes&quot;.
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>- Other medications I have are: If the note indicates any existing medications for the patient that the patient should continue taking without changes, list them here. If no medications are indicated in the note, please  &quot;Not specified&quot;.
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>- My next steps are: This field should document the patient&#39;s next steps, including any actions they should take, test results they should expect, and follow-up visits they should schedule, along with the appropriate time frames for each.
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>- I should seek immediate medical attention if: If the note specifies any conditions for which the patient should immediately seek care, specify it here. Be sure to only include conditions that are mentioned in the note. If no conditions are mentioned, write &quot;Not specified&quot;.
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>- Other comments from my provider: This is an optional extra field that captures any additional relevant information the provider indicated in the notes that it would be useful for the patient to know. Do not include information that is already listed in the previous field.
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>For each field, write at a sixth-grade reading level and avoid using abbreviations or jargon.
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>Output the summary in the following format:
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>- Patient name/age/gender:
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>- Today I was seen by:
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>- I came in today for:
+</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>- New health issues identified today are:
+</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>- Other health issues I have are:
+</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>- Today we accomplished:
+</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>- My important numbers:
+</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>- Changes to my medications are:
+</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>- Other medications I have are:
+</span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>- My next steps are:
+</span><span id="__span-15-29"><a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>- I should seek immediate medical attention if:
+</span><span id="__span-15-30"><a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>- Other comments from my provider:
+</span><span id="__span-15-31"><a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>
+</span><span id="__span-15-32"><a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>Note:
+</span><span id="__span-15-33"><a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>
+</span><span id="__span-15-34"><a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>INPUT_NOTE
+</span><span id="__span-15-35"><a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>
+</span><span id="__span-15-36"><a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>After Visit Summary:
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="rest-api_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="rest-api_2">REST API</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Before using any of the request data, make the following replacements:</p>
+<ul>
+<li><code>PROJECT_ID</code>: Your project ID.</li>
+<li><code>MEDLM_MODEL</code>: The MedLM model, either <code>medlm-medium</code> or <code>medlm-large</code>.</li>
+<li><code>INPUT_NOTE</code>: The input note to summarize.</li>
+</ul>
+<p><strong>HTTP method and URL:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>POST https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict
+</span></code></pre></div>
+<p><strong>Request JSON body:</strong></p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;instances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Please read through the provided medical note describing an outpatient visit and extract the relevant information for each of the following 12 fields:\n\n- Patient name/age/gender: This should summarize the patient\u2019s name, age and gender. It should use the format: &#39;[Patient name], [age] year old [gender]&#39;. If the name is not mentioned in the note, please answer \&quot;Not available\&quot;.\n- Today I was seen by: This field should provide the name of the provider. If the provider seen for the note being summarized is not mentioned, please answer &#39;Not available&#39;.\n- I came in today for: This field should indicate the chief complaint or complaints that caused the visit.\n- New health issues identified today are: This field should indicate any new diagnoses or other issues identified as a result of the visit being summarized. If the issue is a pre-existing condition identified in the past, please answer &#39;No new diagnosis&#39;.\n- Other health issues I have are: This field should indicate any pre-existing health issues identified in notes.\n- Today we accomplished: This field should summarize the main topics of discussion and results of any procedures performed during the current visit. The summary could be a short list of procedures, or could be a text description of the patient\u2019s experience. Please be as brief as possible when providing details, such as test results or medication names. Describing the experience from the patient\u2019s point of view, using phrases like &#39;my visit&#39;, &#39;my condition&#39;.\n- My important numbers: This field should provide the results of any measurements relevant to the  visit, including vitals. Provide the results of any numeric measurements relevant to the visit, including vitals, laboratory studies, or pain scores. Please include the numbers that should be monitored. Do not fabricate numbers that are not presented in the note.\n\n\n\n\n\n\n\n\n- Changes to my medications are: This field should specify any medications that were added, for which the doses were updated, or which are no longer needed after the visit. Please specify both newly added and stopped medications when possible. If no changes are apparent from the note, please answer &#39;no changes&#39;.\n- Other medications I have are: If the note indicates any existing medications for the patient that the patient should continue taking without changes, list them here. If no medications are indicated in the note, please  &#39;Not specified&#39;.\n- My next steps are: This field should document the patient\u2019s next steps, including any actions they should take, test results they should expect, and follow-up visits they should schedule, along with the appropriate time frames for each.\n- I should seek immediate medical attention if: If the note specifies any conditions for which the patient should immediately seek care, specify it here. Be sure to only include conditions that are mentioned in the note. If no conditions are mentioned, write &#39;Not specified&#39;.\n- Other comments from my provider: This is an optional extra field that captures any additional relevant information the provider indicated in the notes that it would be useful for the patient to know. Do not include information that is already listed in the previous field.\nFor each field, write at a sixth-grade reading level and avoid using abbreviations or jargon.\n\nOutput the summary in the following format:\n- Patient name/age/gender:\n- Today I was seen by:\n- I came in today for:\n- New health issues identified today are:\n- Other health issues I have are:\n- Today we accomplished:\n- My important numbers:\n- Changes to my medications are:\n- Other medications I have are:\n- My next steps are:\n- I should seek immediate medical attention if:\n- Other comments from my provider:\n\n Note:\n\n INPUT_NOTE \n\nAfter Visit Summary:&quot;</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="nt">&quot;candidate_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="nt">&quot;maxOutputTokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="nt">&quot;topK&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="nt">&quot;topP&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.80</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>To send your request, choose one of these options:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="curl_2" name="__tabbed_6" type="radio" /><input id="powershell_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="curl_2">curl</label><label for="powershell_2">PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> , or by using Cloud Shell, which automatically logs you into the <code>gcloud</code> CLI . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>request.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="s">{</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="s">  &quot;instances&quot;: [</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="s">    {</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="s">      &quot;content&quot;: &quot;Please read through the provided medical note describing an outpatient visit and extract the relevant information for each of the following 12 fields:\n\n- Patient name/age/gender: This should summarize the patient\u2019s name, age and gender. It should use the format: &#39;[Patient name], [age] year old [gender]&#39;. If the name is not mentioned in the note, please answer \&quot;Not available\&quot;.\n- Today I was seen by: This field should provide the name of the provider. If the provider seen for the note being summarized is not mentioned, please answer &#39;Not available&#39;.\n- I came in today for: This field should indicate the chief complaint or complaints that caused the visit.\n- New health issues identified today are: This field should indicate any new diagnoses or other issues identified as a result of the visit being summarized. If the issue is a pre-existing condition identified in the past, please answer &#39;No new diagnosis&#39;.\n- Other health issues I have are: This field should indicate any pre-existing health issues identified in notes.\n- Today we accomplished: This field should summarize the main topics of discussion and results of any procedures performed during the current visit. The summary could be a short list of procedures, or could be a text description of the patient\u2019s experience. Please be as brief as possible when providing details, such as test results or medication names. Describing the experience from the patient\u2019s point of view, using phrases like &#39;my visit&#39;, &#39;my condition&#39;.\n- My important numbers: This field should provide the results of any measurements relevant to the  visit, including vitals. Provide the results of any numeric measurements relevant to the visit, including vitals, laboratory studies, or pain scores. Please include the numbers that should be monitored. Do not fabricate numbers that are not presented in the note.\n\n\n\n\n\n\n\n\n- Changes to my medications are: This field should specify any medications that were added, for which the doses were updated, or which are no longer needed after the visit. Please specify both newly added and stopped medications when possible. If no changes are apparent from the note, please answer &#39;no changes&#39;.\n- Other medications I have are: If the note indicates any existing medications for the patient that the patient should continue taking without changes, list them here. If no medications are indicated in the note, please  &#39;Not specified&#39;.\n- My next steps are: This field should document the patient\u2019s next steps, including any actions they should take, test results they should expect, and follow-up visits they should schedule, along with the appropriate time frames for each.\n- I should seek immediate medical attention if: If the note specifies any conditions for which the patient should immediately seek care, specify it here. Be sure to only include conditions that are mentioned in the note. If no conditions are mentioned, write &#39;Not specified&#39;.\n- Other comments from my provider: This is an optional extra field that captures any additional relevant information the provider indicated in the notes that it would be useful for the patient to know. Do not include information that is already listed in the previous field.\nFor each field, write at a sixth-grade reading level and avoid using abbreviations or jargon.\n\nOutput the summary in the following format:\n- Patient name/age/gender:\n- Today I was seen by:\n- I came in today for:\n- New health issues identified today are:\n- Other health issues I have are:\n- Today we accomplished:\n- My important numbers:\n- Changes to my medications are:\n- Other medications I have are:\n- My next steps are:\n- I should seek immediate medical attention if:\n- Other comments from my provider:\n\n Note:\n\n INPUT_NOTE \n\nAfter Visit Summary:&quot;</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="s">    }</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="s">  ],</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="s">  &quot;parameters&quot;: {</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="s">    &quot;candidate_count&quot;: 1,</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="s">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="s">    &quot;maxOutputTokens&quot;: 1024,</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="s">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="s">    &quot;topP&quot;: 0.80</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="s">  }</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="s">}</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="s">EOF</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">     </span><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="sh">@&#39;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="sh">{</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="sh">  &quot;instances&quot;: [</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="sh">    {</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="sh">      &quot;content&quot;: &quot;Please read through the provided medical note describing an outpatient visit and extract the relevant information for each of the following 12 fields:\n\n- Patient name/age/gender: This should summarize the patient\u2019s name, age and gender. It should use the format: &#39;[Patient name], [age] year old [gender]&#39;. If the name is not mentioned in the note, please answer \&quot;Not available\&quot;.\n- Today I was seen by: This field should provide the name of the provider. If the provider seen for the note being summarized is not mentioned, please answer &#39;Not available&#39;.\n- I came in today for: This field should indicate the chief complaint or complaints that caused the visit.\n- New health issues identified today are: This field should indicate any new diagnoses or other issues identified as a result of the visit being summarized. If the issue is a pre-existing condition identified in the past, please answer &#39;No new diagnosis&#39;.\n- Other health issues I have are: This field should indicate any pre-existing health issues identified in notes.\n- Today we accomplished: This field should summarize the main topics of discussion and results of any procedures performed during the current visit. The summary could be a short list of procedures, or could be a text description of the patient\u2019s experience. Please be as brief as possible when providing details, such as test results or medication names. Describing the experience from the patient\u2019s point of view, using phrases like &#39;my visit&#39;, &#39;my condition&#39;.\n- My important numbers: This field should provide the results of any measurements relevant to the  visit, including vitals. Provide the results of any numeric measurements relevant to the visit, including vitals, laboratory studies, or pain scores. Please include the numbers that should be monitored. Do not fabricate numbers that are not presented in the note.\n\n\n\n\n\n\n\n\n- Changes to my medications are: This field should specify any medications that were added, for which the doses were updated, or which are no longer needed after the visit. Please specify both newly added and stopped medications when possible. If no changes are apparent from the note, please answer &#39;no changes&#39;.\n- Other medications I have are: If the note indicates any existing medications for the patient that the patient should continue taking without changes, list them here. If no medications are indicated in the note, please  &#39;Not specified&#39;.\n- My next steps are: This field should document the patient\u2019s next steps, including any actions they should take, test results they should expect, and follow-up visits they should schedule, along with the appropriate time frames for each.\n- I should seek immediate medical attention if: If the note specifies any conditions for which the patient should immediately seek care, specify it here. Be sure to only include conditions that are mentioned in the note. If no conditions are mentioned, write &#39;Not specified&#39;.\n- Other comments from my provider: This is an optional extra field that captures any additional relevant information the provider indicated in the notes that it would be useful for the patient to know. Do not include information that is already listed in the previous field.\nFor each field, write at a sixth-grade reading level and avoid using abbreviations or jargon.\n\nOutput the summary in the following format:\n- Patient name/age/gender:\n- Today I was seen by:\n- I came in today for:\n- New health issues identified today are:\n- Other health issues I have are:\n- Today we accomplished:\n- My important numbers:\n- Changes to my medications are:\n- Other medications I have are:\n- My next steps are:\n- I should seek immediate medical attention if:\n- Other comments from my provider:\n\n Note:\n\n INPUT_NOTE \n\nAfter Visit Summary:&quot;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="sh">    }</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="sh">  ],</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="sh">  &quot;parameters&quot;: {</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="sh">    &quot;candidate_count&quot;: 1,</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="sh">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="sh">    &quot;maxOutputTokens&quot;: 1024,</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="sh">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="sh">    &quot;topP&quot;: 0.80</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="sh">  }</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="sh">}</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="sh">&#39;@</span>  <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="n">-Encoding</span> <span class="n">utf8</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>  
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>  
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>  
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>  
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>  
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>  
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>  
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h4 id="compose-a-history-and-physical-examination-hp-note-from-a-transcript">Compose a history and physical examination (H&amp;P) note from a transcript<a class="headerlink" href="#compose-a-history-and-physical-examination-hp-note-from-a-transcript" title="Permanent link">&para;</a></h4>
+<p>The following samples show how to accelerate clinical documentation by sending a request to the MedLM API to write a draft history and physical examination (H&amp;P) note from the transcript of a medical conversation between a provider and patient.</p>
+<p>Suppose you have a transcript of a medical conversation in the following format, where the speakers are known:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>PROVIDER: Welcome! How can we help you this morning?
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>PATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>PROVIDER: I am sorry to hear that. Can you tell me how it happened?
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>PATIENT: I was playing soccer last night and I think I trip and twisted my ankle.
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>PROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>PATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="rest-api_3" name="__tabbed_7" type="radio" /><input id="python-sdk_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="rest-api_3">REST API</label><label for="python-sdk_1">Python SDK</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Before using any of the request data, make the following replacements:</p>
+<ul>
+<li><code>PROJECT_ID</code>: Your project ID.</li>
+<li><code>MEDLM_MODEL</code>: The MedLM model, either <code>medlm-medium</code> or <code>medlm-large</code>.</li>
+</ul>
+<p><strong>HTTP method and URL:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>POST https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict
+</span></code></pre></div>
+<p><strong>Request JSON body:</strong></p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">{</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="nt">&quot;instances&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;You are charting a patient record. Read through the provided transcript of a conversation between a healthcare provider and a patient and write a history and physical examination note.\n\nTranscript: \n PROVIDER: Welcome! How can we help you this morning?\nPATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.\nPROVIDER: I am sorry to hear that. Can you tell me how it happened?\nPATIENT: I was playing soccer last night and I think I trip and twisted my ankle.\nPROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?\nPATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.\n\nHistory and Physical Note:&quot;</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">    </span><span class="nt">&quot;candidate_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">    </span><span class="nt">&quot;temperature&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">    </span><span class="nt">&quot;maxOutputTokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">    </span><span class="nt">&quot;topK&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="w">    </span><span class="nt">&quot;topP&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.80</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>To send your request, choose one of these options:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="curl_3" name="__tabbed_8" type="radio" /><input id="powershell_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="curl_3">curl</label><label for="powershell_3">PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> , or by using Cloud Shell, which automatically logs you into the <code>gcloud</code> CLI . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>request.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="s">{</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="s">  &quot;instances&quot;: [</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="s">    {</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="s">      &quot;content&quot;: &quot;You are charting a patient record. Read through the provided transcript of a conversation between a healthcare provider and a patient and write a history and physical examination note.\n\nTranscript: \n PROVIDER: Welcome! How can we help you this morning?\nPATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.\nPROVIDER: I am sorry to hear that. Can you tell me how it happened?\nPATIENT: I was playing soccer last night and I think I trip and twisted my ankle.\nPROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?\nPATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.\n\nHistory and Physical Note:&quot;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="s">    }</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="s">  ],</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="s">  &quot;parameters&quot;: {</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="s">    &quot;candidate_count&quot;: 1,</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="s">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="s">    &quot;maxOutputTokens&quot;: 1024,</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="s">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="s">    &quot;topP&quot;: 0.80</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="s">  }</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="s">}</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="s">EOF</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">     </span><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <code>gcloud init</code> or <code>gcloud auth login</code> . You can check the currently active account by running <code>gcloud auth list</code>.</p>
+<p>Save the request body in a file named <code>request.json</code>.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="sh">@&#39;</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="sh">{</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="sh">  &quot;instances&quot;: [</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="sh">    {</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="sh">      &quot;content&quot;: &quot;You are charting a patient record. Read through the provided transcript of a conversation between a healthcare provider and a patient and write a history and physical examination note.\n\nTranscript: \n PROVIDER: Welcome! How can we help you this morning?\nPATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.\nPROVIDER: I am sorry to hear that. Can you tell me how it happened?\nPATIENT: I was playing soccer last night and I think I trip and twisted my ankle.\nPROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?\nPATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.\n\nHistory and Physical Note:&quot;</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="sh">    }</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="sh">  ],</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="sh">  &quot;parameters&quot;: {</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="sh">    &quot;candidate_count&quot;: 1,</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="sh">    &quot;temperature&quot;: 0,</span>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="sh">    &quot;maxOutputTokens&quot;: 1024,</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="sh">    &quot;topK&quot;: 40,</span>
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="sh">    &quot;topP&quot;: 0.80</span>
+</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="sh">  }</span>
+</span><span id="__span-27-15"><a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="sh">}</span>
+</span><span id="__span-27-16"><a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="sh">&#39;@</span>  <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="n">-Encoding</span> <span class="n">utf8</span>
+</span></code></pre></div>
+<p>Then execute the following command to send your REST request:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>  
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>  
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>  
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>  
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>  
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>  
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>  
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/MEDLM_MODEL:predict&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Run the following Python code in <a href="https://colab.research.google.com/">Colaboratory</a>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">google</span><span class="o">-</span><span class="n">cloud</span><span class="o">-</span><span class="n">aiplatform</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="c1"># The following restarts the runtime.</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">IPython</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="n">app</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">Application</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="c1"># Note that this will result in a pop-up telling you that the session has</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="c1"># crashed for an unknown reason. This can be safely ignored and you can continue</span>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="c1"># with the following cells after getting this message.</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="n">app</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">do_shutdown</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Run the following code in your Colaboratory notebook. Enter your Google Cloud project ID and the medical transcript where indicated.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">auth</span> <span class="k">as</span> <span class="n">google_auth</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">vertexai</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.preview.language_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextGenerationModel</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">google_auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="c1"># TODO: Replace with project ID from Cloud Console</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="c1"># (https://support.google.com/googleapi/answer/7014113)</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="n">PROJECT_ID</span> <span class="o">=</span> <span class="s1">&#39;my-project&#39;</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="c1"># MedLM models are only available in us-central1.</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="n">vertexai</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">PROJECT_ID</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s1">&#39;us-central1&#39;</span><span class="p">)</span>
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="c1"># TODO: Replace with transcript.</span>
+</span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="n">transcript</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a><span class="s2">PROVIDER: Welcome! How can we help you this morning?</span>
+</span><span id="__span-30-17"><a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a><span class="s2">PATIENT: I think I hurt my ankle while playing football last night. Now even walking hurts.</span>
+</span><span id="__span-30-18"><a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a><span class="s2">PROVIDER: I am sorry to hear that. Can you tell me how it happened?</span>
+</span><span id="__span-30-19"><a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a><span class="s2">PATIENT: I was playing soccer last night and I think I trip and twisted my ankle.</span>
+</span><span id="__span-30-20"><a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a><span class="s2">PROVIDER: Did it start hurting right away? Did you try anything to alleviate the pain?</span>
+</span><span id="__span-30-21"><a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a><span class="s2">PATIENT: It got worse last night. I took some ibuprofen, but it really didn&#39;t help.</span>
+</span><span id="__span-30-22"><a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-30-23"><a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a>
+</span><span id="__span-30-24"><a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a><span class="n">note_generation_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+</span><span id="__span-30-25"><a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a><span class="s2">You are charting a patient record.</span>
+</span><span id="__span-30-26"><a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a><span class="s2">Read through the provided transcript of a conversation between a</span>
+</span><span id="__span-30-27"><a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a><span class="s2">healthcare provider and a patient and write a history and physical</span>
+</span><span id="__span-30-28"><a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a><span class="s2">examination note.</span>
+</span><span id="__span-30-29"><a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a>
+</span><span id="__span-30-30"><a id="__codelineno-30-30" name="__codelineno-30-30" href="#__codelineno-30-30"></a><span class="s2">Transcript:</span>
+</span><span id="__span-30-31"><a id="__codelineno-30-31" name="__codelineno-30-31" href="#__codelineno-30-31"></a><span class="si">{</span><span class="n">transcript</span><span class="si">}</span>
+</span><span id="__span-30-32"><a id="__codelineno-30-32" name="__codelineno-30-32" href="#__codelineno-30-32"></a>
+</span><span id="__span-30-33"><a id="__codelineno-30-33" name="__codelineno-30-33" href="#__codelineno-30-33"></a><span class="s2">History and Physical note:</span>
+</span><span id="__span-30-34"><a id="__codelineno-30-34" name="__codelineno-30-34" href="#__codelineno-30-34"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-30-35"><a id="__codelineno-30-35" name="__codelineno-30-35" href="#__codelineno-30-35"></a>
+</span><span id="__span-30-36"><a id="__codelineno-30-36" name="__codelineno-30-36" href="#__codelineno-30-36"></a><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-30-37"><a id="__codelineno-30-37" name="__codelineno-30-37" href="#__codelineno-30-37"></a>    <span class="s2">&quot;candidate_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-30-38"><a id="__codelineno-30-38" name="__codelineno-30-38" href="#__codelineno-30-38"></a>    <span class="s2">&quot;max_output_tokens&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+</span><span id="__span-30-39"><a id="__codelineno-30-39" name="__codelineno-30-39" href="#__codelineno-30-39"></a>    <span class="s2">&quot;temperature&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span><span id="__span-30-40"><a id="__codelineno-30-40" name="__codelineno-30-40" href="#__codelineno-30-40"></a>    <span class="s2">&quot;top_p&quot;</span><span class="p">:</span> <span class="mf">0.80</span><span class="p">,</span>
+</span><span id="__span-30-41"><a id="__codelineno-30-41" name="__codelineno-30-41" href="#__codelineno-30-41"></a>    <span class="s2">&quot;top_k&quot;</span><span class="p">:</span> <span class="mi">40</span>
+</span><span id="__span-30-42"><a id="__codelineno-30-42" name="__codelineno-30-42" href="#__codelineno-30-42"></a><span class="p">}</span>
+</span><span id="__span-30-43"><a id="__codelineno-30-43" name="__codelineno-30-43" href="#__codelineno-30-43"></a>
+</span><span id="__span-30-44"><a id="__codelineno-30-44" name="__codelineno-30-44" href="#__codelineno-30-44"></a><span class="n">model_instance</span> <span class="o">=</span> <span class="n">TextGenerationModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;medlm-medium&quot;</span><span class="p">)</span>
+</span><span id="__span-30-45"><a id="__codelineno-30-45" name="__codelineno-30-45" href="#__codelineno-30-45"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model_instance</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+</span><span id="__span-30-46"><a id="__codelineno-30-46" name="__codelineno-30-46" href="#__codelineno-30-46"></a>    <span class="n">note_generation_prompt</span><span class="p">,</span>
+</span><span id="__span-30-47"><a id="__codelineno-30-47" name="__codelineno-30-47" href="#__codelineno-30-47"></a>    <span class="o">**</span><span class="n">parameters</span>
+</span><span id="__span-30-48"><a id="__codelineno-30-48" name="__codelineno-30-48" href="#__codelineno-30-48"></a><span class="p">)</span>
+</span><span id="__span-30-49"><a id="__codelineno-30-49" name="__codelineno-30-49" href="#__codelineno-30-49"></a><span class="n">note</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+</span></code></pre></div>
+<p>Note the following:</p>
+<ul>
+<li>The generated note may have inaccuracies and must be reviewed by a physician before sign-off.</li>
+<li>The generated note may not strictly adhere to the format or the required template of the clinical department or specialty. It is intended as a starting point for charting the patient.</li>
+<li>The quality of the generated note is limited by the accuracy of the provided transcript.</li>
+</ul>
+</div>
+</div>
+</div>
 <h2 id="implement-equity-focused-evaluations-and-mitigations">Implement equity-focused evaluations and mitigations<a class="headerlink" href="#implement-equity-focused-evaluations-and-mitigations" title="Permanent link">&para;</a></h2>
 <p>MedLM might produce less accurate results for some groups compared to others depending on the question and its phrasing. Differing performance of outputs of the model across demographic groups has the potential to exacerbate health inequities and perpetuate harmful biases. These output inaccuracies aren't unique to MedLM, and often result from multiple factors, such as existing social and structural inequities, medical misconceptions, negative stereotypes, and lack of diversity in training data.</p>
 <p>Consider implementing equity-focused evaluations and mitigations. These include the following:</p>
@@ -11320,19 +11649,19 @@ click F "#save-or-get-code"</code></pre>
 </ul>
 <p>Depending on your use case, consider augmenting your prompt with equity-focused instructions, which can improve the quality of MedLM outputs with respect to bias and equity.</p>
 <p>For example, the following text, when put at the beginning of a prompt, improves the quality of results on race-based medicine questions as shown in <a href="https://www.nature.com/articles/s41746-023-00939-z">Omiye et al. (2023)</a>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>You are a medical knowledge assistant who provides useful, complete, and
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>scientifically-grounded answers to queries. Your answers are unbiased and
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>up-to-date, and you follow the latest clinical guidelines. You are aware that
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>guidelines may have changed recently in order to address bias and inaccurate
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>information about disadvantaged groups. You are committed to providing the best
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>possible care to all patients, regardless of their race, gender, or
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>geographical location. You are always learning and growing, and you are open to
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>feedback. Only account for race, gender, or geographical location in your
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>answer if you are 100% sure it is correct and unbiased, with no possibility of
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>making a mistake or providing a response based on outdated guidelines.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>You are a medical knowledge assistant who provides useful, complete, and
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>scientifically-grounded answers to queries. Your answers are unbiased and
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>up-to-date, and you follow the latest clinical guidelines. You are aware that
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>guidelines may have changed recently in order to address bias and inaccurate
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>information about disadvantaged groups. You are committed to providing the best
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>possible care to all patients, regardless of their race, gender, or
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>geographical location. You are always learning and growing, and you are open to
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>feedback. Only account for race, gender, or geographical location in your
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>answer if you are 100% sure it is correct and unbiased, with no possibility of
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>making a mistake or providing a response based on outdated guidelines.
 </span></code></pre></div>
 <p>Changing prompts influences model outputs, therefore full evaluations are recommended to ensure other areas of performance aren't affected.</p>
-<p>See the <a href="MedLM-model-card.pdf">MedLM model card</a> for additional considerations on model performance.</p>
+<p>See the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/medlm/MedLM-model-card.pdf">MedLM model card</a> for additional considerations on model performance.</p>
 
 
 

@@ -16,7 +16,7 @@
         <link rel="prev" href="../../../multimodal/send-chat-prompts-gemini/">
       
       
-        <link rel="next" href="../../../multimodal/function-calling/">
+        <link rel="next" href="../../../multimodal/content-generation-parameters/">
       
       
       <link rel="icon" href="../../../../../../assets/images/favicon.png">
@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2110,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2419,6 +2446,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2797,8 +2922,6 @@
   
     
     
-      
-        
       
         
       
@@ -3521,10 +3644,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3645,20 +3764,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#see-an-example-in-a-notebook" class="md-nav__link">
+  <a href="#use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      See an example in a notebook
+      Use cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-a-persona-or-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define a persona or role
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases-for-system-instructions" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#define-output-format" class="md-nav__link">
     <span class="md-ellipsis">
-      Use cases for system instructions
+      Define output format
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-output-style-and-tone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define output style and tone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-goals-or-rules-for-the-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define goals or rules for the task
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide-additional-context-for-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provide additional context for the prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3675,52 +3836,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -5960,6 +6075,8 @@
       
         
       
+        
+      
     
     
     
@@ -6003,7 +6120,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6027,6 +6144,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6085,10 +6225,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6101,8 +6241,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6237,10 +6377,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6253,8 +6393,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7198,129 +7338,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7359,10 +7376,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7375,8 +7392,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8793,7 +8810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../../docs/" class="md-nav__link">
         
   
   
@@ -10062,7 +10079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../../samples/" class="md-nav__link">
         
   
   
@@ -10728,20 +10745,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#see-an-example-in-a-notebook" class="md-nav__link">
+  <a href="#use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      See an example in a notebook
+      Use cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-a-persona-or-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define a persona or role
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases-for-system-instructions" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#define-output-format" class="md-nav__link">
     <span class="md-ellipsis">
-      Use cases for system instructions
+      Define output format
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-output-style-and-tone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define output style and tone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-goals-or-rules-for-the-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define goals or rules for the task
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide-additional-context-for-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provide additional context for the prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -10774,57 +10833,59 @@
 
 
 <h1 id="system-instructions">System instructions<a class="headerlink" href="#system-instructions" title="Permanent link">&para;</a></h1>
-<p>This document describes what system instructions are and provides best practices for writing them effectively.</p>
-<p>System instructions are a set of directions that a model follows before it processes a prompt. You can use system instructions to guide the model's behavior and how it should respond. For example, you can specify a persona to adopt, provide context for the prompt, or define a specific output format.</p>
+<p>This document describes what system instructions are and provides best practices and examples for writing them effectively. To learn how to add system instructions to your prompts, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/prompts/system-instructions">Use system instructions</a>.</p>
+<p>To see live examples of system instructions, you can run the "Intro to Gemini 2.0 Flash" Jupyter notebook in one of the following environments:</p>
+<ul>
+<li><a class="md-button" href="https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb">Open in Colab</a></li>
+<li><a class="md-button" href="https://console.cloud.google.com/vertex-ai/colab/import/https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fgetting-started%2Fintro_gemini_2_0_flash.ipynb">Open in Colab Enterprise</a></li>
+<li><a class="md-button" href="https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url=https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fgetting-started%2Fintro_gemini_2_0_flash.ipynb">Open in Vertex AI Workbench</a></li>
+<li><a class="md-button" href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb">View on GitHub</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Troubleshooting</p>
+<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
+</div>
+<p>System instructions let you provide guidance to a model before it processes a user's prompt. By setting a system instruction, you can steer the model's behavior and response, defining its persona, context, and output format.</p>
 <p>System instructions are particularly useful when you want to:
 *   Provide the model with information that an end user can't see or change.
-*   Give the model additional context to better understand a task.
-*   Ensure the model provides customized responses that adhere to specific guidelines over a full user interaction.
-*   Run multiple prompts that require the same set of instructions.</p>
-<p>When set, system instructions apply to the entire request and persist across multiple turns in a conversation. Although they are separate from the prompt's content, they are still part of the overall prompt and are subject to standard data use policies.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>System instructions can help guide the model to follow instructions, but they don't fully prevent jailbreaks or leaks. We recommend exercising caution and avoiding sensitive information in system instructions.</p>
+*   Give the model additional context to better understand the task.
+*   Ensure the model adheres to specific guidelines over a full multi-turn conversation.
+*   Apply the same set of instructions across multiple prompts.</p>
+<p>When set, system instructions apply to the entire request and persist across all user and model turns in a conversation. Although they are separate from the prompt's content, they are still part of the overall request and are subject to standard data use policies.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>System instructions can help guide the model, but they don't fully prevent jailbreaks or leaks of sensitive information. We recommend exercising caution and avoiding sensitive information in system instructions.</p>
 </div>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>System instruction:</strong> A set of directions provided to a model to steer its behavior before it processes a user's prompt.</li>
-<li><strong>Prompt:</strong> The input text given to a large language model to elicit a specific response.</li>
-<li><strong>Persona:</strong> A character or role that a model adopts to influence the tone, style, and content of its responses.</li>
-<li><strong>Jailbreaking:</strong> A technique used to bypass a model's safety features and content restrictions.</li>
+<li><strong>System instruction</strong>: A set of directions given to a model to steer its behavior before it receives the user's prompt.</li>
+<li><strong>Prompt</strong>: The user's input or query to the generative model.</li>
+<li><strong>Jailbreaking</strong>: A technique used to bypass a model's safety and ethics filters to make it generate otherwise restricted content.</li>
 </ul>
 </details>
-<h2 id="see-an-example-in-a-notebook">See an example in a notebook<a class="headerlink" href="#see-an-example-in-a-notebook" title="Permanent link">&para;</a></h2>
-<p>To see a hands-on example of how to use system instructions, run the "Intro to Gemini 2.0 Flash" Jupyter notebook in one of the following environments:</p>
-<p><a class="md-button" href="https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb">Open in Colab</a> <a class="md-button" href="https://console.cloud.google.com/vertex-ai/colab/import/https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fgetting-started%2Fintro_gemini_2_0_flash.ipynb">Open in Colab Enterprise</a> <a class="md-button" href="https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url=https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fgemini%2Fgetting-started%2Fintro_gemini_2_0_flash.ipynb">Open in Vertex AI Workbench</a> <a class="md-button" href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb">View on GitHub</a></p>
-<h2 id="use-cases-for-system-instructions">Use cases for system instructions<a class="headerlink" href="#use-cases-for-system-instructions" title="Permanent link">&para;</a></h2>
+<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
 <p>We recommend using system instructions to do one or more of the following:</p>
 <ul>
 <li>Define a persona or role</li>
-<li>Define an output format</li>
-<li>Define an output style and tone</li>
+<li>Define output format</li>
+<li>Define output style and tone</li>
 <li>Define goals or rules for the task</li>
 <li>Provide additional context for the prompt</li>
 </ul>
-<p>The following examples show how system instructions can shape a model's response.</p>
-<div class="admonition tip">
-<p class="admonition-title">Troubleshooting</p>
-<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
-</div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="define-a-persona-or-role" name="__tabbed_1" type="radio" /><input id="define-output-format" name="__tabbed_1" type="radio" /><input id="define-style-and-tone" name="__tabbed_1" type="radio" /><input id="define-goals-and-rules" name="__tabbed_1" type="radio" /><input id="provide-context" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="define-a-persona-or-role">Define a persona or role</label><label for="define-output-format">Define output format</label><label for="define-style-and-tone">Define style and tone</label><label for="define-goals-and-rules">Define goals and rules</label><label for="provide-context">Provide context</label></div>
+<h3 id="define-a-persona-or-role">Define a persona or role<a class="headerlink" href="#define-a-persona-or-role" title="Permanent link">&para;</a></h3>
+<p>You can influence how a model responds to prompts by defining a persona or role in the system instructions. For example, you can instruct the model to act as a teacher for different age groups.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="bot-for-college-students" name="__tabbed_1" type="radio" /><input id="bot-for-primary-school-students" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="bot-for-college-students">Bot for college students</label><label for="bot-for-primary-school-students">Bot for primary school students</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>You can influence how a model responds to prompts by defining a persona or role. For example, compare the model's responses when instructed to act as a tutor for college students versus primary school students.</p>
-<p><strong>Example 1: Bot for college students</strong></p>
-<p><strong>System Instruction:</strong>
+<p><strong>System instruction</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>You are a bot, tasked with teaching college students about how to write a paper about a given subject.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Subject: Photosynthesis
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Writing a Paper on Photosynthesis: A Guide for College Students Photosynthesis is a fascinating and complex process that forms the basis of life on Earth. Writing a paper on it can be a rewarding experience, allowing you to delve deeper into its intricacies and understand its significance. Here&#39;s a breakdown of how to approach this task:
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  1. Choosing a Focus:
@@ -10869,15 +10930,16 @@
 </span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>  * The Impact of Climate Change on Photosynthesis: A Global Perspective
 </span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>
 </span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>Remember: A well-written paper on photosynthesis should be clear, informative, and engaging. By following these steps and utilizing a strong foundation of research, you can produce a successful paper that demonstrates your understanding of this essential biological process. (gemini-flash)
-</span></code></pre></div></p>
-<p><strong>Example 2: Bot for primary school students</strong></p>
-<p><strong>System Instruction:</strong>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>System instruction</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>You are a bot, tasked with helping primary school students about how to write a paper about a given subject.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Subject: Photosynthesis
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>That&#39;s a great subject! Photosynthesis is super important for life on Earth. Here&#39;s how you can write a paper about it:
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  1. Think about what you already know:
@@ -10908,31 +10970,35 @@
 </span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
 </span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>Remember: You&#39;re the expert on your paper! Have fun learning and writing about
 </span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>photosynthesis. (gemini-flash)
-</span></code></pre></div></p>
+</span></code></pre></div>
 </div>
+</div>
+</div>
+<h3 id="define-output-format">Define output format<a class="headerlink" href="#define-output-format" title="Permanent link">&para;</a></h3>
+<p>You can influence how a model formats its response by defining an output format, such as Markdown or JSON, in the system instructions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="json-format" name="__tabbed_2" type="radio" /><input id="no-format-requirement" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="json-format">JSON format</label><label for="no-format-requirement">No format requirement</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
-<p>You can influence how a model formats its response by defining an output format, such as Markdown or JSON. For example, compare the model's responses when instructed to format output as JSON versus having no formatting requirements.</p>
-<p><strong>Example 1: JSON format</strong></p>
-<p><strong>System Instruction:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>You are a PR professional for high-end businesses. Follow these instructions,
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>and base your response on the provided User Input. Instructions:
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  * Read through reviews submitted to you.
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  * Summarize the pros and cons of the business based on reviews.
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  * Output your response in JSON.
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  * At the very end, outside the JSON object, write 3 to 5 sentences of advice to the business on how to improve.
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  * Keep it concise.
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  * Stick to the facts.
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  * Do not hallucinate.
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  * If there are conflicting opinions, only include the opinion that is recorded the most.
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  * Do not include any irrelevant information.
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>  * Do not mention any reviewers by name.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+<p><strong>System instruction</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>You are a PR professional for high-end businesses. Follow these instructions, and base your response on the provided User Input.
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Instructions:
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>* Read through reviews submitted to you.
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>* Summarize the pros and cons of the business based on reviews.
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>* Output your response in JSON.
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>* At the very end, outside the JSON object, write 3 to 5 sentences of advice to the business on how to improve.
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>* Keep it concise.
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>* Stick to the facts.
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>* Do not hallucinate.
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>* If there are conflicting opinions, only include the opinion that is recorded the most.
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>* Do not include any irrelevant information.
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>* Do not mention any reviewers by name.
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Chad Brocker: 4 stars This spa was delightful! The entire atmosphere as soon as you walk in relaxes you. It almost feels like you&#39;re in a trance. You don&#39;t have to worry about ANYTHING. The workers have your schedule and guide you through your experience. Everything I got was amazing. The massage, the facial, the mud bath. Plus, they have a 0 cell phone policy, so it really does feel like you&#39;re in a whole different world. It is a bit pricey though. View full prompt Lisa Simmens: 5 stars We had a wonderful time! My best friend and I treated ourselves to a spa day for our birthdays. When I tell you, our lives are changed. The employees go above and beyond to make sure you&#39;re getting the best experience possible. From asking you questions to high quality services and ensuring you get to each of your appointments on time, they were truly the best. We will be back soon! P.S. get the full body exfoliation treatment! Allie Wood: 2 stars While the workers were amazing in their customer services, my massage HURT and my facial BURNED. Plus, they didn&#39;t let you have your cellphone, which causes extra stress. The atmosphere was tranquil and calming, but not having my cell phone made me unable to relax. Plus, it was expensive. Suzy Michaels: 3 stars The environment of this space was out of this world. It&#39;s seriously like stepping into Heaven. My services were the best I&#39;ve ever had. BUT, they didn&#39;t offer any sort of refreshments. I mean, come on, you at least should offer water?! Martin Wong: 4 stars Amazing experience. My only complaint is not being able to check my phone. Debbie Ruiz: 5 stars Amazing environment. Amazing workers. Amazing services. Plus, it&#39;s a cell phone free environment, which was SO freeing and adding = to the peaceful atmosphere. I definitely recommend it to everyone!!! Lucy Mantel: 1 stars No refreshments. No cellphones. Bad massage. Not a great experience. Do not recommend.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
+<p><div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;pros&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="s2">&quot;relaxing atmosphere&quot;</span><span class="p">,</span>
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="s2">&quot;attentive and efficient staff&quot;</span><span class="p">,</span>
@@ -10947,100 +11013,123 @@
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>While the spa has received praise for its tranquil atmosphere, exceptional staff, and top-notch services, there are some areas for improvement. Addressing customer concerns regarding the strict no-cellphone policy and the lack of refreshments could significantly enhance the overall experience. Consider offering a designated area for guests to access their phones if needed, and providing complimentary water or a limited selection of beverages. (gemini-pro)
 </span></code></pre></div></p>
-<p><strong>Example 2: No formatting requirements</strong></p>
-<p><strong>System Instruction:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>You are a PR professional for high-end businesses. Follow these
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>instructions, and base your response on the provided User Input. Instructions:
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  * Read through reviews submitted to you.
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  * Summarize the pros and cons of the business based on reviews.
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  * Keep it concise.
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>  * Stick to the facts.
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  * Do not hallucinate.
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>  * If there are conflicting opinions, only include the opinion that is recorded the most.
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>  * Do not include any irrelevant information.
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>  * Do not mention any reviewers by name.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+</div>
+<div class="tabbed-block">
+<p><strong>System instruction</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>You are a PR professional for high-end businesses. Follow these instructions, and base your response on the provided User Input.
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Instructions:
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>* Read through reviews submitted to you.
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>* Summarize the pros and cons of the business based on reviews.
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>* Keep it concise.
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>* Stick to the facts.
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>* Do not hallucinate.
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>* If there are conflicting opinions, only include the opinion that is recorded the most.
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>* Do not include any irrelevant information.
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>* Do not mention any reviewers by name.
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Chad Brocker: 4 stars This spa was delightful! The entire atmosphere as soon as you walk in relaxes you. It almost feels like you&#39;re in a trance. You don&#39;t have to worry about ANYTHING. The workers have your schedule and guide you through your experience. Everything I got was amazing. The massage, the facial, the mud bath. Plus, they have a 0 cell phone policy, so it really does feel like you&#39;re in a whole different world. It is a bit pricey though. View full prompt Lisa Simmens: 5 stars We had a wonderful time! My best friend and I treated ourselves to a spa day for our birthdays. When I tell you, our lives are changed. The employees go above and beyond to make sure you&#39;re getting the best experience possible. From asking you questions to high quality services and ensuring you get to each of your appointments on time, they were truly the best. We will be back soon! P.S. get the full body exfoliation treatment! Allie Wood: 2 stars While the workers were amazing in their customer services, my massage HURT and my facial BURNED. Plus, they didn&#39;t let you have your cellphone, which causes extra stress. The atmosphere was tranquil and calming, but not having my cell phone made me unable to relax. Plus, it was expensive. Suzy Michaels: 3 stars The environment of this space was out of this world. It&#39;s seriously like stepping into Heaven. My services were the best I&#39;ve ever had. BUT, they didn&#39;t offer any sort of refreshments. I mean, come on, you at least should offer water?! Martin Wong: 4 stars Amazing experience. My only complaint is not being able to check my phone. Debbie Ruiz: 5 stars Amazing environment. Amazing workers. Amazing services. Plus, it&#39;s a cell phone free environment, which was SO freeing and adding = to the peaceful atmosphere. I definitely recommend it to everyone!!! Lucy Mantel: 1 stars No refreshments. No cellphones. Bad massage. Not a great experience. Do not recommend.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Pros: The spa provides a tranquil and relaxing atmosphere with high-quality services. Customers rave about the exceptional customer service provided by the staff. Cons: The spa&#39;s no-cellphone policy is a point of contention, with some finding it added to their relaxation and others finding it stressful. Several reviewers found the prices to be high. (gemini-pro)
-</span></code></pre></div></p>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Pros: The spa provides a tranquil and relaxing atmosphere with high-quality services. Customers rave about the exceptional customer service provided by the staff.
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Cons: The spa&#39;s no-cellphone policy is a point of contention, with some finding it added to their relaxation and others finding it stressful. Several reviewers found the prices to be high. (gemini-pro)
+</span></code></pre></div>
 </div>
+</div>
+</div>
+<h3 id="define-output-style-and-tone">Define output style and tone<a class="headerlink" href="#define-output-style-and-tone" title="Permanent link">&para;</a></h3>
+<p>You can influence a model's response by defining its output style and tone, such as verbosity, formality, and target reading level, in the system instructions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="professional-tone" name="__tabbed_3" type="radio" /><input id="casual-tone" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="professional-tone">Professional tone</label><label for="casual-tone">Casual tone</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
-<p>You can influence a model's response by defining its output style and tone, such as verbosity, formality, and target reading level. For example, compare the model's responses when instructed to write in a professional versus a casual tone.</p>
-<p><strong>Example 1: Professional tone</strong></p>
-<p><strong>System Instruction:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>You are a government proposal writer. You are tasked with producing proposals
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>for future campaigns. Based on the template and user input, provide a proposal
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>for the upcoming campaign.
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>  * Do not use the internet.
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  * Keep answers for each section to no more than two sentences.
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>  * Write in a professional tone.
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  * Provide answers in Markdown format.
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>Proposal template:
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>  * The Big Idea:
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>  * The Challenge
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>  * The Solution
-</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>  * Target Audience
-</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>  * Key Message
-</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>  * Channels
-</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>  * Content Highlights
-</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>  * Expected Results
-</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>  * Why Us
-</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>  * Call to Action
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+<p><strong>System instruction</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>You are a government proposal writer. You are tasked with producing proposals for future campaigns. Based on the template and user input, provide a proposal for the upcoming campaign.
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>* Do not use the internet.
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>* Keep answers for each section to no more than two sentences.
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>* Write in a professional tone.
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>* Provide answers in Markdown format.
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>Proposal template:
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>* The Big Idea:
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>* The Challenge
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>* The Solution
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>* Target Audience
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>* Key Message
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>* Channels
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>* Content Highlights
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>* Expected Results
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>* Why Us
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>* Call to Action
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>The purpose of this campaign is to raise awareness and inspire actionable behavior changes towards sustainability through the use of interactive digital experiences. I will engage environmentally conscious individuals aged 20–45, including students, professionals, and families, by delivering educational content and organizing community-driven events across Facebook and X. My objective is to enhance public awareness and encourage measurable improvements in eco-friendly behaviors. Drawing on my expertise in digital marketing and a strong focus on sustainability, I will design a high-impact campaign that empowers individuals to make meaningful, sustainable changes in their daily lives. I want this campaign to create content that is varied and engaging yet informative.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>The Big Idea: Empowering individuals aged 20-45 to embrace sustainable living through interactive digital experiences and community engagement. The Challenge: Many individuals lack awareness of practical, everyday actions they can take to promote environmental sustainability. The Solution: A multi-platform campaign utilizing Facebook and X to deliver engaging, educational content and foster community involvement through interactive experiences and events. Target Audience: Environmentally conscious individuals aged 20-45, including students, professionals, and families. Key Message: Small changes in daily habits can have a significant positive impact on the environment. Channels: Facebook and X. Content Highlights: Interactive quizzes, educational videos, expert Q&amp;A; sessions, and community challenges promoting sustainable practices. Expected Results: Increased awareness of sustainable living practices and measurable improvements in eco-friendly behaviors within the target audience. Why Us: Proven expertise in digital marketing and a passion for promoting sustainability, ensuring a high-impact, engaging campaign. Call to Action: Join the campaign on Facebook and X to learn, engage, and make a difference for a sustainable future. (gemini-pro)
-</span></code></pre></div></p>
-<p><strong>Example 2: Casual tone</strong></p>
-<p><strong>System Instruction:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>You are a government proposal writer. You are tasked with producing
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>proposals for future campaigns. Based on the template and user input, provide
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>a proposal for the upcoming campaign.
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  * Do not use the internet.
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>  * Keep answers for each section to no more than two sentences.
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>  * Write in a casual tone.
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>  * Provide answers in Markdown format.
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>Proposal template:
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>  * The Big Idea:
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>  * The Challenge
-</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>  * The Solution
-</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>  * Target Audience
-</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>  * Key Message
-</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>  * Channels
-</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>  * Content Highlights
-</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>  * Expected Results
-</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>  * Why Us
-</span><span id="__span-16-21"><a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>  * Call to Action
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>The purpose of this campaign is to raise awareness and inspire actionable behavior changes towards sustainability through the use of interactive digital experiences. I will engage environmentally conscious individuals aged 20–45, including students, professionals, and families, by delivering educational content and organizing community-driven events across Facebook and X. My objective is to enhance public awareness and encourage measurable improvements in eco-friendly behaviors. Drawing on my expertise in digital marketing and a strong focus on sustainability, I will design a high-impact campaign that empowers individuals to make meaningful, sustainable changes in their daily lives. I want this campaign to create content that is varied and engaging yet informative.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>The Big Idea: We&#39;re launching a digital movement to make sustainability cool! Using interactive challenges and engaging content, we&#39;ll inspire real action, transforming eco-friendly living from a chore to a shared journey. The Challenge: Let&#39;s face it, knowing about sustainability and actually acting on it are two different things. We&#39;re battling apathy and a lack of awareness around simple, everyday changes. The Solution: We&#39;ll meet our audience where they are, on platforms like Facebook and X, to deliver a dynamic blend of educational content, fun challenges, and community-driven events. Think interactive quizzes, shareable infographics, and local meetups! Target Audience: We&#39;re focusing on eco-conscious individuals aged 20-45 - students, professionals, and families - who are eager to make a difference. Key Message: Small steps, big impact! You have the power to create a more sustainable future through simple, everyday choices.  Channels: We&#39;ll leverage the power of social media marketing through engaging campaigns on Facebook and X. Content Highlights: Expect a mix of informative and shareable content, including eye-catching infographics, thought-provoking videos, quick tips, and inspiring success stories. Expected Results: We&#39;ll measure success through increased engagement (likes, shares, comments) and website traffic, ultimately aiming for a measurable increase in eco-friendly behaviors within our target audience. Why Us: Our team combines digital marketing expertise with a genuine passion for sustainability, resulting in a campaign that&#39;s both impactful and engaging. Call to Action: Join the movement! Follow our page, participate in our challenges, and share your sustainable living journey with your network. (gemini-pro)
-</span></code></pre></div></p>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>The Big Idea: Empowering individuals aged 20-45 to embrace sustainable living through interactive digital experiences and community engagement.
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>The Challenge: Many individuals lack awareness of practical, everyday actions they can take to promote environmental sustainability.
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>The Solution: A multi-platform campaign utilizing Facebook and X to deliver engaging, educational content and foster community involvement through interactive experiences and events.
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>Target Audience: Environmentally conscious individuals aged 20-45, including students, professionals, and families.
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>Key Message: Small changes in daily habits can have a significant positive impact on the environment.
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>Channels: Facebook and X.
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>Content Highlights: Interactive quizzes, educational videos, expert Q&amp;A; sessions, and community challenges promoting sustainable practices.
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>Expected Results: Increased awareness of sustainable living practices and measurable improvements in eco-friendly behaviors within the target audience.
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>Why Us: Proven expertise in digital marketing and a passion for promoting sustainability, ensuring a high-impact, engaging campaign.
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>Call to Action: Join the campaign on Facebook and X to learn, engage, and make a difference for a sustainable future. (gemini-pro)
+</span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>You can influence a model's response by defining goals or rules—in other words, what the model should or shouldn't do. For example, compare the model's responses when instructed to include docstrings in generated code versus being told not to.</p>
-<p><strong>Example 1: Include docstrings</strong></p>
-<p><strong>System Instruction:</strong>
+<p><strong>System instruction</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>You are a government proposal writer. You are tasked with producing proposals for future campaigns. Based on the template and user input, provide a proposal for the upcoming campaign.
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>* Do not use the internet.
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>* Keep answers for each section to no more than two sentences.
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>* Write in a casual tone.
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>* Provide answers in Markdown format.
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>Proposal template:
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>* The Big Idea:
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>* The Challenge
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>* The Solution
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>* Target Audience
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>* Key Message
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>* Channels
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>* Content Highlights
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>* Expected Results
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>* Why Us
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>* Call to Action
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>The purpose of this campaign is to raise awareness and inspire actionable behavior changes towards sustainability through the use of interactive digital experiences. I will engage environmentally conscious individuals aged 20–45, including students, professionals, and families, by delivering educational content and organizing community-driven events across Facebook and X. My objective is to enhance public awareness and encourage measurable improvements in eco-friendly behaviors. Drawing on my expertise in digital marketing and a strong focus on sustainability, I will design a high-impact campaign that empowers individuals to make meaningful, sustainable changes in their daily lives. I want this campaign to create content that is varied and engaging yet informative.
+</span></code></pre></div>
+<p><strong>Response</strong></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>The Big Idea: We&#39;re launching a digital movement to make sustainability cool! Using interactive challenges and engaging content, we&#39;ll inspire real action, transforming eco-friendly living from a chore to a shared journey.
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>The Challenge: Let&#39;s face it, knowing about sustainability and actually acting on it are two different things. We&#39;re battling apathy and a lack of awareness around simple, everyday changes.
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>The Solution: We&#39;ll meet our audience where they are, on platforms like Facebook and X, to deliver a dynamic blend of educational content, fun challenges, and community-driven events. Think interactive quizzes, shareable infographics, and local meetups!
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>Target Audience: We&#39;re focusing on eco-conscious individuals aged 20-45 - students, professionals, and families - who are eager to make a difference.
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>Key Message: Small steps, big impact! You have the power to create a more sustainable future through simple, everyday choices.
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>Channels: We&#39;ll leverage the power of social media marketing through engaging campaigns on Facebook and X.
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>Content Highlights: Expect a mix of informative and shareable content, including eye-catching infographics, thought-provoking videos, quick tips, and inspiring success stories.
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>Expected Results: We&#39;ll measure success through increased engagement (likes, shares, comments) and website traffic, ultimately aiming for a measurable increase in eco-friendly behaviors within our target audience.
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>Why Us: Our team combines digital marketing expertise with a genuine passion for sustainability, resulting in a campaign that&#39;s both impactful and engaging.
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>Call to Action: Join the movement! Follow our page, participate in our challenges, and share your sustainable living journey with your network. (gemini-pro)
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="define-goals-or-rules-for-the-task">Define goals or rules for the task<a class="headerlink" href="#define-goals-or-rules-for-the-task" title="Permanent link">&para;</a></h3>
+<p>You can influence a model's response by defining goals or rules—what the model should or shouldn't do—in the system instructions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="include-docstrings" name="__tabbed_4" type="radio" /><input id="no-docstrings" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="include-docstrings">Include docstrings</label><label for="no-docstrings">No docstrings</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>System instruction</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>When generating code, make sure to include docstrings explaining the inputs, outputs, and usage of every method.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Create a 2d array in Python, and create an A* pathfinding algorithm to identify the shortest path between two points on the grid.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">heapq</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Node</span><span class="p">:</span>
@@ -11152,15 +11241,16 @@
 </span><span id="__span-21-109"><a id="__codelineno-21-109" name="__codelineno-21-109" href="#__codelineno-21-109"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shortest path:&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
 </span><span id="__span-21-110"><a id="__codelineno-21-110" name="__codelineno-21-110" href="#__codelineno-21-110"></a><span class="k">else</span><span class="p">:</span>
 </span><span id="__span-21-111"><a id="__codelineno-21-111" name="__codelineno-21-111" href="#__codelineno-21-111"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No path found.&quot;</span><span class="p">)</span>
-</span></code></pre></div></p>
-<p><strong>Example 2: No docstrings</strong></p>
-<p><strong>System Instruction:</strong>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><strong>System instruction</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Only generate code, do not include any docstring.
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Create a 2d array in Python, and create an A* pathfinding algorithm to identify the shortest path between two points on the grid.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
+</span></code></pre></div>
+<p><strong>Response</strong></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">heapq</span>
 </span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
 </span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Node</span><span class="p">:</span>
@@ -11249,67 +11339,74 @@
 </span><span id="__span-24-86"><a id="__codelineno-24-86" name="__codelineno-24-86" href="#__codelineno-24-86"></a>
 </span><span id="__span-24-87"><a id="__codelineno-24-87" name="__codelineno-24-87" href="#__codelineno-24-87"></a><span class="n">path</span> <span class="o">=</span> <span class="n">astar</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
 </span><span id="__span-24-88"><a id="__codelineno-24-88" name="__codelineno-24-88" href="#__codelineno-24-88"></a><span class="nb">print</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="provide-additional-context-for-the-prompt">Provide additional context for the prompt<a class="headerlink" href="#provide-additional-context-for-the-prompt" title="Permanent link">&para;</a></h3>
+<p>You can influence how a model responds to prompts by adding additional context in the system instructions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="include-extra-context" name="__tabbed_5" type="radio" /><input id="no-extra-context" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="include-extra-context">Include extra context</label><label for="no-extra-context">No extra context</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>System instruction</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Help the user write a speech based on the information provided:
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>* Event
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>* Audience Size
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>* Speaker Information (name, age, etc.)
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>* Speech Tone
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>* Speech Length
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>* Miscellaneous
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>If the user does not provide all of this information, please respond with, &quot;I&#39;m sorry, but I do not have all of the necessary information to create a speech. Please provide the event, audience size, speaker information, tone, length, and any miscellaneous information.&quot;
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>Some general things to include are:
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>* Breaks for pause
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>* An intriguing hook
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>* A closing remark to keep the speech memorable
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>* A joke
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Event: High School Graduation
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>Audience Size: 1,000 people
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>Speaker Info: Michael Landish, 17 years old
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>Tone: nostalgic, optimistic
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>Speech Length: 250-500 words
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>Miscellaneous: Michael was the senior class president, his favorite teacher was his junior year English teacher, Mrs. Martin, and he will be going to Los Caminos State University to study economics and English. He has never given a speech before, and he is nervous due to his dyslexia.
+</span></code></pre></div>
+<p><strong>Response</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>&quot;Good morning faculty, family, friends, and most importantly, fellow graduates of the class of 2023! (Pause) Standing here, looking out at all of you, it feels surreal. Just yesterday, we were freshmen, wide-eyed and a little terrified. Remember those first day jitters? I know I do. I almost tripped and fell carrying my history textbook – a near disaster that would have been immortalised in the halls of [High School Name] history! (Pause for laughter) But seriously, look at us now! We&#39;ve grown up, learned a lot – and I&#39;m not just talking about the Pythagorean Theorem. We&#39;ve learned about perseverance, about friendship, and about the power of a well-placed sticky note during exam week. These past four years have been amazing, and I owe a lot of my own growth to some truly exceptional teachers. I&#39;d especially like to thank Mrs. Martin, my junior year English teacher, who taught me that words have power, and that even with dyslexia, I can find my voice. Thank you, Mrs. Martin. (Pause) Now, we&#39;re standing on the edge of something new and exciting. As we head off to different colleges, different cities, even different countries, let&#39;s carry the lessons we&#39;ve learned at [High School Name] with us. Let&#39;s remember the laughter, the friendships, and even the occasional all-nighter before a big test. (Pause) Graduates, the world is waiting for us. Let&#39;s face it head-on, with courage, with optimism, and with the unwavering support of the amazing Class of 2023 behind us. Congratulations everyone, and remember – the best is yet to come! (gemini-pro)
+</span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>You can influence how a model responds to prompts by adding additional context. For example, compare the model's responses when provided with extra context about what to include in a speech versus no extra context.</p>
-<p><strong>Example 1: Include extra context</strong></p>
-<p><strong>System Instruction:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Help the user write a speech based on the information provided:
-</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
-</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>  * Event
-</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>  * Audience Size
-</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>  * Speaker Information (name, age, etc.)
-</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>  * Speech Tone
-</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>  * Speech Length
-</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>  * Miscellaneous
-</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>
-</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>If the user does not provide all of this information, please respond with,
-</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>&quot;I&#39;m sorry, but I do not have all of the necessary information to create a
-</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>speech. Please provide the event, audience size, speaker information, tone,
-</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>length, and any miscellaneous information.&quot;
-</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>
-</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>Some general things to include are:
-</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>  * Breaks for pause
-</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>  * An intriguing hook
-</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>  * A closing remark to keep the speech memorable
-</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>  * A joke
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Event: High School Graduation Audience Size: 1,000 people Speaker Info: Michael Landish, 17 years old Tone: nostalgic, optimistic Speech Length: 250-500 words Miscellaneous: Michael was the senior class president, his favorite teacher was his junior year English teacher, Mrs. Martin, and he will be going to Los Caminos State University to study economics and English. He has never given a speech before, and he is nervous due to his dyslexia.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>&quot;Good morning faculty, family, friends, and most importantly, fellow graduates of the class of 2023! (Pause) Standing here, looking out at all of you, it feels surreal. Just yesterday, we were freshmen, wide-eyed and a little terrified. Remember those first day jitters? I know I do. I almost tripped and fell carrying my history textbook – a near disaster that would have been immortalised in the halls of [High School Name] history! (Pause for laughter) But seriously, look at us now! We&#39;ve grown up, learned a lot – and I&#39;m not just talking about the Pythagorean Theorem. We&#39;ve learned about perseverance, about friendship, and about the power of a well-placed sticky note during exam week. These past four years have been amazing, and I owe a lot of my own growth to some truly exceptional teachers. I&#39;d especially like to thank Mrs. Martin, my junior year English teacher, who taught me that words have power, and that even with dyslexia, I can find my voice. Thank you, Mrs. Martin. (Pause) Now, we&#39;re standing on the edge of something new and exciting. As we head off to different colleges, different cities, even different countries, let&#39;s carry the lessons we&#39;ve learned at [High School Name] with us. Let&#39;s remember the laughter, the friendships, and even the occasional all-nighter before a big test. (Pause) Graduates, the world is waiting for us. Let&#39;s face it head-on, with courage, with optimism, and with the unwavering support of the amazing Class of 2023 behind us. Congratulations everyone, and remember – the best is yet to come! (gemini-pro)
-</span></code></pre></div></p>
-<p><strong>Example 2: No extra context</strong></p>
-<p><strong>System Instruction:</strong>
+<p><strong>System instruction</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Help the user write a speech based on the information provided:
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
-</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>  * Event
-</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>  * Audience Size
-</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>  * Speaker Information (name, age, etc.)
-</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>  * Speech Tone
-</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>  * Speech Length
-</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>  * Miscellaneous
-</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>
-</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>If the user does not provide all of this information, please respond with,
-</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>&quot;I&#39;m sorry, but I do not have all of the necessary information to create a
-</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>speech. Please provide the event, audience size, speaker information, tone,
-</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>length, and any miscellaneous information.&quot;
-</span></code></pre></div></p>
-<p><strong>Prompt:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Event: High School Graduation Audience Size: 1,000 people Speaker Info: Michael Landish, 17 years old Tone: nostalgic, optimistic Speech Length: 250-500 words Miscellaneous: Michael was the senior class president, his favorite teacher was his junior year English teacher, Mrs. Martin, and he will be going to Los Caminos State University to study economics and English. He has never given a speech before, and he is nervous due to his dyslexia.
-</span></code></pre></div></p>
-<p><strong>Response:</strong>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>* Event
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>* Audience Size
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>* Speaker Information (name, age, etc.)
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>* Speech Tone
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>* Speech Length
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>* Miscellaneous
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>If the user does not provide all of this information, please respond with, &quot;I&#39;m sorry, but I do not have all of the necessary information to create a speech. Please provide the event, audience size, speaker information, tone, length, and any miscellaneous information.&quot;
+</span></code></pre></div>
+<p><strong>Prompt</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Event: High School Graduation
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>Audience Size: 1,000 people
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>Speaker Info: Michael Landish, 17 years old
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>Tone: nostalgic, optimistic
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>Speech Length: 250-500 words
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>Miscellaneous: Michael was the senior class president, his favorite teacher was his junior year English teacher, Mrs. Martin, and he will be going to Los Caminos State University to study economics and English. He has never given a speech before, and he is nervous due to his dyslexia.
+</span></code></pre></div>
+<p><strong>Response</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>&quot;Good morning, faculty, family, friends, and most importantly, my fellow graduates of the Class of [Year]! It feels strange standing here before you, not just as Michael Landish, but as your class president. For the last four years, these hallways have been our proving grounds, filled with laughter, late-night study sessions (some more successful than others), and enough shared memories to last a lifetime. We&#39;ve grown up together within these walls, and now, as we stand on the precipice of something new and unknown, it&#39;s hard not to feel a little overwhelmed. Thinking back, it seems like yesterday we were awkward freshmen, navigating crowded hallways and trying to figure out where we fit in. And now, looking out at all of you, I&#39;m struck by how far we&#39;ve come. We&#39;ve cheered each other on in victory and offered support during setbacks. We&#39;ve learned from our mistakes, celebrated our triumphs, and most importantly, formed bonds of friendship that I know will last a lifetime. I&#39;d like to especially thank Mrs. Martin, my junior year English teacher, for her patience and guidance. Your belief in me, especially when I struggled, helped me find my voice not just as a student, but as a person. Thank you. Now, we embark on our next chapter. Some, like myself, will be heading to Los Caminos State University, eager to delve into the worlds of economics and, yes, even more English. Others will pursue different paths, equally valid and exciting. Though our journeys may diverge, let us always remember the lessons we&#39;ve learned and the friendships we&#39;ve forged within these walls. Let&#39;s carry the spirit of the Class of [Year] with us – the spirit of resilience, determination, and unwavering support for one another. Congratulations to the graduating class! I can&#39;t wait to see what amazing things we accomplish. (gemini-pro)
-</span></code></pre></div></p>
+</span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Learn how to <a href="../system-instructions/">use system instructions</a>.</li>
-<li>Explore more examples of prompts.</li>
+<li>Learn how to <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/prompts/system-instructions">use system instructions</a>.</li>
+<li>Explore more examples of prompts in the <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery">prompt gallery</a>.</li>
 </ul>
 
 
@@ -11365,13 +11462,13 @@
         
         
           
-          <a href="../../../multimodal/function-calling/" class="md-footer__link md-footer__link--next" aria-label="Next: Function calling">
+          <a href="../../../multimodal/content-generation-parameters/" class="md-footer__link md-footer__link--next" aria-label="Next: Content generation parameters">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Function calling
+                Content generation parameters
               </div>
             </div>
             <div class="md-footer__button md-icon">

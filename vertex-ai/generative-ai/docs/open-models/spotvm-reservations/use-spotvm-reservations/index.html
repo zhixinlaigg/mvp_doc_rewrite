@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2112,6 +2137,8 @@
       
         
       
+        
+      
     
     
     
@@ -2439,6 +2466,104 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2742,9 +2867,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comparison-of-deployment-options" class="md-nav__link">
+  <a href="#choose-your-deployment-option" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparison of deployment options
+      Choose your deployment option
     </span>
   </a>
   
@@ -2769,9 +2894,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploy-and-test-the-llama-31-model" class="md-nav__link">
+  <a href="#deploy-the-llama-31-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploy and test the Llama-3.1 model
+      Deploy the Llama-3.1 model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy the Llama-3.1 model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-and-share-a-reservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create and share a reservation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deploy-the-endpoint-using-a-reservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Deploy the endpoint using a reservation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean up
     </span>
   </a>
   
@@ -2787,9 +2954,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      Next steps
+      What's next
     </span>
   </a>
   
@@ -2893,8 +3060,6 @@
   
     
     
-      
-        
       
         
       
@@ -3615,10 +3780,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3686,52 +3847,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -5976,6 +6091,8 @@
       
         
       
+        
+      
     
     
     
@@ -6019,7 +6136,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6043,6 +6160,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6101,10 +6241,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6117,8 +6257,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6253,10 +6393,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6269,8 +6409,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7214,129 +7354,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7375,10 +7392,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7391,8 +7408,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8809,7 +8826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../../docs/" class="md-nav__link">
         
   
   
@@ -10078,7 +10095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../../samples/" class="md-nav__link">
         
   
   
@@ -10735,9 +10752,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comparison-of-deployment-options" class="md-nav__link">
+  <a href="#choose-your-deployment-option" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparison of deployment options
+      Choose your deployment option
     </span>
   </a>
   
@@ -10762,9 +10779,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploy-and-test-the-llama-31-model" class="md-nav__link">
+  <a href="#deploy-the-llama-31-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploy and test the Llama-3.1 model
+      Deploy the Llama-3.1 model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy the Llama-3.1 model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-and-share-a-reservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create and share a reservation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deploy-the-endpoint-using-a-reservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Deploy the endpoint using a reservation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean up
     </span>
   </a>
   
@@ -10780,9 +10839,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#whats-next" class="md-nav__link">
     <span class="md-ellipsis">
-      Next steps
+      What's next
     </span>
   </a>
   
@@ -10808,110 +10867,104 @@
 
 
 <h1 id="using-spot-vms-or-reservations-to-deploy-a-vertex-ai-llama-31-endpoint-on-cloud-gpus">Using Spot VMs or reservations to deploy a Vertex AI Llama-3.1 endpoint on Cloud GPUs<a class="headerlink" href="#using-spot-vms-or-reservations-to-deploy-a-vertex-ai-llama-31-endpoint-on-cloud-gpus" title="Permanent link">&para;</a></h1>
-<p>This tutorial guides you through deploying the Meta-Llama-3.1-8B model on Vertex AI. You will learn how to deploy endpoints and optimize them for your specific needs. For fault-tolerant workloads, you can optimize for cost by using Spot VMs. To ensure high availability for production workloads, you can use Compute Engine reservations.</p>
-<p>This document demonstrates how to deploy endpoints that use the following:</p>
+<p>This tutorial guides you through deploying the Meta-Llama-3.1-8B model on a Vertex AI endpoint. You will learn how to deploy the model using different provisioning options to optimize for either cost or resource availability.</p>
+<p>You can deploy endpoints that use one of the following options:</p>
 <ul>
-<li><strong>Spot VMs:</strong> Spot-provisioned instances that offer significant cost savings for workloads that can tolerate preemption.</li>
-<li><strong>Reservations:</strong> Guaranteed resource availability for predictable performance. This tutorial covers both automatic (<code>ANY_RESERVATION</code>) and specific (<code>SPECIFIC_RESERVATION</code>) reservations.</li>
+<li><strong>Spot VMs</strong>: Use spot-provisioned virtual machine instances for fault-tolerant workloads at a significant cost savings.</li>
+<li><strong>Reservations</strong>: Guarantee resource availability for predictable performance, which is ideal for production workloads. This tutorial demonstrates using both an automatic (<code>ANY_RESERVATION</code>) and a specific (<code>SPECIFIC_RESERVATION</code>) reservation.</li>
 </ul>
-<p>For more information, see <a href="https://cloud.google.com/compute/docs/instances/spot">Spot VMs</a> or <a href="https://cloud.google.com/compute/docs/instances/reservations-overview">Reservations of Compute Engine resources</a>.</p>
-<h3 id="comparison-of-deployment-options">Comparison of deployment options<a class="headerlink" href="#comparison-of-deployment-options" title="Permanent link">&para;</a></h3>
-<p>Before you begin, use the following table to decide which deployment option is best for your workload.</p>
+<p>For more information, see <a href="httpss://cloud.google.com/compute/docs/instances/spot">Spot VMs</a> or <a href="https://cloud.google.com/compute/docs/instances/reservations-overview">Reservations of Compute Engine resources</a>.</p>
+<h3 id="choose-your-deployment-option">Choose your deployment option<a class="headerlink" href="#choose-your-deployment-option" title="Permanent link">&para;</a></h3>
+<p>Before you begin, use the following table to decide which deployment option is right for your workload.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Option</th>
-<th style="text-align: left;">Definition</th>
-<th style="text-align: left;">Pros</th>
-<th style="text-align: left;">Cons</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Best for</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Spot VM</strong></td>
-<td style="text-align: left;">Virtual machine instances that you can purchase at a much lower price than standard instances.</td>
-<td style="text-align: left;">Significant cost savings (60-91% discount). Ideal for fault-tolerant, stateless, or batch workloads.</td>
-<td style="text-align: left;">Instances can be preempted (stopped) by Compute Engine with a 30-second notice if resources are needed elsewhere. Not suitable for workloads requiring constant availability.</td>
+<td style="text-align: left;">Instances that are excess Compute Engine capacity, offered at a significant discount compared to standard VMs. They can be preempted (stopped) by Compute Engine at any time.</td>
+<td style="text-align: left;">Cost-sensitive, fault-tolerant, and stateless workloads like batch processing or development/testing environments that can handle interruptions.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong><code>ANY_RESERVATION</code></strong></td>
-<td style="text-align: left;">Consumes capacity from any matching shared reservation that is available in the project.</td>
-<td style="text-align: left;">Flexible and simple to configure. Automatically uses available reserved capacity without needing to specify a reservation name.</td>
-<td style="text-align: left;">Less control over which specific reservation is used, which might be a concern in complex, multi-team environments.</td>
+<td style="text-align: left;">Consumes capacity from any available shared reservation in the project that has a matching machine configuration. It offers flexibility by not being tied to a specific reservation name.</td>
+<td style="text-align: left;">Workloads that require guaranteed capacity but can use any matching reservation within the project, simplifying management.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong><code>SPECIFIC_RESERVATION</code></strong></td>
-<td style="text-align: left;">Targets a single, named reservation for capacity.</td>
-<td style="text-align: left;">Guarantees that the deployment uses capacity from a particular reservation, providing predictable resource allocation.</td>
-<td style="text-align: left;">Requires more specific configuration (reservation name, project, and zone). If the specified reservation is full, the deployment will fail.</td>
+<td style="text-align: left;">Consumes capacity from a single, named reservation that you specify. This provides precise control over which reserved resources are used.</td>
+<td style="text-align: left;">Critical production workloads that require guaranteed capacity from a particular pool of resources, often for capacity planning or billing allocation.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h3>
-<p>The following diagram shows the overall workflow for deploying the Llama-3.1 model using either Spot VMs or reservations.</p>
+<p>This tutorial follows these steps:</p>
 <pre class="mermaid"><code>flowchart TD
-    A["Step 1: Set up your environment"] --&gt; B{"Step 2: Choose deployment method"};
-    B -- "Spot VM" --&gt; C["Deploy with a Spot VM"];
-    B -- "Reservation" --&gt; D["Create and deploy with a reservation"];
-    C --&gt; E["Step 3: Test the endpoint"];
+    A[Before you begin] --&gt; B{Choose deployment option};
+    B -- Spot VM --&gt; C[Deploy on a Spot VM];
+    B -- Reservation --&gt; D[Deploy on a reserved instance];
+    C --&gt; E[Test the endpoint];
     D --&gt; E;
-    E --&gt; F["Step 4: Clean up resources"];
+    E --&gt; F[Clean up];
 
-    click A "#setup-your-environment"
-    click B "#deploy-the-model"
-    click C "#deploy-the-model"
-    click D "#deploy-the-model"
+    click A "#before-you-begin"
+    click B "#deploy-the-llama-3-1-model"
+    click C "#deploy-the-llama-3-1-model"
+    click D "#deploy-the-llama-3-1-model"
     click E "#test-the-endpoint"
-    click F "#clean-up-resources"</code></pre>
+    click F "#clean-up"</code></pre>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
-<details open="open">
-<summary>Prerequisites and setup</summary>
+<p><a name="before-you-begin"></a></p>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>Spot VMs</strong>: Virtual machine instances that run on spare Google Cloud capacity and are offered at a significant discount compared to standard VMs, but can be preempted.</li>
-<li><strong>Compute Engine Reservations</strong>: A feature that guarantees access to Compute Engine resources in a specific zone, protecting against "resource not available" errors.</li>
-<li><strong>Hugging Face User Access Token</strong>: An API token used to authenticate your requests and download gated models and datasets from the Hugging Face Hub.</li>
+<li><strong>Spot VM</strong>: An instance that you can create and run at a much lower price than standard instances, but which might be stopped (preempted) if Compute Engine requires access to those resources for other tasks.</li>
+<li><strong>Compute Engine reservation</strong>: Guarantees access to Compute Engine resources in a specific zone, protecting you from "resource not available" errors.</li>
+<li><strong>Hugging Face User Access Token</strong>: A credential used to authenticate your identity with the Hugging Face Hub, required for downloading gated models like Llama 3.1.</li>
+<li><strong>Principal Service Account (P4SA)</strong>: A Google-managed service account that acts on behalf of a Google Cloud service, such as Vertex AI.</li>
 </ul>
 </details>
-<p>Before you begin, complete the following prerequisites:</p>
+<details open="open">
+<summary>Prerequisites and setup</summary>
+<p>All steps in this tutorial are performed in the accompanying Colab Enterprise notebook.</p>
+<p><a class="md-button" href="https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_reservations_spotvm.ipynb">Open the notebook</a></p>
+<p><strong>1. Complete initial project prerequisites</strong></p>
+<p>Before running the notebook, ensure you have the following:</p>
 <ul>
 <li>A Google Cloud project with billing enabled.</li>
 <li>The Vertex AI and Compute Engine APIs enabled.</li>
-<li>Sufficient quota for the machine type and accelerator that you intend to use, such as NVIDIA L4 GPUs. To check your quotas, see <a href="https://console.cloud.google.com/iam-admin/quotas">Quotas and system limits in the Google Cloud console</a>.</li>
+<li>Sufficient quota for the machine type and accelerator you intend to use, such as NVIDIA L4 GPUs. To check your quotas, see <a href="https://console.cloud.google.com/iam-admin/quotas">Quotas and system limits in the Google Cloud console</a>.</li>
 <li>A Hugging Face account and a <a href="https://huggingface.co/docs/hub/security-tokens">User Access Token</a> with read access.</li>
-<li>If you are using shared reservations, grant IAM permissions between projects. These permissions are covered in the notebook.</li>
+<li>If you are using shared reservations, the necessary IAM permissions are granted between projects. The notebook handles these permissions.</li>
 </ul>
-</details>
-<h2 id="deploy-and-test-the-llama-31-model">Deploy and test the Llama-3.1 model<a class="headerlink" href="#deploy-and-test-the-llama-31-model" title="Permanent link">&para;</a></h2>
-<p>The following sections guide you through setting up your environment and deploying the Llama-3.1 model using the method you chose. All steps are performed within the provided Colab Enterprise notebook.</p>
-<p><a class="md-button" href="https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_reservations_spotvm.ipynb">Open the Colab Enterprise notebook</a></p>
-<details>
-<summary>Step 1: Set up your environment</summary>
-<p><a name="setup-your-environment"></a></p>
-<p>This step prepares your Google Cloud project and authenticates with Hugging Face. These actions are required for all deployment types.</p>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
-<p><strong>1. Configure your Google Cloud project</strong></p>
+<p><strong>2. Set up your Google Cloud project variables</strong>
+<a name="set-up-your-google-cloud-project-and-shared-reservation"></a></p>
 <p>In the first section of the Colab notebook, set the <code>PROJECT_ID</code>, <code>SHARED_PROJECT_ID</code> (if applicable), <code>BUCKET_URI</code>, and <code>REGION</code> variables.</p>
 <p>If you intend to use a reservation created in a different project, ensure that <code>SHARED_PROJECT_ID</code> is correctly set. The notebook grants the <code>compute.viewer</code> role to the service account of both projects, which allows the Vertex AI endpoint in your primary project to use the reservation capacity in the shared project.</p>
-<p><strong>2. Set up Hugging Face authentication</strong></p>
-<p>To download the Llama-3.1 model, you must provide your Hugging Face User Access Token in the <code>HF_TOKEN</code> variable in the notebook. If you do not provide a token, you will receive a <code>Cannot access gated repository for URL</code> error.</p>
+<p><strong>3. Set up Hugging Face authentication</strong>
+<a name="set-up-hugging-face-authentication"></a></p>
+<p>To download the Llama-3.1 model, you must provide your Hugging Face User Access Token in the <code>HF_TOKEN</code> variable in the Colab notebook. If you don't provide one, you will receive a <code>Cannot access gated repository for URL</code> error.</p>
 <p><figure style="text-align: center;">
-  <img src="../images/access_token_settings_link.png" alt="Hugging Face Access Token Settings" style="max-width: 100%; border-radius: 8px;">
+  <img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/vllm/images/access_token_settings_link.png" alt="Hugging Face Access Token Settings" style="max-width: 100%; border-radius: 8px;">
   <figcaption>Figure 1. Hugging Face Access Token Settings.</figcaption>
 </figure></p>
 </details>
-<details>
-<summary>Step 2: Deploy the model</summary>
-<p><a name="deploy-the-model"></a></p>
-<p>Choose one of the following methods to deploy your model.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="deploy-with-a-spot-vm" name="__tabbed_1" type="radio" /><input id="deploy-with-a-reservation" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="deploy-with-a-spot-vm">Deploy with a Spot VM</label><label for="deploy-with-a-reservation">Deploy with a reservation</label></div>
+<h2 id="deploy-the-llama-31-model">Deploy the Llama-3.1 model<a class="headerlink" href="#deploy-the-llama-31-model" title="Permanent link">&para;</a></h2>
+<p><a name="deploy-the-llama-3-1-model"></a></p>
+<p>Follow the instructions in the tab that corresponds to your chosen deployment option.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="deploy-on-a-spot-vm" name="__tabbed_1" type="radio" /><input id="deploy-on-a-reserved-instance" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="deploy-on-a-spot-vm">Deploy on a Spot VM</label><label for="deploy-on-a-reserved-instance">Deploy on a reserved instance</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>To deploy the Llama model to a Spot VM, navigate to the <strong>Spot VM Vertex AI Endpoint Deployment</strong> section in the Colab notebook and set <code>is_spot=True</code>. This parameter instructs Vertex AI to use a preemptible Spot VM instance, optimizing for cost.</p>
+<p>To deploy the Llama model to a Spot VM, navigate to the <strong>Spot VM Vertex AI Endpoint Deployment</strong> section in the Colab notebook and set <code>is_spot=True</code>. This setting instructs Vertex AI to use a Spot VM instance for the endpoint, which can significantly reduce costs.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">base_model_name</span> <span class="o">=</span> <span class="s2">&quot;Meta-Llama-3.1-8B&quot;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">hf_model_id</span> <span class="o">=</span> <span class="s2">&quot;meta-llama/&quot;</span> <span class="o">+</span> <span class="n">base_model_name</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -10956,10 +11009,9 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>This method uses reserved Compute Engine instances to guarantee resource availability. You can use either an <code>ANY_RESERVATION</code> or a <code>SPECIFIC_RESERVATION</code>.</p>
-<p><strong>1. Create and share the reservation</strong></p>
-<p>There are two types of reservations: single-project (default) and shared. This tutorial focuses on shared reservations, which can improve resource utilization across projects. For more information, see <a href="https://cloud.google.com/compute/docs/instances/reservations-shared#how-it-works">How shared reservations work</a>.</p>
-<p>In the <strong>Set Up Reservations for Vertex AI Predictions</strong> section of the notebook, define the variables for your reservation, such as <code>RES_ZONE</code>, <code>RESERVATION_NAME</code>, <code>RES_MACHINE_TYPE</code>, <code>RES_ACCELERATOR_TYPE</code>, and <code>RES_ACCELERATOR_COUNT</code>.</p>
+<p>Deploying on a reserved instance is a multi-step process. First, you create and configure the reservation, and then you deploy the model endpoint to consume that reservation.</p>
+<h3 id="1-create-and-share-a-reservation">1. Create and share a reservation<a class="headerlink" href="#1-create-and-share-a-reservation" title="Permanent link">&para;</a></h3>
+<p>In the <strong>Set Up Reservations for Vertex AI Predictions</strong> section of the notebook, define the properties for your reservation. Set the <code>RES_ZONE</code>, <code>RESERVATION_NAME</code>, <code>RES_MACHINE_TYPE</code>, <code>RES_ACCELERATOR_TYPE</code>, and <code>RES_ACCELERATOR_COUNT</code> variables.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">RES_ZONE</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">RES_ZONE</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">REGION</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">RES_ZONE</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -10980,13 +11032,17 @@
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">shared_project_id</span><span class="o">=</span><span class="n">SHARED_PROJECT_ID</span><span class="p">,</span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">)</span>
 </span></code></pre></div>
-<p>After creating the reservation, you must enable sharing in the Google Cloud console.</p>
+<p>After creating the reservation, you must configure it to be shared so that Vertex AI services can consume it. In the Google Cloud console, navigate to the reservation and select <strong>Share with other Google Services</strong>. For more information, see <a href="https://cloud.google.com/compute/docs/instances/reservations-shared#how-it-works">How shared reservations work</a>.</p>
 <p><figure style="text-align: center;">
-  <img src="../images/share-reservations.png" alt="Share reservation with other Google services" style="max-width: 100%; border-radius: 8px;">
+  <img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/spotvm-reservations/images/share-reservations.png" alt="Share reservation with other Google services" style="max-width: 100%; border-radius: 8px;">
   <figcaption>Figure 2. Share reservation with other Google services.</figcaption>
 </figure></p>
-<p><strong>2. Deploy with <code>ANY_RESERVATION</code></strong></p>
-<p>To deploy the endpoint using any available shared reservation, go to the <strong>Deploy Llama-3.1 Endpoint with <code>ANY_RESERVATION</code></strong> section of the notebook and set <code>reservation_affinity_type="ANY_RESERVATION"</code>.</p>
+<h3 id="2-deploy-the-endpoint-using-a-reservation">2. Deploy the endpoint using a reservation<a class="headerlink" href="#2-deploy-the-endpoint-using-a-reservation" title="Permanent link">&para;</a></h3>
+<p>You can deploy an endpoint to consume any matching reservation or a specific, named reservation.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="use-any_reservation" name="__tabbed_2" type="radio" /><input id="use-specific_reservation" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="use-any_reservation">Use ANY_RESERVATION</label><label for="use-specific_reservation">Use SPECIFIC_RESERVATION</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>To deploy the endpoint using any available shared reservation, navigate to the <strong>Deploy Llama-3.1 Endpoint with <code>ANY_RESERVATION</code></strong> section of the notebook and set <code>reservation_affinity_type="ANY_RESERVATION"</code>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">hf_model_id</span> <span class="o">=</span> <span class="s2">&quot;meta-llama/Meta-Llama-3.1-8B&quot;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">models</span><span class="p">[</span><span class="s2">&quot;vllm_gpu_any_reserve&quot;</span><span class="p">],</span> <span class="n">endpoints</span><span class="p">[</span><span class="s2">&quot;vllm_gpu_any_reserve&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">deploy_model_vllm</span><span class="p">(</span>
@@ -11003,8 +11059,9 @@
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">reservation_affinity_type</span><span class="o">=</span><span class="s2">&quot;ANY_RESERVATION&quot;</span><span class="p">,</span>
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">)</span>
 </span></code></pre></div>
-<p><strong>3. Deploy with <code>SPECIFIC_RESERVATION</code></strong></p>
-<p>To target a specific, named reservation, go to the <strong>Deploy Llama-3.1 Endpoint with <code>SPECIFIC_RESERVATION</code></strong> section. Set <code>reservation_affinity_type="SPECIFIC_RESERVATION"</code> and provide the <code>reservation_name</code>, <code>reservation_project</code>, and <code>reservation_zone</code>.</p>
+</div>
+<div class="tabbed-block">
+<p>To deploy the endpoint using a specific reservation, go to the <strong>Deploy Llama-3.1 Endpoint with <code>SPECIFIC_RESERVATION</code></strong> section of the notebook. Set <code>reservation_affinity_type="SPECIFIC_RESERVATION"</code> and provide the <code>reservation_name</code>, <code>reservation_project</code>, and <code>reservation_zone</code>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">hf_model_id</span> <span class="o">=</span> <span class="s2">&quot;meta-llama/Meta-Llama-3.1-8B&quot;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">MACHINE_TYPE</span> <span class="o">=</span> <span class="s2">&quot;g2-standard-12&quot;</span>
@@ -11034,29 +11091,34 @@
 </div>
 </div>
 </div>
-</details>
-<details>
-<summary>Step 3: Test the endpoint</summary>
+</div>
+</div>
+</div>
+<h2 id="test-the-endpoint">Test the endpoint<a class="headerlink" href="#test-the-endpoint" title="Permanent link">&para;</a></h2>
 <p><a name="test-the-endpoint"></a></p>
-<p>After your endpoint is deployed, run the prediction cells in the notebook to send test prompts and ensure it is working correctly.</p>
-<p>If you used a reservation, you can verify that it is being consumed by Vertex AI online prediction in the Google Cloud console.</p>
-<p><figure style="text-align: center;">
-  <img src="../images/consumed-reservation.png" alt="Check reservation is used by Vertex online prediction" style="max-width: 100%; border-radius: 8px;">
+<p>After your endpoint is deployed, run the testing cells in the notebook to send prompts to the model and ensure it is working correctly.</p>
+<p>If you deployed using a reservation, you can verify that Vertex AI online prediction is consuming the reservation in the Google Cloud console.</p>
+<figure style="text-align: center;">
+  <img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/open-models/spotvm-reservations/images/consumed-reservation.png" alt="Check reservation is used by Vertex online prediction" style="max-width: 100%; border-radius: 8px;">
   <figcaption>Figure 3. Check that the reservation is consumed by Vertex AI online prediction.</figcaption>
-</figure></p>
-</details>
-<details>
-<summary>Step 4: Clean up resources</summary>
-<p><a name="clean-up-resources"></a></p>
-<p>To avoid ongoing charges to your Google Cloud account, delete the resources created during this tutorial. The Colab notebook provides code in the <strong>Clean Up</strong> section to delete the models, endpoints, and reservations.</p>
+</figure>
+
+<h2 id="clean-up">Clean up<a class="headerlink" href="#clean-up" title="Permanent link">&para;</a></h2>
+<p><a name="clean-up"></a></p>
+<details open="open">
+<summary>Cleanup steps</summary>
+<p>To avoid ongoing charges to your Google Cloud account, it is important to delete the resources created during this tutorial. The Colab notebook provides code in the <strong>Clean Up</strong> section to automate the deletion of the models, endpoints, and reservations. Run these cells to remove all created resources.</p>
 </details>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<details>
+<summary>Troubleshooting tips</summary>
 <ul>
-<li><strong>Hugging Face Token Errors:</strong> Double-check that your Hugging Face token has <code>read</code> permissions and is correctly set in the notebook.</li>
-<li><strong>Quota Errors:</strong> Verify that you have sufficient GPU quota in the region you are deploying to. Request a quota increase if needed.</li>
-<li><strong>Reservation Conflicts:</strong> Ensure that the machine type and accelerator configuration of your endpoint deployment match the settings of your reservation. Also, ensure that the reservation is configured to be shared with other Google Cloud services.</li>
+<li><strong>Hugging Face Token Errors</strong>: Double-check that your Hugging Face token has <code>read</code> permissions and is correctly set in the notebook.</li>
+<li><strong>Quota Errors</strong>: Verify that you have sufficient GPU quota in the region you are deploying to. Request a quota increase if needed.</li>
+<li><strong>Reservation Conflicts</strong>: Ensure that the machine type and accelerator configuration of your endpoint deployment match the settings of your reservation. Also, confirm that the reservation is configured to be shared with other Google services.</li>
 </ul>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+</details>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Explore different <a href="https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama3-3">Llama 3 model variants</a>.</li>
 <li>Learn more about <a href="https://cloud.google.com/compute/docs/instances/reservations-overview">Compute Engine Reservations</a>.</li>

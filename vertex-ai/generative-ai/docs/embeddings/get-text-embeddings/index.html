@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2110,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2419,6 +2446,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2797,8 +2922,6 @@
   
     
     
-      
-        
       
         
       
@@ -3519,10 +3642,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3590,52 +3709,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -5635,6 +5708,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       Before you begin
@@ -5658,30 +5740,6 @@
       Get text embeddings for a snippet of text
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Get text embeddings for a snippet of text">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#api-limits" class="md-nav__link">
-    <span class="md-ellipsis">
-      API limits
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5995,6 +6053,8 @@
       
         
       
+        
+      
     
     
     
@@ -6038,7 +6098,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6062,6 +6122,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6120,10 +6203,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6136,8 +6219,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6272,10 +6355,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6288,8 +6371,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7233,129 +7316,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7394,10 +7354,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7410,8 +7370,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8828,7 +8788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../docs/" class="md-nav__link">
         
   
   
@@ -10097,7 +10057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../samples/" class="md-nav__link">
         
   
   
@@ -10754,6 +10714,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       Before you begin
@@ -10777,30 +10746,6 @@
       Get text embeddings for a snippet of text
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Get text embeddings for a snippet of text">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#api-limits" class="md-nav__link">
-    <span class="md-ellipsis">
-      API limits
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parameters
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -10842,63 +10787,71 @@
 
 
 <h1 id="get-text-embeddings">Get text embeddings<a class="headerlink" href="#get-text-embeddings" title="Permanent link">&para;</a></h1>
-<p>This document describes how to create a text embedding using the Vertex AI <a href="../../model-reference/text-embeddings-api/">Text embeddings API</a>.</p>
-<p>Text embeddings are dense vector representations of text. For example, the <code>gemini-embedding-001</code> model generates 3072-dimensional vectors for a given piece of text. These dense vector embeddings are created using deep-learning methods similar to those used by large language models.</p>
-<p>Unlike sparse vectors that map words to numbers, dense vectors are designed to represent the semantic meaning of text. The primary benefit of using dense vector embeddings is the ability to perform semantic search. Instead of searching for direct word or syntax matches, you can search for text passages that align with the meaning of your query, even if the passages don't use the same phrasing.</p>
+<p>This document describes how to create a text embedding using the Vertex AI <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api">Text embeddings API</a>.</p>
+<p>Text embeddings are dense vector representations of text. These vectors are designed to capture the semantic meaning of the text, not just its keywords. For example, a semantic search for "what is the cost to get a driver's license?" can retrieve a passage that says "the fee for a new license is $35," even though the query and the text do not share the same phrasing. This is because the embedding for the query is semantically similar to the embedding for the answer.</p>
 <p>The embedding vectors are normalized, so you can use cosine similarity, dot product, or Euclidean distance to get the same similarity rankings.</p>
 <ul>
-<li>To learn more about embeddings, see the <a href="get-embeddings-overview.md">Embeddings for generative AI overview</a>.</li>
-<li>To learn about text embedding models, see <a href="../../model-reference/text-embeddings-api/">Text embedding models</a>.</li>
-<li>For information about which languages each embeddings model supports, see <a href="../../model-reference/text-embeddings-api/#supported_text_languages">Supported text languages</a>.</li>
+<li>To learn more about embeddings, see the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/embeddings/overview">Embeddings for generative AI overview</a>.</li>
+<li>To learn about text embedding models and their supported languages, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api#supported_text_languages">Text embedding models</a>.</li>
 </ul>
 <p>To see an example of getting text embeddings, run the "Getting Started with Text Embeddings + Vertex AI Vector Search" Jupyter notebook in one of the following environments:</p>
 <p><a class="md-button" href="https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/embeddings/intro-textemb-vectorsearch.ipynb">Open in Colab</a> <a class="md-button" href="https://console.cloud.google.com/vertex-ai/colab/import/https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fembeddings%2Fintro-textemb-vectorsearch.ipynb">Open in Colab Enterprise</a> <a class="md-button" href="https://console.cloud.google.com/vertex-ai/workbench/deploy-notebook?download_url=https%3A%2F%2Fraw.githubusercontent.com%2FGoogleCloudPlatform%2Fgenerative-ai%2Fmain%2Fembeddings%2Fintro-textemb-vectorsearch.ipynb">Open in Vertex AI Workbench</a> <a class="md-button" href="https://github.com/GoogleCloudPlatform/generative-ai/blob/main/embeddings/intro-textemb-vectorsearch.ipynb">View on GitHub</a></p>
-<p>This document follows the workflow shown in the following diagram:</p>
-<pre class="mermaid"><code>flowchart TD
-    A[Before you begin] --&gt; B(Supported models)
-    B --&gt; C(Get text embeddings for a snippet of text)
-    C --&gt; D(Add an embedding to a vector database)
-
-    click A "#before-you-begin"
-    click B "#supported-models"
-    click C "#get-text-embeddings-for-a-snippet-of-text"
-    click D "#add-an-embedding-to-a-vector-database"</code></pre>
 <figure style="text-align: center;">
-  <img src="../images/embedding_flow.png" alt="Questions and their answers aren't semantically similar" style="max-width: 100%; border-radius: 8px;">
-  <figcaption><b>Figure 1.</b> Get Text Embedding.</figcaption>
+  <img src="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/embeddings/images/embedding_flow.png" alt="A diagram showing the process of converting text to an embedding and using it for semantic search." style="max-width: 100%; border-radius: 8px;">
+  <figcaption>Figure 1. A high-level overview of generating and using text embeddings.</figcaption>
 </figure>
 
+<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
+<p>The following diagram shows the workflow for getting and using text embeddings.</p>
+<pre class="mermaid"><code>flowchart TD
+    A[Setup prerequisites] --&gt; B[Choose a model]
+    B --&gt; C[Get text embeddings]
+    C --&gt; D[Add embeddings to a vector database]
+
+    click A "#setup-prerequisites"
+    click B "#choose-a-model"
+    click C "#get-text-embeddings"
+    click D "#add-embeddings-to-a-vector-database"</code></pre>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
-<p><a name="before-you-begin"></a></p>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>Text embeddings</strong>: Numerical vector representations of text that capture semantic meaning.</li>
-<li><strong>Dense vector</strong>: A vector where most of the elements are non-zero, used to represent complex relationships in data like text.</li>
-<li><strong>Semantic search</strong>: A search technique that understands the intent and contextual meaning of words in a query, rather than just matching keywords.</li>
-<li><strong>Cosine similarity</strong>: A metric used to measure the cosine of the angle between two non-zero vectors, often used to determine similarity between text documents.</li>
-<li><strong>Vector database</strong>: A database designed to store and query high-dimensional vectors, such as those generated by embedding models.</li>
+<li><strong>Text embedding</strong>: A dense vector representation of text that captures its semantic meaning.</li>
+<li><strong>Dense vector</strong>: A numerical array where most elements are non-zero, used to represent complex data like the meaning of text.</li>
+<li><strong>Semantic search</strong>: A search technique that understands the intent and contextual meaning of a query, rather than just matching keywords.</li>
+<li><strong>Cosine similarity</strong>: A metric used to measure the similarity between two vectors, often used to compare text embeddings.</li>
+<li><strong>Vector Search</strong>: A Google Cloud service that allows you to find semantically similar items by searching a large collection of vector embeddings.</li>
 </ul>
 </details>
 <details open="open">
 <summary>Prerequisites</summary>
+<p><a name="setup-prerequisites"></a></p>
 <ol>
 <li>
-<p><strong>Sign in to your Google Cloud account.</strong> If you're new to Google Cloud, <a href="https://console.cloud.google.com/freetrial">create an account</a> to evaluate how our products perform in real-world scenarios. New customers also get $300 in free credits to run, test, and deploy workloads.</p>
-</li>
+<p><strong>Set up your Google Cloud project</strong>:</p>
+<ul>
+<li>Sign in to your Google Cloud account. If you're new to Google Cloud, <a href="https://console.cloud.google.com/freetrial">create an account</a> to evaluate how our products perform in real-world scenarios. New customers also get $300 in free credits to run, test, and deploy workloads.</li>
 <li>
-<p><strong>Create or select a Google Cloud project.</strong> In the Google Cloud console, on the project selector page, select or create a Google Cloud project.</p>
-<p><strong>Note</strong>: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.</p>
+<p>In the Google Cloud console, on the project selector page, select or create a Google Cloud project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.</p>
+</div>
 <p><a class="md-button" href="https://console.cloud.google.com/projectselector2/home/dashboard">Go to project selector</a></p>
 </li>
+</ul>
+</li>
 <li>
-<p><strong>Enable the Vertex AI API.</strong></p>
+<p><strong>Enable the Vertex AI API</strong>:</p>
 <p><a class="md-button" href="https://console.cloud.google.com/flows/enableapi?apiid=aiplatform.googleapis.com">Enable the API</a></p>
+</li>
+<li>
+<p><strong>Choose a task type</strong>: Before generating embeddings, you need to <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/embeddings/task-types">choose a task type</a> that best fits your use case.</p>
 </li>
 </ol>
 </details>
 <h2 id="supported-models">Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h2>
-<p><a name="supported-models"></a></p>
+<p><a name="choose-a-model"></a></p>
 <p>You can get text embeddings by using the following models:</p>
 <table>
 <thead>
@@ -10916,7 +10869,7 @@
 <td>State-of-the-art performance across English, multilingual and code tasks. It unifies the previously specialized models like <code>text-embedding-005</code> and <code>text-multilingual-embedding-002</code> and achieves better performance in their respective domains. Read our <a href="https://deepmind.google/research/publications/157741/">Tech Report</a> for more detail.</td>
 <td>up to 3072</td>
 <td>2048 tokens</td>
-<td><a href="../../model-reference/text-embeddings-api/#supported_text_languages">Supported text languages</a></td>
+<td><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api#supported_text_languages">Supported text languages</a></td>
 </tr>
 <tr>
 <td><code>text-embedding-005</code></td>
@@ -10930,125 +10883,76 @@
 <td>Specialized in multilingual tasks.</td>
 <td>up to 768</td>
 <td>2048 tokens</td>
-<td><a href="../../model-reference/text-embeddings-api/#supported_text_languages">Supported text languages</a></td>
+<td><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api#supported_text_languages">Supported text languages</a></td>
 </tr>
 </tbody>
 </table>
-<p>For superior embedding quality, <code>gemini-embedding-001</code> is our large model designed to provide the highest performance. Note that <code>gemini-embedding-001</code> supports one instance per request.</p>
-<p><strong>Note:</strong> Only use the models as listed in the supported models table. Don't specify a model without the <code>@version</code> suffix or <code>@latest</code>. These model names are not considered valid.</p>
+<p>For the highest embedding quality, <code>gemini-embedding-001</code> is a large model designed to provide the highest performance. Note that <code>gemini-embedding-001</code> supports one instance per request.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only use the models as listed in the supported models table. Don't specify a model without the <code>@version</code> suffix or <code>@latest</code>. These model names are not considered valid.</p>
+</div>
 <h2 id="get-text-embeddings-for-a-snippet-of-text">Get text embeddings for a snippet of text<a class="headerlink" href="#get-text-embeddings-for-a-snippet-of-text" title="Permanent link">&para;</a></h2>
-<p><a name="get-text-embeddings-for-a-snippet-of-text"></a></p>
-<p>You can get text embeddings for a snippet of text by using the Vertex AI API or an SDK.</p>
-<h3 id="api-limits">API limits<a class="headerlink" href="#api-limits" title="Permanent link">&para;</a></h3>
+<p><a name="get-text-embeddings"></a></p>
+<p>You can get text embeddings for a snippet of text by using the Vertex AI API or the Vertex AI SDK for Python.</p>
+<p><strong>API limits</strong></p>
 <p>For each request, you're limited to 250 input texts for non-Gemini models, and a single input text for Gemini Embedding models. The API has a maximum input token limit of 20,000. Inputs exceeding this limit result in a 400 error. Each individual input text is further limited to 2048 tokens; any excess is silently truncated. You can also disable silent truncation by setting <code>autoTruncate</code> to <code>false</code>.</p>
-<p>For more information, see <a href="../../quotas/#text-embedding-limits">Text embedding limits</a>.</p>
-<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
-<p>When you generate embeddings, you can configure the following parameters:</p>
-<ul>
-<li><strong>Task type</strong>: Specify the downstream application for the embeddings to achieve the best performance. For more details, see <a href="../task-types/">Choose a task type</a>.</li>
-<li><strong>Embedding dimension</strong>: All models produce a full-length embedding vector by default (<code>3072</code> for <code>gemini-embedding-001</code> and <code>768</code> for other models). You can use the <code>output_dimensionality</code> parameter to reduce the vector size, which can save storage and improve computational efficiency with a small trade-off in quality.</li>
-</ul>
-<p>The following examples use the <code>gemini-embedding-001</code> model.</p>
+<p>For more information, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/quotas#text-embedding-limits">Text embedding limits</a>.</p>
+<p><strong>Choose an embedding dimension</strong></p>
+<p>All models produce a full-length embedding vector by default. For <code>gemini-embedding-001</code>, this vector has 3072 dimensions, and other models produce 768-dimensional vectors. However, by using the <code>output_dimensionality</code> parameter, you can control the size of the output embedding vector. Selecting a smaller output dimensionality can save storage space and increase computational efficiency for downstream applications, while sacrificing little in terms of quality.</p>
+<p>The following example uses the <code>gemini-embedding-001</code> model.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="python-sdk" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="python-sdk">Python SDK</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Install the SDK</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>google-genai
+</span></code></pre></div>
+<p>To learn more, see the <a href="https://googleapis.github.io/python-genai/">SDK reference documentation</a>.</p>
+<p><strong>Set environment variables</strong></p>
+<p>Set environment variables to use the Gen AI SDK with Vertex AI:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Replace the `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION` values</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># with appropriate values for your project.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_PROJECT</span><span class="o">=</span>GOOGLE_CLOUD_PROJECT
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_LOCATION</span><span class="o">=</span>global
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_GENAI_USE_VERTEXAI</span><span class="o">=</span>True
+</span></code></pre></div>
+<p><strong>Example</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google</span><span class="w"> </span><span class="kn">import</span> <span class="n">genai</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.genai.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbedContentConfig</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">client</span> <span class="o">=</span> <span class="n">genai</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">embed_content</span><span class="p">(</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gemini-embedding-001&quot;</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">contents</span><span class="o">=</span><span class="s2">&quot;How do I get a driver&#39;s license/learner&#39;s permit?&quot;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">config</span><span class="o">=</span><span class="n">EmbedContentConfig</span><span class="p">(</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;RETRIEVAL_DOCUMENT&quot;</span><span class="p">,</span>  <span class="c1"># Optional</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">output_dimensionality</span><span class="o">=</span><span class="mi">3072</span><span class="p">,</span>  <span class="c1"># Optional</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Driver&#39;s License&quot;</span><span class="p">,</span>  <span class="c1"># Optional</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">),</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># Example response:</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># embeddings=[ContentEmbedding(values=[-0.06302902102470398, 0.00928034819662571, 0.014716853387653828, -0.028747491538524628, ... ],</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># statistics=ContentEmbeddingStatistics(truncated=False, token_count=13.0))]</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1"># metadata=EmbedContentMetadata(billable_character_count=112)</span>
+</span></code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="curl" name="__tabbed_1" type="radio" /><input id="vertex-ai-sdk-for-python" name="__tabbed_1" type="radio" /><input id="gen-ai-sdk-for-python" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="curl">cURL</label><label for="vertex-ai-sdk-for-python">Vertex AI SDK for Python</label><label for="gen-ai-sdk-for-python">Gen AI SDK for Python</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="s2">&quot;https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/us-central1/publishers/google/models/gemini-embedding-001:predict&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s1">$&#39;{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="s1">  &quot;instances&quot;: [</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="s1">    {</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="s1">      &quot;content&quot;: &quot;How do I get a driver\&#39;s license/learner\&#39;s permit?&quot;,</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="s1">      &quot;task_type&quot;: &quot;RETRIEVAL_DOCUMENT&quot;,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="s1">      &quot;title&quot;: &quot;Driver\&#39;s License&quot;</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="s1">    }</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s1">  ],</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="s1">  &quot;parameters&quot;: {</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="s1">    &quot;outputDimensionality&quot;: 3072</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="s1">  }</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="s1">}&#39;</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><strong>Install the SDK</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>google-cloud-aiplatform
-</span></code></pre></div>
-<p><strong>Run the code</strong></p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">vertexai</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.language_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextEmbeddingModel</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># TODO(developer): Update and un-comment below lines</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># project_id = &quot;YOUR_PROJECT_ID&quot;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># location = &quot;YOUR_LOCATION&quot;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">vertexai</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="n">project_id</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="n">location</span><span class="p">)</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">model</span> <span class="o">=</span> <span class="n">TextEmbeddingModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;gemini-embedding-001&quot;</span><span class="p">)</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_embeddings</span><span class="p">(</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">[</span><span class="s2">&quot;How do I get a driver&#39;s license/learner&#39;s permit?&quot;</span><span class="p">],</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;RETRIEVAL_DOCUMENT&quot;</span><span class="p">,</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">output_dimensionality</span><span class="o">=</span><span class="mi">3072</span><span class="p">,</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Driver&#39;s License&quot;</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">)</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generated </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span><span class="si">}</span><span class="s2"> embedding.&quot;</span><span class="p">)</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Embedding dimensions: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">embeddings</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="c1"># Example response:</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="c1"># Generated 1 embedding.</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1"># Embedding dimensions: 3072</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><strong>Install the SDK</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>google-genai
-</span></code></pre></div>
-<p>To learn more, see the <a href="https://googleapis.github.io/python-genai/">SDK reference documentation</a>.</p>
-<p><strong>Run the code</strong></p>
-<p>Set environment variables to use the Gen AI SDK with Vertex AI:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Replace the `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION` values</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># with appropriate values for your project.</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_PROJECT</span><span class="o">=</span>GOOGLE_CLOUD_PROJECT
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_LOCATION</span><span class="o">=</span>global
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_GENAI_USE_VERTEXAI</span><span class="o">=</span>True
-</span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google</span><span class="w"> </span><span class="kn">import</span> <span class="n">genai</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.genai.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">EmbedContentConfig</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">client</span> <span class="o">=</span> <span class="n">genai</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">embed_content</span><span class="p">(</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gemini-embedding-001&quot;</span><span class="p">,</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">contents</span><span class="o">=</span><span class="s2">&quot;How do I get a driver&#39;s license/learner&#39;s permit?&quot;</span><span class="p">,</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">config</span><span class="o">=</span><span class="n">EmbedContentConfig</span><span class="p">(</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;RETRIEVAL_DOCUMENT&quot;</span><span class="p">,</span>  <span class="c1"># Optional</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        <span class="n">output_dimensionality</span><span class="o">=</span><span class="mi">3072</span><span class="p">,</span>  <span class="c1"># Optional</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Driver&#39;s License&quot;</span><span class="p">,</span>  <span class="c1"># Optional</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="p">),</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="p">)</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1"># Example response:</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c1"># embeddings=[ContentEmbedding(values=[-0.06302902102470398, 0.00928034819662571, 0.014716853387653828, -0.028747491538524628, ... ],</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="c1"># statistics=ContentEmbeddingStatistics(truncated=False, token_count=13.0))]</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="c1"># metadata=EmbedContentMetadata(billable_character_count=112)</span>
-</span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="add-an-embedding-to-a-vector-database">Add an embedding to a vector database<a class="headerlink" href="#add-an-embedding-to-a-vector-database" title="Permanent link">&para;</a></h2>
-<p><a name="add-an-embedding-to-a-vector-database"></a></p>
+<p><a name="add-embeddings-to-a-vector-database"></a></p>
 <p>After you've generated your embedding you can add embeddings to a vector database, like Vector Search. This enables low-latency retrieval, and is critical as the size of your data increases.</p>
-<p>To learn more about Vector Search, see the <a href="https://cloud.google.com/vertex-ai/docs/vector-search/overview">Vector Search overview</a>.</p>
+<p>To learn more about Vector Search, see <a href="/mvp_doc_rewrite/vertex-ai/docs/vector-search/overview">Overview of Vector Search</a>.</p>
 <h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
-<li>To learn more about rate limits, see <a href="../../quotas/">Generative AI on Vertex AI rate limits</a>.</li>
-<li>To get batch predictions for embeddings, see <a href="../batch-prediction-genai-embeddings/">Get batch text embeddings predictions</a>.</li>
-<li>To learn more about multimodal embeddings, see <a href="../get-multimodal-embeddings/">Get multimodal embeddings</a>.</li>
-<li>To tune an embedding, see <a href="../../models/tune-embeddings/">Tune text embeddings</a>.</li>
+<li>To learn more about rate limits, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/quotas">Generative AI on Vertex AI rate limits</a>.</li>
+<li>To get batch predictions for embeddings, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/embeddings/batch-prediction-genai-embeddings">Get batch text embeddings predictions</a>.</li>
+<li>To learn more about multimodal embeddings, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/embeddings/get-multimodal-embeddings">Get multimodal embeddings</a>.</li>
+<li>To tune an embedding, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/tune-embeddings">Tune text embeddings</a>.</li>
 <li>To learn more about the research behind <code>text-embedding-005</code> and <code>text-multilingual-embedding-002</code>, see the research paper <a href="https://arxiv.org/abs/2403.20327">Gecko: Versatile Text Embeddings Distilled from Large Language Models</a>.</li>
 </ul>
 

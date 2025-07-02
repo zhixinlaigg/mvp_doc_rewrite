@@ -441,6 +441,8 @@
       
         
       
+        
+      
     
     
     
@@ -479,12 +481,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../start/api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -502,12 +504,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../start/gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -525,12 +527,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start/quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../start/quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -553,7 +555,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -577,6 +579,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -2110,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2419,6 +2446,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2797,8 +2922,6 @@
   
     
     
-      
-        
       
         
       
@@ -3519,10 +3642,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3590,52 +3709,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -5237,6 +5310,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       Before you begin
@@ -5246,9 +5328,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ground-your-model" class="md-nav__link">
+  <a href="#place-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Ground your model
+      Place properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Place properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-place-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample place properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-using-place-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of using place properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-grounding-with-google-maps-to-ground-your-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Grounding with Google Maps to ground your model
     </span>
   </a>
   
@@ -5260,39 +5375,6 @@
       Render the Google Maps contextual widget
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#supported-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported models
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#place-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Place properties
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -6002,6 +6084,8 @@
       
         
       
+        
+      
     
     
     
@@ -6045,7 +6129,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6069,6 +6153,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6127,10 +6234,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6143,8 +6250,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6279,10 +6386,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6295,8 +6402,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7240,129 +7347,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7401,10 +7385,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7417,8 +7401,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8835,7 +8819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../docs/" class="md-nav__link">
         
   
   
@@ -10104,7 +10088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../samples/" class="md-nav__link">
         
   
   
@@ -10770,6 +10754,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       Before you begin
@@ -10779,9 +10772,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ground-your-model" class="md-nav__link">
+  <a href="#place-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Ground your model
+      Place properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Place properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-place-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample place properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-using-place-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of using place properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-grounding-with-google-maps-to-ground-your-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Grounding with Google Maps to ground your model
     </span>
   </a>
   
@@ -10793,39 +10819,6 @@
       Render the Google Maps contextual widget
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#supported-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported models
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#place-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Place properties
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -10859,79 +10852,136 @@
 
 <h1 id="grounding-with-google-maps-in-vertex-ai">Grounding with Google Maps in Vertex AI<a class="headerlink" href="#grounding-with-google-maps-in-vertex-ai" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>European Economic Area (EEA):</strong> On July 8 2025, Google introduced new <a href="/terms/maps-platform/eea">Terms of Service</a> for projects with EEA billing accounts. Functionality varies by region. <a href="/maps/comms/eea/faq">Learn more</a>.</p>
-<p><strong>Experimental</strong></p>
-<p>Grounding with Google Maps in Vertex AI is covered by the Pre-GA Offerings Terms of the Google Cloud Terms of Service. Pre-GA features may have limited support, and changes to pre-GA features may not be compatible with other pre-GA versions. For more information, see the <a href="https://cloud.google.com/products#product-launch-stages">launch stage descriptions</a>.</p>
-<p>This feature is available for testing by customers in the United States. For assistance, send a message to <code>maps-grounding-feedback-external@google.com</code>.</p>
+<p><strong>European Economic Area (EEA) developers</strong></p>
+<p>On July 8 2025, Google introduced new <a href="/terms/maps-platform/eea">Terms of Service</a> for projects with EEA billing accounts. Functionality varies by region. <a href="/maps/comms/eea/faq">Learn more</a>.</p>
+<p><strong>Preview</strong></p>
+<p>Grounding with Google Maps in Vertex AI is covered by the Pre-GA Offerings Terms of the Google Cloud Terms of Service. Pre-GA features may have limited support, and changes to pre-GA features may not be compatible with other pre-GA versions. For more information, see the <a href="https://cloud.google.com/products#launch-stages">launch stage descriptions</a>.</p>
+<p>Grounding with Google Maps in Vertex AI is available for testing by customers in the United States.</p>
 </blockquote>
 <p>Grounding with Google Maps in Vertex AI combines the power of Gemini with Google Maps, which has access to information on over 250 million places. This integration, available through Vertex AI, is designed to help you create a new generation of generative applications.</p>
+<p>This page explains how you can use Google Maps to ground your LLM responses.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Grounding with Google Maps in Vertex AI is a service that lets you use Google Maps data with LLMs to provide more accurate and context-aware responses to your prompts. This feature is integrated with Vertex AI to support your use of geographical data with your Gemini model.</p>
+<p>Grounding with Google Maps in Vertex AI is a service that lets you use Google Maps data with LLMs to provide more accurate and context-aware responses to your prompts. Grounding with Google Maps is integrated with Vertex AI to support your use of geographical data with your Gemini model.</p>
 <p>Grounding with Google Maps helps you to discover new places, plan for events, and get recommendations for a variety of locations. You can do the following:</p>
 <ul>
-<li><strong>Ask a conversational assistant about the area and any nearby places.</strong> Your assistant has access to travel time information and can let you know how far a place is from your location. For example, <em>Are there any parks nearby?</em></li>
-<li><strong>See personalized descriptions of the place that matches your criteria.</strong> For example, <em>Can you tell me more about the parks and any family-friendly restaurants that are within a walkable distance?</em></li>
+<li>Ask a conversational assistant about the area and any nearby places. Your assistant has access to travel time information and can let you know how far a place is from your location. For example, <em>Are there any parks nearby?</em></li>
+<li>See personalized descriptions of the place that matches your criteria. For example, <em>Can you tell me more about the parks and any family-friendly restaurants that are within a walkable distance?</em></li>
 </ul>
 <p>Grounding with Google Maps lets you create generative AI applications from an LLM-powered chat using geospatial context to generate a personalized location-based summary to help you make better decisions.</p>
+<p>For assistance, send a message to <code>maps-grounding-feedback-external@google.com</code>.</p>
+<h2 id="supported-models">Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h2>
+<p>This section lists the models that support grounding with Google Maps.</p>
+<ul>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-lite">Gemini 2.5 Flash-Lite</a> (Preview)</li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#live-api-native-audio">Gemini 2.5 Flash with Live API native audio</a> (Preview)</li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-0-flash#live-api">Gemini 2.0 Flash with Live API</a> (Preview)</li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-5-pro">Gemini 2.5 Pro</a></li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-5-flash">Gemini 2.5 Flash</a></li>
+<li><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models/gemini/2-0-flash">Gemini 2.0 Flash</a></li>
+</ul>
+<p>For more information about the Gemini models, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/models#gemini-models">Gemini models</a>.</p>
 <h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>Grounding</strong>: The process of connecting a language model's responses to verifiable, real-world information from a specific data source, in this case, Google Maps.</li>
-<li><strong>Gemini</strong>: A family of powerful, multimodal large language models (LLMs) developed by Google.</li>
+<li><strong>Grounding</strong>: The process of connecting a large language model's (LLM) responses to verifiable, real-world information from a specific data source, such as Google Maps.</li>
 <li><strong>LLM (Large Language Model)</strong>: A type of artificial intelligence model trained on vast amounts of text data to understand and generate human-like language.</li>
 <li><strong>API Key</strong>: A unique identifier used to authenticate requests associated with your project for usage and billing purposes.</li>
-<li><strong>Contextual Widget</strong>: An interactive UI component that displays rich, contextual information from Google Maps related to the generated response.</li>
+<li><strong>Contextual Widget</strong>: An interactive user interface component that displays location-based information, such as a map and place details, relevant to the generated response.</li>
+<li><strong>Gemini</strong>: A family of multimodal large language models developed by Google.</li>
 </ul>
 </details>
-<p>This guide walks you through the process of setting up and enabling Grounding with Google Maps for your Vertex AI project.</p>
+<p>The following workflow outlines the steps to enable and configure Grounding with Google Maps for your project.</p>
 <pre class="mermaid"><code>flowchart TD
-    A[Request Access] --&gt; B[Enable Maps Grounding API]
+    A[Request access] --&gt; B[Enable Maps Grounding API]
     B --&gt; C[Enable Maps JavaScript API]
-    C --&gt; D[Configure in Vertex AI Studio]
+    C --&gt; D[Verify in Vertex AI Studio]
 
     click A "#request-access"
     click B "#enable-maps-grounding-api"
     click C "#enable-maps-javascript-api"
-    click D "#configure-in-vertex-ai-studio"</code></pre>
+    click D "#verify-in-vertex-ai-studio"</code></pre>
 <details open="open">
-<summary>Set up Grounding with Google Maps</summary>
+<summary>Enable Grounding with Google Maps</summary>
 <p><a name="request-access"></a>
 <strong>1. Request access</strong></p>
-<p>To use Grounding with Google Maps in Vertex AI for specific projects, complete and submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJixRKhCjPQ6jO34tHLtTzaypHE4FDKpX2BFsUwHrOLLg9IQ/viewform">Opt-in or Opt-out to use Google Maps form</a>. This form requires your email address, company name, project ID, and your acceptance of the terms.</p>
+<p>To request access to use Grounding with Google Maps in Vertex AI for specific projects, complete and submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJixRKhCjPQ6jO34tHLtTzaypHE4FDKpX2BFsUwHrOLLg9IQ/viewform">Opt-in or Opt-out to use Google Maps form</a>. This form requires your email address, company name, project ID, and your acceptance of the terms.</p>
 <p>If you don't have a project, see <a href="/resource-manager/docs/creating-managing-projects">Creating and managing projects</a>.</p>
 <p><a name="enable-maps-grounding-api"></a>
 <strong>2. Enable the Maps Grounding API</strong></p>
-<p>In the Google Cloud console, go to the <strong>Maps Grounding API</strong> page and click <strong>Enable</strong>. Select a project to continue.</p>
+<p>In the Google Cloud console, go to the <strong>Maps Grounding API</strong> page.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/marketplace/product/google/mapsgrounding.googleapis.com?q=search&amp;referrer=search&amp;inv=1&amp;invt=AbtQYw&amp;project=google.com:graphic-catcher-858">Go to Maps Grounding API</a></p>
+<p>Click <strong>Enable</strong>. Select a project, and the <strong>Maps Grounding API</strong> page displays.</p>
 <p><a name="enable-maps-javascript-api"></a>
 <strong>3. Enable the Maps JavaScript API</strong></p>
-<p>In the Google Cloud console, go to the <strong>Maps JavaScript API</strong> page and click <strong>Enable</strong>. Select a project to continue.</p>
+<p>In the Google Cloud console, go to the <strong>Maps JavaScript API</strong> page.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/marketplace/product/google/maps-backend.googleapis.com?q=search&amp;referrer=search&amp;inv=1&amp;invt=AbtQYw&amp;project=google.com:graphic-catcher-858">Go to Maps JavaScript API</a></p>
-<p><a name="configure-in-vertex-ai-studio"></a>
-<strong>4. Configure and verify in Vertex AI Studio</strong></p>
-<p>To verify that Google Maps is enabled, go to Vertex AI Studio.</p>
+<p>Click <strong>Enable</strong>. Select a project, and the <strong>APIs &amp; Services</strong> page displays.</p>
+<p><a name="verify-in-vertex-ai-studio"></a>
+<strong>4. Verify that Google Maps is enabled</strong></p>
+<p>Go to Vertex AI Studio to verify the configuration.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/vertex-ai/studio/multimodal?model=gemini-2.0-flash-001&amp;invt=AbtiYw">Go to Vertex AI Studio</a></p>
 <ul>
 <li>Select the project for which you enabled the APIs.</li>
-<li>In the <strong>Tools</strong> section of the model's pane, click the <strong>Grounding: Google</strong> toggle.</li>
+<li>In the <strong>Tools</strong> section of the model's pane, click the <strong>Grounding: Google</strong> toggle to turn it on.</li>
 <li>Select <strong>Google Maps Preview</strong>.</li>
-<li>Enter your <strong>API Key</strong>.<ul>
+<li>Enter the <strong>API Key</strong>.<ul>
 <li>If you don't have an API Key, see <a href="https://developers.google.com/maps/documentation/places/web-service/get-api-key#creating-api-keys">Creating API keys</a>.</li>
-<li>To limit the use of the APIs, see <a href="https://developers.google.com/maps/documentation/places/web-service/get-api-key#restrict_key">Restricting API keys</a>.</li>
+<li>Limit use of the APIs by <a href="https://developers.google.com/maps/documentation/places/web-service/get-api-key#restrict_key">Restricting API keys</a>.</li>
 </ul>
 </li>
 <li>Select the <strong>Location</strong> for a location-based response.</li>
 <li>Click <strong>Apply</strong>.</li>
 </ul>
 </details>
-<h2 id="ground-your-model">Ground your model<a class="headerlink" href="#ground-your-model" title="Permanent link">&para;</a></h2>
-<p>You can use the Google Maps API to ground your model's responses. These code samples demonstrate how to use the Maps API to ground your model's responses using either the Python SDK or the REST API.</p>
+<h2 id="place-properties">Place properties<a class="headerlink" href="#place-properties" title="Permanent link">&para;</a></h2>
+<p>This section lists place properties that are used to describe locations and are used by Grounding with Google Maps to generate responses. These properties determine the types of questions that Grounding with Google Maps can answer.</p>
+<h3 id="sample-place-properties">Sample place properties<a class="headerlink" href="#sample-place-properties" title="Permanent link">&para;</a></h3>
+<p>This list provides an alphabetized sampling of properties about places that your model might use to generate responses:</p>
+<ul>
+<li>Address</li>
+<li>Cash only</li>
+<li>Credit card</li>
+<li>Curbside pickup</li>
+<li>Debit card</li>
+<li>Distance</li>
+<li>Free parking lot</li>
+<li>Live music</li>
+<li>Menu for children</li>
+<li>Opening hours</li>
+<li>Pet friendly</li>
+<li>Serves beer</li>
+<li>Serves vegetarian food</li>
+<li>Wheelchair accessible</li>
+<li>Wifi</li>
+</ul>
+<h3 id="examples-of-using-place-properties">Examples of using place properties<a class="headerlink" href="#examples-of-using-place-properties" title="Permanent link">&para;</a></h3>
+<p>The following examples use place properties in questions about different types of places. Grounding with Google Maps uses the properties to understand your intent and then provides relevant answers based on the data associated with places in Google Maps.</p>
+<ul>
+<li>
+<p><strong>Plan a family dinner</strong>: You might ask, <em>Is "The Italian Place" good for children, and do they offer takeout? What is their rating?</em></p>
+<p>Answers to these questions help you to determine if a restaurant is suitable for a family and if the restaurant offers a convenient service.</p>
+</li>
+<li>
+<p><strong>Check accessibility for a friend</strong>: You might ask, <em>I need a restaurant that has a wheelchair accessible entrance.</em></p>
+<p>A response to this prompt might help you to determine if the location meets specific accessibility needs.</p>
+</li>
+<li>
+<p><strong>Find a location for a late-night snack</strong>: You might ask, <em>Is "Burger Joint" open now? Do they serve dinner? What are their opening hours for Friday?</em></p>
+<p>Answers to these questions help you to find an open establishment serving a specific meal during a particular time.</p>
+</li>
+<li>
+<p><strong>Meet a client for coffee</strong>: You might ask, <em>Does "Cafe Central" have Wifi? Do they serve coffee? What is their price level, and do they accept credit cards?</em></p>
+<p>Answers to these questions help you to assess the suitability of a cafe for a business meeting based on amenities, offerings, and payment options.</p>
+</li>
+</ul>
+<h2 id="use-grounding-with-google-maps-to-ground-your-model">Use Grounding with Google Maps to ground your model<a class="headerlink" href="#use-grounding-with-google-maps-to-ground-your-model" title="Permanent link">&para;</a></h2>
+<p>You can use the Google Maps API to ground your model's responses. These code samples demonstrate how to use the Maps API to ground your model's responses using Grounding with Google Maps.</p>
 <div class="admonition tip">
 <p class="admonition-title">Troubleshooting</p>
 <p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="python-sdk" name="__tabbed_1" type="radio" /><input id="rest-api" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="python-sdk">Python SDK</label><label for="rest-api">REST API</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="gen-ai-sdk-for-python" name="__tabbed_1" type="radio" /><input id="rest" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="gen-ai-sdk-for-python">Gen AI SDK for Python</label><label for="rest">REST</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><strong>Install the SDK</strong></p>
@@ -11027,38 +11077,35 @@
 </span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID&quot;</span>
 </span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="p">}</span>
 </span></code></pre></div>
+<details>
+<summary>Send the request</summary>
 <p>To send your request, expand one of these options:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="curl" name="__tabbed_2" type="radio" /><input id="powershell" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="curl">curl</label><label for="powershell">PowerShell</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p><strong>curl (Linux, macOS, or Cloud Shell)</strong></p>
 <p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <a href="/sdk/gcloud/reference/init"><code>gcloud init</code></a> or <a href="/sdk/gcloud/reference/auth/login"><code>gcloud auth login</code></a> , or by using <a href="/shell/docs">Cloud Shell</a>, which automatically logs you into the <code>gcloud</code> CLI . You can check the currently active account by running <a href="/sdk/gcloud/reference/auth/list"><code>gcloud auth list</code></a>.</p>
 <p>Save the request body in a file named <code>request.json</code>, and execute the following command:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl -X POST \  
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>     -H &quot;Authorization: Bearer $(gcloud auth print-access-token)&quot; \  
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>     -H &quot;Content-Type: application/json; charset=utf-8&quot; \  
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>     -d @request.json \  
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>     &quot;https://LOCATION-aiplatform.googleapis.com/v1beta1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateContent&quot;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="k">$(</span>gcloud<span class="w"> </span>auth<span class="w"> </span>print-access-token<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json; charset=utf-8&quot;</span><span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">     </span>-d<span class="w"> </span>@request.json<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">     </span><span class="s2">&quot;https://LOCATION-aiplatform.googleapis.com/v1beta1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateContent&quot;</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
+<p><strong>PowerShell (Windows)</strong></p>
 <p><strong>Note:</strong> The following command assumes that you have logged in to the <code>gcloud</code> CLI with your user account by running <a href="/sdk/gcloud/reference/init"><code>gcloud init</code></a> or <a href="/sdk/gcloud/reference/auth/login"><code>gcloud auth login</code></a> . You can check the currently active account by running <a href="/sdk/gcloud/reference/auth/list"><code>gcloud auth list</code></a>.</p>
 <p>Save the request body in a file named <code>request.json</code>, and execute the following command:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$cred = gcloud auth print-access-token  
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>$headers = @{ &quot;Authorization&quot; = &quot;Bearer $cred&quot; }  
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="n">gcloud</span> <span class="n">auth</span> <span class="n">print-access-token</span>  
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$headers</span> <span class="p">=</span> <span class="p">@{</span> <span class="s2">&quot;Authorization&quot;</span> <span class="p">=</span> <span class="s2">&quot;Bearer $cred&quot;</span> <span class="p">}</span>  
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Invoke-WebRequest `  
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    -Method POST `  
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    -Headers $headers `  
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    -ContentType: &quot;application/json; charset=utf-8&quot; `  
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    -InFile request.json `  
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    -Uri &quot;https://LOCATION-aiplatform.googleapis.com/v1beta1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateContent&quot; | Select-Object -Expand Content
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">Invoke-WebRequest</span> <span class="p">`</span>  
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">-Method</span> <span class="n">POST</span> <span class="p">`</span>  
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">-Headers</span> <span class="nv">$headers</span> <span class="p">`</span>  
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">-ContentType</span><span class="p">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span> <span class="p">`</span>  
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">-InFile</span> <span class="n">request</span><span class="p">.</span><span class="n">json</span> <span class="p">`</span>  
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">-Uri</span> <span class="s2">&quot;https://LOCATION-aiplatform.googleapis.com/v1beta1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateContent&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Expand</span> <span class="n">Content</span>
 </span></code></pre></div>
-</div>
-</div>
-</div>
-<p>You should receive a JSON response.</p>
+</details>
 <details>
-<summary>View a sample JSON response</summary>
+<summary>View an example response</summary>
+<p>You should receive a JSON response similar to the following:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;candidates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="p">{</span>
@@ -11158,121 +11205,67 @@
 </div>
 </div>
 <h2 id="render-the-google-maps-contextual-widget">Render the Google Maps contextual widget<a class="headerlink" href="#render-the-google-maps-contextual-widget" title="Permanent link">&para;</a></h2>
-<p>Rendering the Google Maps contextual widget is required as part of using Grounding with Google Maps in Vertex AI. In any response that is grounded with Google Maps, there is a corresponding <code>googleMapsWidgetContextToken</code> that is used to render the contextual widget in close proximity to the generated response.</p>
+<p>Rendering the Google Maps contextual widget is required when using Grounding with Google Maps in Vertex AI. Any response grounded with Google Maps includes a <code>googleMapsWidgetContextToken</code> that is used to render the contextual widget in close proximity to the generated response.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&quot;googleMapsWidgetContextToken&quot;: &quot;widgetcontent/AcBXPQdpWQWbap9H-OH8sEKmOXxmEKAYvff0tvthhneMQC3VrqWCjpnPBl4-Id98FGiA_S_t8aeAeJj0T6JkWFX56Bil8oBSR0W8JH3C_RSYLbTjxKdpxc9yNn6JcZTtolIRZon9xi6WpNGuSyjcIxWu2S0hwpasNOpUlWrG1RxVCB4WD1fsz_pwR236mG36lMxevXTQ_JnfdYNuQwQ4Lc3vn...&lt;snip&gt;...
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Ts5VJE_b3IC5eE_6wez0nh61r7foTUZpP7BXMwxR-7Wyfcj6x1v6mIWsFGr1o0p_HSAMNqWPg-aFVnkPLhAkOR6MaNZOfezTva-gxHlu7z_haFvYxcUE1qfNVQ&quot;,
 </span></code></pre></div>
-<p>Your page that displays the widget must use the alpha version of the Google Maps JS API. For more information, see <a href="https://developers.google.com/maps/documentation/javascript/load-maps-js-api">Load the Maps JavaScript API</a>. You must use the same API key that was enabled for Grounding with Google Maps to load the Google Maps JS API.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="create-a-widget-html" name="__tabbed_3" type="radio" /><input id="update-a-widget-javascript" name="__tabbed_3" type="radio" /><input id="create-a-widget-javascript" name="__tabbed_3" type="radio" /><input id="configure-layout" name="__tabbed_3" type="radio" /><input id="disable-the-map" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="create-a-widget-html">Create a widget (HTML)</label><label for="update-a-widget-javascript">Update a widget (JavaScript)</label><label for="create-a-widget-javascript">Create a widget (JavaScript)</label><label for="configure-layout">Configure layout</label><label for="disable-the-map">Disable the map</label></div>
+<p>Your page that displays the widget must use the alpha version of the Google Maps JS API and the API key that was enabled for Grounding with Google Maps. For more information, see <a href="https://developers.google.com/maps/documentation/javascript/load-maps-js-api">Load the Maps JavaScript API</a>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="html" name="__tabbed_2" type="radio" /><input id="javascript" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="html">HTML</label><label for="javascript">JavaScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
+<p><strong>Create a widget</strong></p>
 <p>This code sample demonstrates how to create a widget using HTML.</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  <span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>Use the following method to update the context token in your JavaScript.</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">updateWidget</span><span class="p">(</span><span class="nx">contextToken</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">widget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#widget&#39;</span><span class="p">);</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nx">widget</span><span class="p">.</span><span class="nx">contextToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">contextToken</span><span class="p">;</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>You can also create a widget dynamically with the following code.</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">createWidget</span><span class="p">(</span><span class="nx">contextToken</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">importLibrary</span><span class="p">(</span><span class="s1">&#39;places&#39;</span><span class="p">);</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">widgetContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#wc&#39;</span><span class="p">);</span><span class="w">  </span><span class="c1">// a div that contains the widget</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">placeContextualElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">      </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">places</span><span class="p">.</span><span class="nx">PlaceContextualElement</span><span class="p">({</span><span class="w"> </span><span class="nx">contextToken</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="nx">widgetContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">placeContextualElement</span><span class="p">);</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
+<p><strong>Configure layout</strong></p>
 <p>This HTML code sample demonstrates how to use configuration options to toggle between two different layouts (<code>compact</code> or <code>vertical</code>).</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  <span class="p">&lt;</span><span class="nt">gmp-place-contextual-list-config</span> <span class="na">layout</span><span class="o">=</span><span class="s">&quot;compact&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  <span class="p">&lt;/</span><span class="nt">gmp-place-contextual-list-config</span><span class="p">&gt;</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>    <span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>      <span class="p">&lt;</span><span class="nt">gmp-place-contextual-list-config</span> <span class="na">layout</span><span class="o">=</span><span class="s">&quot;compact&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>      <span class="p">&lt;/</span><span class="nt">gmp-place-contextual-list-config</span><span class="p">&gt;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="p">&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>Disable the map</strong></p>
+<p>This HTML code sample demonstrates how to disable the map.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>    <span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>      <span class="p">&lt;</span><span class="nt">gmp-place-contextual-list-config</span> <span class="na">map-hidden</span><span class="p">&gt;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>      <span class="p">&lt;/</span><span class="nt">gmp-place-contextual-list-config</span><span class="p">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="p">&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>This HTML code sample demonstrates how to disable the map.</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">gmp-place-contextual</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;widget&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  <span class="p">&lt;</span><span class="nt">gmp-place-contextual-list-config</span> <span class="na">map-hidden</span><span class="p">&gt;</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  <span class="p">&lt;/</span><span class="nt">gmp-place-contextual-list-config</span><span class="p">&gt;</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="p">&lt;/</span><span class="nt">gmp-place-contextual</span><span class="p">&gt;</span>
+<p><strong>Update the context token</strong></p>
+<p>In your Javascript, use the following method to update the context token:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">updateWidget</span><span class="p">(</span><span class="nx">contextToken</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">widget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#widget&#39;</span><span class="p">);</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nx">widget</span><span class="p">.</span><span class="nx">contextToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">contextToken</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>This JavaScript code sample demonstrates how to specify a <code>compact</code> layout and hide the map.</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">widgetConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">places</span><span class="p">.</span><span class="nx">PlaceContextualListConfigElement</span><span class="p">({</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nx">layout</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;compact&#39;</span><span class="p">,</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nx">mapHidden</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">});</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nx">widget</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">widgetConfig</span><span class="p">);</span>
+<p><strong>Create a widget dynamically</strong></p>
+<p>You can also create a widget dynamically with the following code:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">createWidget</span><span class="p">(</span><span class="nx">contextToken</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">importLibrary</span><span class="p">(</span><span class="s1">&#39;places&#39;</span><span class="p">);</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">widgetContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#wc&#39;</span><span class="p">);</span><span class="w">  </span><span class="c1">// a div that contains the widget</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">placeContextualElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">places</span><span class="p">.</span><span class="nx">PlaceContextualElement</span><span class="p">({</span><span class="w"> </span><span class="nx">contextToken</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nx">widgetContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">placeContextualElement</span><span class="p">);</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Configure layout and map visibility</strong></p>
+<p>This JavaScript code sample demonstrates how to specify a <code>compact</code> layout and how to hide the map.</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">widgetConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">places</span><span class="p">.</span><span class="nx">PlaceContextualListConfigElement</span><span class="p">({</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="nx">layout</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;compact&#39;</span><span class="p">,</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nx">mapHidden</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="nx">widget</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">widgetConfig</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
-<h3 id="supported-models">Supported models<a class="headerlink" href="#supported-models" title="Permanent link">&para;</a></h3>
-<p>This section lists the models that support grounding with Google Maps.</p>
-<ul>
-<li><a href="../../models/gemini/2-5-flash-lite/">Gemini 2.5 Flash-Lite</a> (Preview)</li>
-<li><a href="../../models/gemini/2-5-flash/#live-api-native-audio">Gemini 2.5 Flash with Live API native audio</a> (Preview)</li>
-<li><a href="../../models/gemini/2-0-flash/#live-api">Gemini 2.0 Flash with Live API</a> (Preview)</li>
-<li><a href="../../models/gemini/2-5-pro/">Gemini 2.5 Pro</a></li>
-<li><a href="../../models/gemini/2-5-flash/">Gemini 2.5 Flash</a></li>
-<li><a href="../../models/gemini/2-0-flash/">Gemini 2.0 Flash</a></li>
-</ul>
-<p>For more information about the Gemini models, see <a href="../../models/#gemini-models">Gemini models</a>.</p>
-<h3 id="place-properties">Place properties<a class="headerlink" href="#place-properties" title="Permanent link">&para;</a></h3>
-<p>This section lists place properties that are used to describe locations and used by Grounding with Google Maps to generate responses. These properties are used to determine the types of questions that Grounding with Google Maps can answer.</p>
-<p><strong>Sample place properties</strong></p>
-<p>This list provides an alphabetized sampling of properties about places that might be used by your model to generate responses.</p>
-<ul>
-<li>Address</li>
-<li>Cash only</li>
-<li>Credit card</li>
-<li>Curbside pickup</li>
-<li>Debit card</li>
-<li>Distance</li>
-<li>Free parking lot</li>
-<li>Live music</li>
-<li>Menu for children</li>
-<li>Opening hours</li>
-<li>Pet friendly</li>
-<li>Serves beer</li>
-<li>Serves vegetarian food</li>
-<li>Wheelchair accessible</li>
-<li>Wifi</li>
-</ul>
-<p><strong>Examples of using place properties</strong></p>
-<p>The following examples use place properties in questions about different types of places. Grounding with Google Maps uses the properties to understand your intent and then provides relevant answers based on the data associated with places in Google Maps.</p>
-<ul>
-<li>
-<p><strong>Plan a family dinner</strong>: You might ask, <em>Is "The Italian Place" good for children, and do they offer takeout? What is their rating?</em>
-    Answers to these questions help you to determine if a restaurant is suitable for a family and if the restaurant offers a convenient service.</p>
-</li>
-<li>
-<p><strong>Check accessibility for a friend</strong>: You might ask, <em>I need a restaurant that has a wheelchair accessible entrance.</em>
-    A response to this prompt might help you to determine if the location meets specific accessibility needs.</p>
-</li>
-<li>
-<p><strong>Find a location for a late-night snack</strong>: You might ask, <em>Is "Burger Joint" open now? Do they serve dinner? What are their opening hours for Friday?</em>
-    Answers to these questions help you to find an open establishment serving a specific meal during a particular time.</p>
-</li>
-<li>
-<p><strong>Meet a client for coffee</strong>: You might ask, <em>Does "Cafe Central" have Wifi? Do they serve coffee? What is their price level, and do they accept credit cards?</em>
-    Answers to these questions help you to assess the suitability of a cafe for a business meeting based on amenities, offerings, and payment options.</p>
-</li>
-</ul>
 <h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
-<li>To learn more about how to ground Gemini models to your data, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview">Grounding with your data</a>.</li>
-<li>To learn more about responsible AI best practices and Vertex AI's safety filters, see <a href="../../learn/responsible-ai/">Responsible AI</a>.</li>
+<li>To learn more about responsible AI best practices and Vertex AI's safety filters, see <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/learn/responsible-ai">Responsible AI</a>.</li>
 </ul>
 
 

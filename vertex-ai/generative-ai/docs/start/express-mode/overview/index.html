@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://zhixinlaigg.github.io/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/express-mode/overview/">
       
       
-        <link rel="prev" href="../../quickstarts/deploy-vais-prompt/">
+        <link rel="prev" href="../../../image/quickstart-image-generate-console/">
       
       
         <link rel="next" href="../vertex-ai-studio-express-mode-quickstart/">
@@ -443,6 +443,8 @@
       
         
       
+        
+      
     
     
     
@@ -481,12 +483,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstarts/try-gen-ai/" class="md-nav__link">
+      <a href="../../api-keys/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Send a text prompt to the Gemini API without an account
+    Get an API key
     
   </span>
   
@@ -504,12 +506,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+      <a href="../../gcp-auth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate an image and verify its watermark using Imagen
+    Configure application default credentials
     
   </span>
   
@@ -527,12 +529,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstarts/quickstart-multimodal/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Generate text using the Gemini API
+    API quickstart
     
   </span>
   
@@ -555,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    Send text prompts to Gemini using Vertex AI Studio
+    Vertex AI Studio quickstart
     
   </span>
   
@@ -579,6 +581,29 @@
   
   <span class="md-ellipsis">
     Deploy your Vertex AI Studio prompt as a web application
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../image/quickstart-image-generate-console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an image and verify its watermark using Imagen
     
   </span>
   
@@ -646,35 +671,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#express-mode-eligibility" class="md-nav__link">
+  <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
-      Express mode eligibility
+      Before you begin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-and-limitations" class="md-nav__link">
+  <a href="#express-mode-vs-full-vertex-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      Key features and limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key features and limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-models-and-rate-limits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available models and rate limits
+      Express mode vs. full Vertex AI
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#available-models-and-rate-limits-in-express-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available models and rate limits in express mode
+    </span>
+  </a>
   
 </li>
       
@@ -691,57 +710,6 @@
   <a href="#manage-your-express-mode-environment" class="md-nav__link">
     <span class="md-ellipsis">
       Manage your express mode environment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Manage your express mode environment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#view-and-manage-api-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      View and manage API keys
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-quotas" class="md-nav__link">
-    <span class="md-ellipsis">
-      View quotas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-billing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable billing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graduate-to-the-full-google-cloud-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Graduate to the full Google Cloud experience
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-express-mode-differs-from-standard-vertex-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      How express mode differs from standard Vertex AI
     </span>
   </a>
   
@@ -2265,6 +2233,8 @@
       
         
       
+        
+      
     
     
     
@@ -2574,6 +2544,104 @@
   
   <span class="md-ellipsis">
     Llama 3.1 8b
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11_3" id="__nav_2_3_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Model capabilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Model capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/function-calling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function calling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maas/capabilities/structured-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured output
     
   </span>
   
@@ -2950,8 +3018,6 @@
   
     
     
-      
-        
       
         
       
@@ -3672,10 +3738,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -3743,52 +3805,6 @@
   
   <span class="md-ellipsis">
     System instructions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/function-calling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Function calling
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../multimodal/control-generated-output/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structured output
     
   </span>
   
@@ -6033,6 +6049,8 @@
       
         
       
+        
+      
     
     
     
@@ -6076,7 +6094,7 @@
   
   
   <span class="md-ellipsis">
-    RAG Overview
+    RAG overview
     
   </span>
   
@@ -6100,6 +6118,29 @@
   
   <span class="md-ellipsis">
     RAG quickstart for Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rag-engine/understanding-ragmanageddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding RagManagedDb
     
   </span>
   
@@ -6158,10 +6199,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_4" id="__nav_2_4_18_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
             
   
   
@@ -6174,8 +6215,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_5">
             <span class="md-nav__icon md-icon"></span>
             Document parsing
           </label>
@@ -6310,10 +6351,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_18_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_18_5" id="__nav_2_4_18_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_18_6" id="__nav_2_4_18_6_label" tabindex="0">
             
   
   
@@ -6326,8 +6367,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_18_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_18_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_18_6">
             <span class="md-nav__icon md-icon"></span>
             Vector database choices in RAG
           </label>
@@ -7271,129 +7312,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_24" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4_24" id="__nav_2_4_24_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Translation models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_24_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_24">
-            <span class="md-nav__icon md-icon"></span>
-            Translation models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-supervised-tuning-prepare/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prepare your data
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../models/translation-use-supervised-tuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Use supervised fine-tuning
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../model-garden/lora-qlora/" class="md-nav__link">
         
@@ -7432,10 +7350,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_26" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_25" >
         
           
-          <label class="md-nav__link" for="__nav_2_4_26" id="__nav_2_4_26_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4_25" id="__nav_2_4_25_label" tabindex="0">
             
   
   
@@ -7448,8 +7366,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_26_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_26">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_25">
             <span class="md-nav__icon md-icon"></span>
             Call Vertex AI models using OpenAI libraries
           </label>
@@ -8866,7 +8784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs" class="md-nav__link">
+      <a href="../../../../../docs/" class="md-nav__link">
         
   
   
@@ -10135,7 +10053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://cloud.google.com/vertex-ai/docs/samples" class="md-nav__link">
+      <a href="../../../samples/" class="md-nav__link">
         
   
   
@@ -10792,35 +10710,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#express-mode-eligibility" class="md-nav__link">
+  <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
-      Express mode eligibility
+      Before you begin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-and-limitations" class="md-nav__link">
+  <a href="#express-mode-vs-full-vertex-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      Key features and limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key features and limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-models-and-rate-limits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available models and rate limits
+      Express mode vs. full Vertex AI
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#available-models-and-rate-limits-in-express-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available models and rate limits in express mode
+    </span>
+  </a>
   
 </li>
       
@@ -10837,57 +10749,6 @@
   <a href="#manage-your-express-mode-environment" class="md-nav__link">
     <span class="md-ellipsis">
       Manage your express mode environment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Manage your express mode environment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#view-and-manage-api-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      View and manage API keys
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-quotas" class="md-nav__link">
-    <span class="md-ellipsis">
-      View quotas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-billing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable billing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graduate-to-the-full-google-cloud-experience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Graduate to the full Google Cloud experience
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-express-mode-differs-from-standard-vertex-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      How express mode differs from standard Vertex AI
     </span>
   </a>
   
@@ -10927,30 +10788,34 @@
 <p>This feature is subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the Service Specific Terms. Pre-GA features are available "as is" and might have limited support. For more information, see the launch stage descriptions.</p>
 </blockquote>
 <p>Vertex AI in express mode is the fastest way to start building generative AI applications on Google Cloud. Signing up in express mode is quick and easy, and it doesn't require entering any billing information. After you sign up, you can access and use Google Cloud APIs in just a few steps.</p>
-<p>To learn more about Vertex AI in express mode, see <a href="https://cloud.google.com/vertex-ai/docs/generative-ai/express-mode/faq">Google Cloud express mode FAQs</a>.</p>
+<p>To learn more about Vertex AI in express mode, see <a href="https://cloud.google.com/free/docs/express-mode-faq">Google Cloud express mode FAQs</a>.</p>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<details open="open">
+<summary>Prerequisites</summary>
+<p><strong>Express mode eligibility</strong></p>
+<p>Vertex AI in express mode is separate from, and not available through, the Google Cloud Free Program. If you are in the Google Cloud Free Program, see the other quickstarts in the <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/start">Get Started</a> section to start using Generative AI on Vertex AI.</p>
+<p>Vertex AI is available in express mode for developers that click the <strong><a href="https://cloud.google.com/generative-ai-studio">Try Vertex AI Studio free</a></strong> button and sign up using a <code>@gmail.com</code> <a href="https://accounts.google.com/">Google Account</a>. Accounts used previously to access Google Cloud are ineligible for express mode. For example, if you used your Google Account to create a Google Cloud free trial account, you are not eligible to sign up in express mode with that same Google Account.</p>
 <details>
 <summary>Concepts</summary>
 <ul>
-<li><strong>API Key</strong>: A unique string used to authenticate requests to an API without needing a Google Cloud project.</li>
-<li><strong>Quota</strong>: A limit on the amount of a particular Google Cloud resource that you can use.</li>
-<li><strong>Vertex AI Studio</strong>: A Google Cloud console UI for prototyping and testing generative AI models.</li>
-<li><strong>Project</strong>: The base-level organizing entity for creating and using Google Cloud services.</li>
-<li><strong>Organization</strong>: The root node of the Google Cloud resource hierarchy, to which projects and billing accounts belong.</li>
+<li><strong>Generative AI</strong>: A type of artificial intelligence that can create new content, such as text, images, or code.</li>
+<li><strong>API Key</strong>: A unique string used to authenticate requests to an API, proving that the caller has permission to use it.</li>
+<li><strong>Quota</strong>: A limit on the amount of a specific Google Cloud resource that you can use.</li>
+<li><strong>Project</strong>: A Google Cloud entity used to organize all your cloud resources.</li>
+<li><strong>Location</strong>: The geographical region where your Google Cloud resources are hosted.</li>
 </ul>
 </details>
-<h2 id="express-mode-eligibility">Express mode eligibility<a class="headerlink" href="#express-mode-eligibility" title="Permanent link">&para;</a></h2>
-<p>Vertex AI in express mode is separate from, and not available through, the Google Cloud Free Program. If you are in the Google Cloud Free Program, see the other quickstarts in the Get Started section to start using Generative AI on Vertex AI.</p>
-<p>Vertex AI is available in express mode for developers that click the <strong><a href="https://cloud.google.com/generative-ai-studio">Try Vertex AI Studio free</a></strong> button and sign up using a <code>@gmail.com</code> <a href="https://accounts.google.com/">Google Account</a>. Accounts used previously to access Google Cloud are ineligible for express mode and are not shown the <strong>Try Vertex AI Studio free</strong> button. For example, if you used your Google Account to create a Google Cloud free trial account, you are not eligible to sign up in express mode with that same Google Account.</p>
-<h2 id="key-features-and-limitations">Key features and limitations<a class="headerlink" href="#key-features-and-limitations" title="Permanent link">&para;</a></h2>
-<p>Upon completing your sign-up in express mode, you get access to core Vertex AI Studio features, an API key, and a 90-day trial period. During the trial, you can use the supported Vertex AI APIs for free up to their quotas. You can increase your quota limits at any time by enabling billing.</p>
-<p>The following table summarizes the key differences between using Vertex AI in express mode, with billing enabled, and the standard Vertex AI experience.</p>
+</details>
+<h2 id="express-mode-vs-full-vertex-ai">Express mode vs. full Vertex AI<a class="headerlink" href="#express-mode-vs-full-vertex-ai" title="Permanent link">&para;</a></h2>
+<p>Upon completing your sign-up in express mode, you get access to core Vertex AI Studio features, an API key, and a 90-day trial period. During this trial, you can use supported Vertex AI APIs for free up to their quotas.</p>
+<p>You can enable billing at any time to remove the 90-day limit, increase quotas, and pay only for what you use. The following table compares the features of Vertex AI in express mode (with and without billing) to the full Vertex AI experience.</p>
 <table>
 <thead>
 <tr>
 <th>Item</th>
 <th>Vertex AI express mode</th>
 <th>Vertex AI express mode with billing</th>
-<th>Vertex AI (standard)</th>
+<th>Full Vertex AI</th>
 </tr>
 </thead>
 <tbody>
@@ -10962,38 +10827,39 @@
 </tr>
 <tr>
 <td><strong>Available services</strong></td>
-<td>Basic Generative AI on Vertex AI services</td>
-<td>Expanded Vertex AI services and select Google Cloud services</td>
-<td>All Google Cloud services, including Vertex AI</td>
+<td>Basic Generative AI on Vertex AI services.</td>
+<td>Expanded Vertex AI services and select Google Cloud services.</td>
+<td>All Google Cloud services, including Vertex AI.</td>
 </tr>
 <tr>
 <td><strong>Data sources</strong></td>
 <td>Google Drive</td>
 <td>Google Drive, web files, YouTube video URLs</td>
-<td>All data sources available in Google Cloud</td>
+<td>All data sources available in Google Cloud.</td>
 </tr>
 <tr>
 <td><strong>Quota</strong></td>
-<td>Free tier quotas</td>
-<td>Standard quotas. See <a href="../../../quotas/">Rate limits</a>.</td>
-<td>Standard quotas. See <a href="../../../quotas/">Rate limits</a>.</td>
+<td>See <a href="#available-models-and-rate-limits-in-express-mode">Available models and rate limits in express mode</a>.</td>
+<td>See <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/quotas">Rate limits</a>.</td>
+<td>See <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/quotas">Rate limits</a>.</td>
 </tr>
 <tr>
 <td><strong>Service Level Agreement (SLA)</strong></td>
 <td>None</td>
-<td>Vertex AI SLA</td>
-<td>Vertex AI SLA</td>
+<td><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/sla">Vertex AI SLA</a></td>
+<td><a href="/mvp_doc_rewrite/vertex-ai/generative-ai/sla">Vertex AI SLA</a></td>
 </tr>
 <tr>
-<td><strong>Authentication</strong></td>
-<td>API Key</td>
-<td>API Key</td>
-<td>Project ID and location</td>
+<td><strong>API endpoint format</strong></td>
+<td>Uses an API key: <br> <code>.../models/{model}:streamGenerateContent?key={API_KEY}</code></td>
+<td>Uses an API key: <br> <code>.../models/{model}:streamGenerateContent?key={API_KEY}</code></td>
+<td>Uses a project ID and location: <br> <code>.../projects/{project}/locations/{location}/...</code></td>
 </tr>
 </tbody>
 </table>
-<h3 id="available-models-and-rate-limits">Available models and rate limits<a class="headerlink" href="#available-models-and-rate-limits" title="Permanent link">&para;</a></h3>
-<p>You can try out several models in express mode, including the Gemini family of models. The following table lists the models that are available in express mode, along with their rate limits:</p>
+<p>When using Vertex AI in express mode, you don't need to manage Google Cloud organizations or projects. While some documentation may reference these concepts, you can ignore them. The location you select during sign-up is used for your entire express mode experience.</p>
+<h2 id="available-models-and-rate-limits-in-express-mode">Available models and rate limits in express mode<a class="headerlink" href="#available-models-and-rate-limits-in-express-mode" title="Permanent link">&para;</a></h2>
+<p>You can try out several models in express mode, including the Gemini models. The following table lists the models that are available in express mode, along with their rate limits.</p>
 <table>
 <thead>
 <tr>
@@ -11005,7 +10871,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Gemini</td>
+<td><strong>Gemini</strong></td>
 <td><code>gemini-1.5-pro</code></td>
 <td>30</td>
 <td>June 17, 2026</td>
@@ -11054,28 +10920,34 @@
 </tr>
 </tbody>
 </table>
-<p>For Gemini 1.0 models, the <a href="../../../model-reference/multimodal-live/">Multimodal Live API</a> isn't available in the Console in express mode. To use the Multimodal Live API in express mode, use the Vertex AI API or the Google Gen AI SDK.</p>
+<p>For Gemini 1.0 models, the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/model-reference/multimodal-live">Multimodal Live API</a> isn't available in the Console in express mode. To use the Multimodal Live API in express mode, use the Vertex AI API or the Google Gen AI SDK.</p>
 <h2 id="get-started-with-express-mode">Get started with express mode<a class="headerlink" href="#get-started-with-express-mode" title="Permanent link">&para;</a></h2>
-<p>You can start sending requests from your application to Vertex AI APIs in three steps. This workflow shows how to test a prompt in Vertex AI Studio, get the equivalent code, and use your API key to run it in your application.</p>
-<pre class="mermaid"><code>flowchart LR
+<p>This section shows you how to start sending requests from your application to Vertex AI APIs. The following diagram shows the overall workflow.</p>
+<pre class="mermaid"><code>flowchart TD
     A[Try features in Vertex AI Studio] --&gt; B[Get code]
     B --&gt; C[Authenticate with API key]
 
-click A "#try-features-in-vertex-ai-studio"
+click A "#try-features"
 click B "#get-code"
-click C "#authenticate-with-api-key"</code></pre>
+click C "#authenticate"</code></pre>
 <details open="open">
-<summary>Get started with express mode</summary>
-<p><a name="try-features-in-vertex-ai-studio"></a>
-<strong>1. Try features in Vertex AI Studio</strong></p>
+<summary>Steps to get started</summary>
+<p><a name="try-features"></a>
+<strong>Step 1: Try features in Vertex AI Studio</strong></p>
 <p>Use Vertex AI Studio in express mode to quickly try Vertex AI features. For example, in the Google Cloud console in express mode, select <strong>Vertex AI &gt; Freeform</strong> and use the Freeform page to create and optimize multimodal prompts using a variety of Gemini models.</p>
 <p><a name="get-code"></a>
-<strong>2. Get code</strong></p>
-<p>On the Freeform page, click code <strong>Get code</strong>. A panel opens showing code that programmatically sends the same requests that you implemented in the UI. You can get the code for a programming language or as a cURL command. You can use <a href="https://colab.research.google.com/">Google Colab</a> to try the Python code.</p>
-<p><a name="authenticate-with-api-key"></a>
-<strong>3. Authenticate with your API key</strong></p>
-<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong> and select <strong>API Keys</strong>, and then copy your key into your code where it says <code>"YOUR_API_KEY"</code>.</p>
-<p><strong>Python example</strong></p>
+<strong>Step 2: Get the code</strong></p>
+<p>After designing your prompt in the UI, click code <strong>Get code</strong>. A panel opens showing code that programmatically sends the same request. You can get code snippets for different programming languages or as a cURL command. You can use <a href="https://colab.research.google.com/">Google Colab</a> to try the Python code.</p>
+<p><a name="authenticate"></a>
+<strong>Step 3: Authenticate with your API key</strong></p>
+<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong> and select <strong>API Keys</strong>. Copy your key and paste it into your code where it says <code>"YOUR_API_KEY"</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Troubleshooting</p>
+<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="python" name="__tabbed_1" type="radio" /><input id="curl" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="python">Python</label><label for="curl">cURL</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>The Google Gen AI SDK for Python is available on PyPI and GitHub:</p>
 <ul>
 <li><a href="https://pypi.org/project/google-genai/"><code>google-genai</code> on PyPI</a></li>
@@ -11098,114 +10970,88 @@ click C "#authenticate-with-api-key"</code></pre>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># Example response:</span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># Bubble Sort is a simple sorting algorithm that repeatedly steps through the list</span>
 </span></code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Troubleshooting</p>
-<p>If you encounter issues with code snippets or setup, refer to the <a href="https://cloud.google.com/vertex-ai/docs/general/troubleshooting?component=any">Troubleshooting Guide</a>.</p>
+</div>
+<div class="tabbed-block">
+<p>To use cURL, replace <code>YOUR_API_KEY</code> with the key you copied from the console.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;contents&quot;: [{&quot;parts&quot;: [{&quot;text&quot;: &quot;Explain bubble sort to me.&quot;}]}]}&#39;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="s2">&quot;https://aiplatform.googleapis.com/v1/publishers/google/models/gemini-1.5-flash:streamGenerateContent?key=YOUR_API_KEY&quot;</span>
+</span></code></pre></div>
+</div>
+</div>
 </div>
 </details>
 <h2 id="manage-your-express-mode-environment">Manage your express mode environment<a class="headerlink" href="#manage-your-express-mode-environment" title="Permanent link">&para;</a></h2>
-<p>The following sections describe how to manage your API keys, quotas, and billing settings in express mode.</p>
-<h3 id="view-and-manage-api-keys">View and manage API keys<a class="headerlink" href="#view-and-manage-api-keys" title="Permanent link">&para;</a></h3>
-<p>To authenticate with <a href="../vertex-ai-express-mode-api-reference/">Vertex AI API endpoints that support express mode</a>, use the API key that was created for you during sign-up or any key that you've created in express mode.</p>
-<p>To learn more about the best practices for managing API keys, see <a href="https://cloud.google.com/docs/authentication/api-keys-best-practices">Best practices for managing API keys</a>.</p>
+<p>Use the following sections to manage your API keys, quotas, and billing settings in express mode.</p>
 <details>
-<summary>Steps to view and manage API keys</summary>
+<summary>View and manage API keys</summary>
+<p>To authenticate with <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-express-mode-api-reference">Vertex AI API endpoints that support express mode</a>, use the API key that was created for you during sign-up or any key that you've created in express mode. For best practices, see <a href="https://cloud.google.com/docs/authentication/api-keys-best-practices">Best practices for managing API keys</a>.</p>
+<p>To view and manage your API keys:</p>
 <ol>
 <li>
 <p>Go to the Vertex AI Studio Overview page in express mode.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/freetrial/?redirectPath=/vertex-ai/studio">Go to Vertex AI Studio</a></p>
 </li>
 <li>
-<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong>.</p>
+<p>In the Google Cloud console, click menu <strong>Menu</strong>.</p>
 </li>
-<li>
-<p>Select <strong>API Keys</strong>. The API Keys page opens, where you can manage your API keys.</p>
-</li>
+<li>Select <strong>API Keys</strong>. The API Keys page opens, where you can manage your keys.</li>
 </ol>
 </details>
-<h3 id="view-quotas">View quotas<a class="headerlink" href="#view-quotas" title="Permanent link">&para;</a></h3>
-<p>Your free use of Vertex AI in express mode is restricted by quotas. These quotas limit the rate at which you can use Vertex AI in express mode at no cost.</p>
 <details>
-<summary>Steps to view quotas</summary>
+<summary>View quotas</summary>
+<p>Your free use of Vertex AI in express mode is restricted by quotas. A quota limits how much of a Google Cloud resource you can use.</p>
+<p>To view your current usage and quotas:</p>
 <ol>
 <li>
 <p>Go to the Vertex AI Studio Overview page in express mode.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/freetrial/?redirectPath=/vertex-ai/studio">Go to Vertex AI Studio</a></p>
 </li>
 <li>
-<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong>.</p>
+<p>In the Google Cloud console, click menu <strong>Menu</strong>.</p>
 </li>
-<li>
-<p>Select <strong>Quotas</strong>.</p>
-</li>
+<li>Select <strong>Quotas</strong>.</li>
 </ol>
 </details>
-<h3 id="enable-billing">Enable billing<a class="headerlink" href="#enable-billing" title="Permanent link">&para;</a></h3>
+<details>
+<summary>Enable and manage billing</summary>
 <p>You can increase your quotas and remove the 90-day limit by enabling billing. After enabling billing, you pay only for what you use. You can also save your prompts and access additional settings in the console that are grayed out when billing isn't enabled.</p>
-<details>
-<summary>Steps to enable billing</summary>
+<p>To enable and manage billing:</p>
 <ol>
 <li>
 <p>Go to the Vertex AI Studio Overview page in express mode.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/freetrial/?redirectPath=/vertex-ai/studio">Go to Vertex AI Studio</a></p>
 </li>
 <li>
-<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong>.</p>
+<p>In the Google Cloud console, click menu <strong>Menu</strong>.</p>
 </li>
-<li>
-<p>Select <strong>Billing</strong>.</p>
-</li>
+<li>Select <strong>Billing</strong>.</li>
 </ol>
 </details>
-<h3 id="graduate-to-the-full-google-cloud-experience">Graduate to the full Google Cloud experience<a class="headerlink" href="#graduate-to-the-full-google-cloud-experience" title="Permanent link">&para;</a></h3>
-<p>You can start using all the capabilities and services available in Google Cloud in your project by graduating from express mode.</p>
 <details>
-<summary>Steps to graduate from express mode</summary>
+<summary>Graduate to the full Google Cloud experience</summary>
+<p>You can start using all the capabilities and services available in Google Cloud by graduating from express mode.</p>
+<p>To graduate from express mode:</p>
 <ol>
 <li>
 <p>Go to the Vertex AI Studio Overview page in express mode.</p>
 <p><a class="md-button" href="https://console.cloud.google.com/freetrial/?redirectPath=/vertex-ai/studio">Go to Vertex AI Studio</a></p>
 </li>
 <li>
-<p>In the Google Cloud console in express mode, click menu <strong>Menu</strong>.</p>
+<p>In the Google Cloud console, click menu <strong>Menu</strong>.</p>
 </li>
-<li>
-<p>Select <strong>Billing</strong>.</p>
-</li>
-<li>
-<p>In the <strong>Access all Google Cloud</strong> section, click <strong>Learn more and get started</strong>.</p>
-</li>
+<li>Select <strong>Billing</strong>.</li>
+<li>In the <strong>Access all Google Cloud</strong> section, click <strong>Learn more and get started</strong>.</li>
 </ol>
-</details>
-<p>After you graduate from express mode, specify your project ID and location instead of your API key when you call the REST API endpoints. For example:
+<p>After you graduate, you must specify your project ID and location instead of your API key when calling REST API endpoints. For example:
 <code>https://{location}-aiplatform.googleapis.com/v1/projects/{projectid}/locations/{location}/publishers/google/models/{model}:streamGenerateContent</code></p>
-<h2 id="how-express-mode-differs-from-standard-vertex-ai">How express mode differs from standard Vertex AI<a class="headerlink" href="#how-express-mode-differs-from-standard-vertex-ai" title="Permanent link">&para;</a></h2>
-<p>Vertex AI in express mode provides a subset of the features for Generative AI on Vertex AI. For details on the available API endpoints in express mode, see the <a href="../vertex-ai-express-mode-api-reference/">Vertex AI in express mode REST API reference</a>.</p>
-<p>In addition, customers in Google Cloud typically use <em>organizations</em> and <em>projects</em> to work with resources. When using Vertex AI in express mode, you don't need to worry about organizations or projects. However, you might see them mentioned in some of the Google Cloud documentation. You can still use the documentation, but ignore concepts and instructions that refer to organizations and projects. In addition, the <a href="../../../learn/locations/">location</a> you selected when signing up in express mode is used throughout your experience.</p>
-<p>When calling REST API endpoints, you must use the format specific to express mode and provide your API key.</p>
-<table>
-<thead>
-<tr>
-<th>Endpoint Type</th>
-<th>URL Format</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Standard endpoint URL</strong></td>
-<td><code>https://{location}-aiplatform.googleapis.com/v1/projects/{project}/locations/{location}/publishers/google/models/{model}:streamGenerateContent</code></td>
-</tr>
-<tr>
-<td><strong>Endpoint URL in express mode</strong></td>
-<td><code>https://aiplatform.googleapis.com/v1/publishers/google/models/{model}:streamGenerateContent?key={API_KEY}</code></td>
-</tr>
-</tbody>
-</table>
+</details>
 <h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Try the <a href="../vertex-ai-studio-express-mode-quickstart/">Vertex AI Studio tutorial</a> for Vertex AI in express mode.</li>
-<li>Try the <a href="../vertex-ai-express-mode-api-quickstart/">API tutorial</a> for Vertex AI in express mode.</li>
-<li>See the complete <a href="../vertex-ai-express-mode-api-reference/">API reference</a> for Vertex AI in express mode.</li>
+<li>Try the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-studio-express-mode-quickstart">Vertex AI Studio tutorial</a> for Vertex AI in express mode.</li>
+<li>Try the <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-express-mode-api-quickstart">API tutorial</a> for Vertex AI in express mode.</li>
+<li>See the complete <a href="/mvp_doc_rewrite/vertex-ai/generative-ai/docs/start/express-mode/vertex-ai-express-mode-api-reference">API reference</a> for Vertex AI in express mode.</li>
 </ul>
 
 
@@ -11244,7 +11090,7 @@ click C "#authenticate-with-api-key"</code></pre>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../quickstarts/deploy-vais-prompt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Deploy your Vertex AI Studio prompt as a web application">
+          <a href="../../../image/quickstart-image-generate-console/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Generate an image and verify its watermark using Imagen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -11254,7 +11100,7 @@ click C "#authenticate-with-api-key"</code></pre>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Deploy your Vertex AI Studio prompt as a web application
+                Generate an image and verify its watermark using Imagen
               </div>
             </div>
           </a>
